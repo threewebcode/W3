@@ -16,4 +16,9 @@ function git(){
   git config --local user.email magestore@outlook.com
 }
 
+function create_tsp(){
+    npm init typescript-project;
+    npx typescript-starter;
+}
+
 $@
