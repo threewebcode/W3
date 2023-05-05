@@ -21,4 +21,12 @@ function create_tsp(){
     npx typescript-starter;
 }
 
+function sui(){
+  #curl -sLO  https://github.com/MystenLabs/sui/releases/download/devnet-0.33.0/sui
+  curl -sLO https://github.com/MystenLabs/sui/releases/download/sui-v1.0.0/sui
+  chmod +x sui
+  mv sui $(dirname $(which cargo))
+  which sui  
+}
+
 $@
