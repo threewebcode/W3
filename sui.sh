@@ -11,10 +11,16 @@ function gas(){
 }
 
 function publish(){
-  sui client publish --gas-budget 30000
+  sui client publish --gas-budget 10000000000 --skip-fetch-latest-git-deps
 }
 
-PACKAGE=
+PACKAGE=0xf4c82b3145d5eed01d1b1a9e9b367ba937968ec7804359897fe2df80197e8efb
+
+sui client call \
+  --function get \
+  --module devnet \
+  --package "$PACKAGE" \
+  --gas-budget 1000000000 --json
 
 function call(){
 
