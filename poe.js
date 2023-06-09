@@ -7,6 +7,7 @@ for (var i = 0; i < nodes.length; i++) {
 
 var nodes = document.getElementsByClassName("Message_botMessageBubble__CPGMI");
 for (var i = 0; i < nodes.length; i++) {
-  node.classList.remove("Message_botMessageBubble__CPGMI");
+  nodes[i].style.maxWidth = "1248px";
+// node.classList.remove("Message_botMessageBubble__CPGMI");
 };
 
