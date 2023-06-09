@@ -11,3 +11,7 @@ for (var i = 0; i < nodes.length; i++) {
 // node.classList.remove("Message_botMessageBubble__CPGMI");
 };
 
+var nodes = document.getElementsByClassName("markdown-body");
+for (var i = 0; i < nodes.length; i++) {
+  nodes[i].style.fontSize = "15px";
+};
