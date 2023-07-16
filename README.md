@@ -35,5 +35,22 @@ Intersection of AI and Blockchain
 6. intelligence focus
 
 ---
+BRC69
 
-
+1. recursive inscription
+   1. inscribing images of traits onchain
+   2. inscribing BRC69 collection deployment json
+   3. inscribing BRC69 collection javascript compiler
+   4. inscribing BRC69 asset with the mint operation
+2. bitcoin ordinals
+   1. ordinal protocol
+      1. fundamental unit
+      2. inscribing digital assets
+      3. inscribe data into witness of transaction
+   2. bitcoin as a secure and decentralized network for data storage
+   3. ordinal
+      1. conventional arguments
+      2. inscribing data into block space
+      3. efficient arrangement of data in transaction
+      4. statoshi position: four distinct parameters
+---
