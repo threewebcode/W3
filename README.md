@@ -23,6 +23,7 @@ Three Web World
       6. refungible
       7. memorial
 
+## Ideas
 ---
 Intersection of AI and Blockchain
 
