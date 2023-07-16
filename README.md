@@ -57,3 +57,23 @@ AI
 7. build with reality
 8. foundation model and your own model
 ---
+Ethereum
+1. blockchain technology beyond currency
+2. opcodes instructions
+3. account address controlled by private key
+4. contract address controlled by contract code
+5.  code execution
+
+zysync
+1. use zksnark to scale up. transaction
+2. switch from privacy to scale up
+3. knowledge proof: snark and stark
+4. main chain as witness of state and side chain for transaction process
+5. off chain computation
+6. execute state transition functions correctly
+7. data availability
+8. transaction executed by evm
+9. reconstruct the state
+10. history and state
+
+---
