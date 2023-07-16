@@ -24,7 +24,7 @@ Three Web World
       7. memorial
 
 ## Ideas
----
+
 Intersection of AI and Blockchain
 
 1. code generation
@@ -33,5 +33,7 @@ Intersection of AI and Blockchain
 4. trading bot
 5. mature automation
 6. intelligence focus
+
+---
 
 
