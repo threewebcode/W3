@@ -1,10 +1,8 @@
 # W3
 Three Web World
 
-## NFT
-
-**NFT Mass Adoption**
-
+## Ideas
+NFT Mass Adoption
 1. three components
    1. sustainability and energy efficiency
    2. NFT infrastructure 2.0
@@ -22,21 +20,16 @@ Three Web World
       5. real restate
       6. refungible
       7. memorial
-
-## Ideas
-
+---
 Intersection of AI and Blockchain
-
 1. code generation
 2. code test
 3. code audit
 4. trading bot
 5. mature automation
 6. intelligence focus
-
 ---
 BRC69
-
 1. recursive inscription
    1. inscribing images of traits onchain
    2. inscribing BRC69 collection deployment json
@@ -53,4 +46,14 @@ BRC69
       2. inscribing data into block space
       3. efficient arrangement of data in transaction
       4. statoshi position: four distinct parameters
+---
+AI
+1. mechanical engineering versus software engineering
+2. passionate about what you are doing
+3. spiritual pursuit
+4. believe so hard in what you are doing
+5. There is always a different way.
+6. ask the right questions
+7. build with reality
+8. foundation model and your own model
 ---
