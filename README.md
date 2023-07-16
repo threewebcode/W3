@@ -23,5 +23,14 @@ Three Web World
       6. refungible
       7. memorial
 
+---
+Intersection of AI and Blockchain
+
+1. code generation
+2. code test
+3. code audit
+4. trading bot
+5. mature automation
+6. intelligence focus
 
 
