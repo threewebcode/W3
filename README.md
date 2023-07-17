@@ -77,3 +77,16 @@ zysync
 10. history and state
 
 ---
+zksync
+1. float history
+2. many nodes in the merkle tree
+3. transaction: generic transaction, balance transfer, program
+4. proof verification and data availability
+5. different storage space between layer1 and layer2
+
+Innovation
+1. DePINs
+2. scroll zkevm
+3. native layer2 code
+4. migrate from layer1 to layer2
+5. 
