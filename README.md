@@ -89,4 +89,20 @@ Innovation
 2. scroll zkevm
 3. native layer2 code
 4. migrate from layer1 to layer2
-5. 
+---
+scroll zkevm
+ 1. intersection hardware and software
+ 2. acceleration proof
+ 3. advanced crypto algorithm
+ 4. compiler
+ 5. general purpose
+ 6. uniswap on testnet
+ 7. bridging between layer2 and layer1
+ 8. evm circuit as a whole
+ 9. compile evm down to local virtual machine
+ 10. same environment support
+ 11. sequence implementation
+ 12. private GPU cloud/cluster
+ 13. decentralized proof generation
+---
+
