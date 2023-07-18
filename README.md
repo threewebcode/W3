@@ -105,4 +105,14 @@ scroll zkevm
  12. private GPU cloud/cluster
  13. decentralized proof generation
 ---
-
+Ethereum protocol
+1. client
+   1. go
+   2. java
+   3. C#
+2. node
+   1. full node
+   2. light node
+   3. archival node
+3. network
+---
