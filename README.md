@@ -116,3 +116,10 @@ Ethereum protocol
    3. archival node
 3. network
 ---
+Layer2 network
+1. level up and collect coins
+2. application specific blockchain
+3. user experience gets better every 6-12 months, so it is better to have a long bear market
+4. patience is virtue
+5. Ethereum is unfriendly with ZK proof.
+---
