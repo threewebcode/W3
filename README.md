@@ -123,3 +123,13 @@ Layer2 network
 4. patience is virtue
 5. Ethereum is unfriendly with ZK proof.
 ---
+Good culture requires:
+1. documentation: writing things down
+2. clear communication
+3. value accrual
+
+lesson learned
+1. more than one implementation for the open protocol and ensure security and flexibility.
+2. mission push instead of people push
+
+---
