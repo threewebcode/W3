@@ -133,3 +133,14 @@ lesson learned
 2. mission push instead of people push
 
 ---
+Cairo
+1. intermediate representation: sierra
+2. assembly language
+   1. fit well with ZK proof
+   2. prove purpose
+3. cairo vm
+   1. field element
+   2. generic type
+   3. linear type system
+
+---
