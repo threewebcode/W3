@@ -6,4 +6,4 @@ The entrypoint of `next` command is a node script file. In this file, the corres
 
 ### `next build` Command
 
-
+The build command is defined in the file `cli/next-build.tx`. The main stuff in the build file is file operation and argument handling. After they are done, these paramates are passed to `build` function which does the actual work. The build function is an asynchronous function in the file `build/index.js`. It is the default export of that module file. 
