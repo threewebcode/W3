@@ -7,3 +7,18 @@ Account abstraction is a proposed upgrade to the Ethereum Virtual Machine (EVM) 
 - BeInCrypto: Provides a complete guide to account abstraction (ERC-4337), explaining the technicals and jargon involved in the proposal[5].
 - Trail of Bits: Offers a presentation on ERC-4337 account abstraction, presented by Kurt Willis, a security engineer at Trail of Bits[6].
 
+There are several wallets that implement account abstraction and EIP-4337. Here are some examples:
+
+- Soul Wallet
+- Candide
+- UniPass
+- Castle
+- Openfort
+- UniPass
+- Privy
+- Bitski
+- Safe
+- Argent
+
+These wallets use smart contracts to manage digital assets, making them easier to build and safer to use. They also allow for bundling of transactions for speed and efficiency, removing the need for users to sign multiple transactions for approving spending of individual tokens before the swap is executed. Additionally, they provide programmability and the ability for features like social recovery. Some of these wallets are ERC-4337 compliant, while others use alternative approaches to account abstraction.
+
