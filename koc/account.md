@@ -1,0 +1,9 @@
+Account abstraction is a proposed upgrade to the Ethereum Virtual Machine (EVM) that would allow users to program more security and better user experiences into their accounts. It would achieve this by upgrading externally owned accounts (EOAs) so they can be controlled by smart contracts, or by upgrading smart contracts so they can initiate transactions. There are two generally accepted ways of achieving account abstraction: (a) letting EOAs execute EVM code and (b) allowing smart contracts to initiate transactions. The new EIP-4337 standard offers a new approach to account abstraction that does not require consensus layer changes, allowing developers to start building with this universal standard today. Account abstraction would improve support for smart contract wallets, making them easier to build and safer to use. It would also allow for bundling of transactions for speed and efficiency, removing the need for users to sign multiple transactions for approving spending of individual tokens before the swap is executed. Here are some products, services, and projects that implement account abstraction and EIP-4337:
+
+- Blocknative: Provides an introductory guide to account abstraction (ERC-4337) and explains how it changes Ethereum[1].
+- QuickNode: Offers a two-part series focused on understanding and implementing the ERC-4337 Ethereum Improvement Proposal (EIP)[2].
+- OKX: Provides a quick and simple guide to account abstraction and EIP-4337, explaining the benefits of account abstraction and how it works[3].
+- Codezeros: Offers a comprehensive guide to account abstraction and EIP-4337, explaining how it works and how it benefits users[4].
+- BeInCrypto: Provides a complete guide to account abstraction (ERC-4337), explaining the technicals and jargon involved in the proposal[5].
+- Trail of Bits: Offers a presentation on ERC-4337 account abstraction, presented by Kurt Willis, a security engineer at Trail of Bits[6].
+
