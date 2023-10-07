@@ -54,4 +54,45 @@ Open-source projects related to post-quantum cryptography (PQC) algorithms on Gi
 
 20. [PQCrypto-Archived](https://github.com/PQCrypto/PQCrypto-Archived): A collection of older, archived versions of post-quantum cryptographic schemes and related research.
 
+Open-source blockchain projects on GitHub that are related to post-quantum cryptography (PQC) algorithms:
+
+1. [CIRCL](https://github.com/cloudflare/circl): Cloudflare's cryptographic library that includes PQC algorithms suitable for post-quantum security.
+
+2. [QAN Platform](https://github.com/QANplatform/qanplatform): A quantum-resistant blockchain platform that utilizes post-quantum cryptographic algorithms.
+
+3. [Quantum-Proof Blockchain](https://github.com/JinxiangWu/Quantum-Proof-Blockchain): A blockchain implementation that incorporates post-quantum cryptographic algorithms for enhanced security.
+
+4. [Quantum Resistant Ledger](https://github.com/theQRL/QRL): A blockchain platform designed to be resilient against attacks by quantum computers using PQC algorithms.
+
+5. [PQCHains](https://github.com/pskupinski/PQChains): An experimental blockchain implementation that explores the integration of post-quantum cryptography.
+
+6. [Quantum Dawn](https://github.com/QuantumDawn/QuantumDawn): A blockchain infrastructure project that focuses on quantum-resistant cryptography and security.
+
+7. [QuarkChain](https://github.com/QuarkChain/pyquarkchain): A sharded blockchain platform that aims to provide quantum-resistant security through the use of PQC algorithms.
+
+8. [IOTA](https://github.com/iotaledger): A distributed ledger technology platform that is exploring post-quantum cryptographic algorithms for securing transactions.
+
+9. [ChainZy](https://github.com/chainzy): A blockchain project that emphasizes post-quantum cryptography and secure decentralized systems.
+
+10. [Quantum-Safe Ethereum](https://github.com/ethereum/ethereumj): An Ethereum client implementation that includes research and development on quantum-safe cryptographic algorithms.
+
+11. [qTESLA](https://github.com/qtesla/qtesla): A quantum-resistant signature scheme that can be integrated into blockchain systems for enhanced security.
+
+12. [HoneyBadgerBFT](https://github.com/amiller/HoneyBadgerBFT): A Byzantine fault-tolerant consensus protocol that can be used as a foundation for quantum-resistant blockchains.
+
+13. [QRLJacking](https://github.com/OWASP/QRLJacking): A project that focuses on the security implications of QR code-based authentication, including potential threats from quantum computers.
+
+14. [Quantum-Safe Cryptography and Blockchain](https://github.com/icsi-berkeley/quantum-safe-crypto-blockchain): A research project that explores the integration of quantum-safe cryptographic algorithms into blockchain systems.
+
+15. [Post-Quantum Blockchain](https://github.com/seresistvanandras/post-quantum-blockchain): An experimental blockchain implementation that aims to be resistant against attacks by quantum computers.
+
+16. [Quantum-Safe Blockchain](https://github.com/robertmartin8/quantum-safe-blockchain): A project that investigates the integration of quantum-resistant cryptographic algorithms into blockchain architectures.
+
+17. [Quantum-Safe Token](https://github.com/Quantum-Safe-Token/quantum-safe-token): A project that explores the development of a quantum-resistant token and blockchain ecosystem.
+
+18. [Quantum-Safe Blockchain Infrastructure](https://github.com/Quantum-Safe-Blockchain-Infrastructure): A research project that focuses on developing a blockchain infrastructure that is secure against quantum attacks.
+
+19. [QUANTA](https://github.com/QuantaOfficial/QUANTA): A blockchain project that emphasizes quantum-resistant cryptography and secure decentralized applications.
+
+20. [Quantum-Secure Blockchain Framework](https://github.com/SamuelSt-Jean/Quantum-Secure-Blockchain-Framework): A framework that aims to provide a quantum-resistant blockchain solution by integrating PQC algorithms.
 
