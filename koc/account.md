@@ -22,3 +22,18 @@ There are several wallets that implement account abstraction and EIP-4337. Here 
 
 These wallets use smart contracts to manage digital assets, making them easier to build and safer to use. They also allow for bundling of transactions for speed and efficiency, removing the need for users to sign multiple transactions for approving spending of individual tokens before the swap is executed. Additionally, they provide programmability and the ability for features like social recovery. Some of these wallets are ERC-4337 compliant, while others use alternative approaches to account abstraction.
 
+To use account abstraction for an EVM blockchain network, you need to understand the concept and the benefits it offers. Account abstraction allows users to use smart contracts as their accounts, providing more flexibility and improved user experiences. Here are the steps to use account abstraction:
+
+1. Understand the limitations of externally owned accounts (EOAs): By default, most users interact with the Ethereum Virtual Machine (EVM) using EOAs, which are controlled by external private keys. EOAs have certain limitations that can hinder user experiences, such as the need to know about blockchain workings and the requirement to maintain an ETH balance for gas fees [[1]](https://docs.stackup.sh/docs/account-abstraction).
+
+2. Learn about contract accounts: Contract accounts are a type of account that can be controlled by smart contracts. They offer several advantages over EOAs, including arbitrary verification logic, sponsored transactions, account security features, and atomic multi-operations [[1]](https://docs.stackup.sh/docs/account-abstraction).
+
+3. Familiarize yourself with the concept of account abstraction: Account abstraction is a way to solve the limitations of EOAs by allowing users to program more security and better user experiences into their accounts. This can be achieved by upgrading EOAs to be controlled by smart contracts or by upgrading smart contracts to initiate transactions [[2]](https://ethereum.org/en/roadmap/account-abstraction/).
+
+4. Explore existing standards and proposals: There have been multiple approaches to account abstraction on Ethereum-based blockchains, such as EIP-86 and EIP-2938. However, these proposals required consensus layer changes, making them impractical to implement. Fortunately, a new standard called ERC-4337 has been introduced, which allows developers to build on a universal standard without the need for consensus layer changes [[1]](https://docs.stackup.sh/docs/account-abstraction).
+
+5. Consider the downsides: While account abstraction offers numerous benefits, there are some downsides to consider. For example, not all applications follow the EIP-1271 standard for validating signatures, which can lead to compatibility issues. Additionally, account abstraction may result in higher gas costs, especially on Ethereum mainnet [[1]](https://docs.stackup.sh/docs/account-abstraction).
+
+6. Utilize tools and frameworks: To implement account abstraction, you can leverage tools and frameworks like Stackup, which is an open-source suite of tools specifically designed for building applications with account abstraction [[1]](https://docs.stackup.sh/docs/account-abstraction).
+
+
