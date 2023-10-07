@@ -54,6 +54,7 @@ Open-source projects related to post-quantum cryptography (PQC) algorithms on Gi
 
 20. [PQCrypto-Archived](https://github.com/PQCrypto/PQCrypto-Archived): A collection of older, archived versions of post-quantum cryptographic schemes and related research.
 
+
 Open-source blockchain projects on GitHub that are related to post-quantum cryptography (PQC) algorithms:
 
 1. [CIRCL](https://github.com/cloudflare/circl): Cloudflare's cryptographic library that includes PQC algorithms suitable for post-quantum security.
@@ -95,4 +96,14 @@ Open-source blockchain projects on GitHub that are related to post-quantum crypt
 19. [QUANTA](https://github.com/QuantaOfficial/QUANTA): A blockchain project that emphasizes quantum-resistant cryptography and secure decentralized applications.
 
 20. [Quantum-Secure Blockchain Framework](https://github.com/SamuelSt-Jean/Quantum-Secure-Blockchain-Framework): A framework that aims to provide a quantum-resistant blockchain solution by integrating PQC algorithms.
+
+Academic Material
+
+1. https://www.youtube.com/watch?v=XyyGq3GX4K0
+2. https://ieeexplore.ieee.org/document/10185538?denied=
+3. https://www.nature.com/articles/s41598-023-32701-6
+4. https://www.theqrl.org/the-future-of-post-quantum-resistant-blockchains/
+5. https://www.nervos.org/knowledge-base/quantum_resistance
+6. https://www.researchgate.net/publication/338779877_Towards_Post-Quantum_Blockchain_A_Review_on_Blockchain_Cryptography_Resistant_to_Quantum_Computing_Attacks
+7. https://www.researchgate.net/profile/Engin-Zeydan/publication/359440628_Recent_Advances_in_Post-Quantum_Cryptography_for_Networks_A_Survey/links/6255dfd0b0cee02d6966dfc9/Recent-Advances-in-Post-Quantum-Cryptography-for-Networks-A-Survey.pdf
 
