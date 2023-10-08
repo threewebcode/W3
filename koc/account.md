@@ -64,3 +64,8 @@ The list of popupar smart contract wallets:
 2. https://moralis.io/what-is-account-abstraction-full-guide
 3. https://medium.com/@messagehash/a-complete-guide-on-account-abstraction-b885542e7552
 4. https://docs.alchemy.com/docs/creating-a-smart-contract-account-and-sending-userops
+
+
+More stuff can be found here: https://github.com/4337Mafia/awesome-account-abstraction/tree/main
+
+
