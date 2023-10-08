@@ -58,3 +58,9 @@ To achieve the replacement of an externally owned account (EOA) with an email ad
 
 5. User Experience: The user interface and experience should be designed to accommodate the use of email addresses instead of traditional blockchain addresses. This may involve creating user-friendly interfaces that allow users to interact with the blockchain using their email addresses.
 
+The list of popupar smart contract wallets:
+
+1. https://thirdweb.com/dashboard/wallets/smart-wallet
+2. https://moralis.io/what-is-account-abstraction-full-guide
+3. https://medium.com/@messagehash/a-complete-guide-on-account-abstraction-b885542e7552
+4. https://docs.alchemy.com/docs/creating-a-smart-contract-account-and-sending-userops
