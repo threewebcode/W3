@@ -14,7 +14,6 @@ There are several wallets that implement account abstraction and EIP-4337. Here 
 - UniPass
 - Castle
 - Openfort
-- UniPass
 - Privy
 - Bitski
 - Safe
