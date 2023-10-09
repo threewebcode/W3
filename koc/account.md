@@ -67,4 +67,10 @@ The list of popupar smart contract wallets:
 
 More stuff can be found here: https://github.com/4337Mafia/awesome-account-abstraction/tree/main
 
+The present strategies into two main categories:
+
+1) Embedded Wallet Solutions, generic wallet solutions for applications with varying methods for managing private keys (MPC, KMS, etc.).
+
+2) Web3 Gaming Backend-as-a-Service, a comprehensive suite of products from which games can benefit, usually including wallets -other services may encompass inventory and currency minting, indexers, white-label marketplaces, etc.
+
 
