@@ -82,4 +82,6 @@ The basic internet cryptography infrastructure:
 5) social recovery: use email to create crypto account
 6) pure web experience
 
+Social login: 1) Web3Auth 2) Magic Link
+
 
