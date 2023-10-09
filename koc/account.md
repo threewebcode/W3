@@ -73,4 +73,13 @@ The present strategies into two main categories:
 
 2) Web3 Gaming Backend-as-a-Service, a comprehensive suite of products from which games can benefit, usually including wallets -other services may encompass inventory and currency minting, indexers, white-label marketplaces, etc.
 
+The basic internet cryptography infrastructure:
+
+1) subtlecrypto
+2) webauthn
+3) email and dkim
+4) DomainKeys Identified Mail
+5) social recovery: use email to create crypto account
+6) pure web experience
+
 
