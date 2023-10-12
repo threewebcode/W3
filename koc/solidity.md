@@ -1,3 +1,5 @@
+# Solidity Language
+
 Here are some best practices, design patterns, and security considerations to keep in mind when developing smart contracts using Solidity:
 
 Best Practices:
@@ -34,3 +36,56 @@ Security Considerations:
 5. Use multi-signature wallets: Use multi-signature wallets to prevent single points of failure and increase security.
 
 6. Use formal verification: Use formal verification tools to mathematically prove the correctness of your smart contracts.
+
+
+### BNF Form
+
+The BNF (Backus-Naur Form) grammar for the Solidity programming language is as follows:
+```
+<program> ::= <contract> | <library>
+
+<contract> ::= "contract" <identifier> "{" <statement>* "}"
+
+<library> ::= "library" <identifier> "{" <statement>* "}"
+
+<statement> ::= <block> | <expression> ";"
+
+<block> ::= "{" <statement>* "}"
+
+<expression> ::= <primary> | <unary_op> <primary> | <binary_op> <primary> <primary>
+
+<primary> ::= <literal> | <variable> | <function_call> | <array_access> | <struct_access>
+
+<literal> ::= <number> | <string> | <boolean>
+
+<variable> ::= <identifier>
+
+<function_call> ::= <identifier> "(" <arguments>? ")"
+
+<arguments> ::= <expression> ("," <expression>)*
+
+<array_access> ::= <identifier> "[" <expression> "]"
+
+<struct_access> ::= <identifier> "." <identifier>
+
+<unary_op> ::= "-" | "!" | "~"
+
+<binary_op> ::= "+" | "-" | "*" | "/" | "%" | "**" | "&" | "|" | "^" | "<<" | ">>" | "==" | "!=" | "<" | ">" | "<=" | ">="
+
+<identifier> ::= <letter> (<letter> | <digit> | "_")*
+
+<number> ::= <integer> | <float>
+
+<integer> ::= <digit>+
+
+<float> ::= <digit>+ "." <digit>+
+
+<string> ::= '"' <character>* '"'
+
+<character> ::= <letter> | <digit> | <special_char>
+
+<special_char> ::= "'" | "\"" | "\\" | "\n" | "\t" | "\r"
+```
+This BNF grammar defines the syntax of the Solidity programming language, including the structure of contracts and libraries, statements, expressions, literals, variables, function calls, array accesses, struct accesses, unary operators, binary operators, identifiers, numbers, strings, and special characters.
+
+
