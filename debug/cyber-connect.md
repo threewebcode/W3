@@ -8,4 +8,6 @@ As for a contract, the client should be created with the chain configuration. Th
 
 TypeScript code defining various types and interfaces related to a bundler and paymaster system. It includes types for user operations, transaction data, estimated gas values, bundler RPC requests, user operation receipts, estimation values, bundler actions, bundler clients, paymaster data, paymaster context, estimated user operation return, sponsor user operation return, user operation status, pending user operation, paymaster RPC requests, paymaster actions, paymaster clients, on-chain user operation, and top-up contract request. These types and interfaces likely serve as a foundation for implementing the bundler and paymaster functionalities in a decentralized application.
 
+The file suffix is tsx and it is extended ts syntax. The user interface component is defined by constant variable and exported for external usage. The function type is passed and generic type is specified. The default page is the page.tsx file. In this file, the home component is defined. The home component is function type component. The SDK and viem packages are imported to take part in the home functionalities. The cyber app from the SDK package is created and setted as the home state. The app instance is utilized to make the blockchain network operation.
+
 
