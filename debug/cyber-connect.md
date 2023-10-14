@@ -10,4 +10,14 @@ TypeScript code defining various types and interfaces related to a bundler and p
 
 The file suffix is tsx and it is extended ts syntax. The user interface component is defined by constant variable and exported for external usage. The function type is passed and generic type is specified. The default page is the page.tsx file. In this file, the home component is defined. The home component is function type component. The SDK and viem packages are imported to take part in the home functionalities. The cyber app from the SDK package is created and setted as the home state. The app instance is utilized to make the blockchain network operation.
 
+The component initializes a CyberApp instance and connects to it. It also creates a wallet client using the `createWalletClient` function from the "viem" library. The user can enter the transaction details (amount and recipient address) and choose to send the transaction either via CyberWallet or MetaMask.
+
+If the user chooses to send the transaction via CyberWallet, the `sendViaCyberWallet` function is called, which sends the transaction using the `optimismGoerli.sendTransaction` method of the CyberWallet. If the user chooses to send the transaction via MetaMask, the `sendViaMetaMask` function is called, which sends the transaction using the `sendTransaction` method of the wallet client.
+
+It defines schemas for user operations, RPC contexts, and contract calls, as well as type definitions for return values of different RPC methods.
+
+The module also exports a `CyberConnectClient` type, which represents a client for interacting with the CyberConnect API. It includes methods for estimating transactions, sponsoring user operations, sending user operations, and retrieving user operations by hash.
+
+Additionally, the module exports `UserOperationSchema` and `UnsignedUserOperationSchema`, which are Zod schemas for validating user operation objects.
+
 
