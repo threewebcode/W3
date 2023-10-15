@@ -77,4 +77,24 @@ UniPass Contract is a versatile contract that creates smart wallets and mainly h
 
 Owner is the account's owner and has the ultimate authority when it comes to controlling the account's basic operations, including deployment, upgrade, and deletion. Operator is the executor of the account's assets and is in charge of all asset transfers, contract invocations, licensing, and other activities. The key that users most used. Guardian is the guardians of the account. Guardians can be used to retrieve the account if the keys are lost or deleted and the user no longer has access to it. On-chain email social recovery is one of the features that only UniPass has.
 
+The Wallet implements a minimal upgradeable proxy pattern, which delegates all calls to the address defined by the storage slot matching the wallet address.
 
+The library consists of two parts: the deployed code and the deploy function.
+
+The deployed code is a series of bytecode instructions that handle the delegation of calls. It starts by copying the call data, then retrieves the implementation address from storage, and finally performs a delegate call to the implementation address. The result of the delegate call is returned as the result of the proxy call.
+
+The deploy function is used to deploy an instance of the upgradeable proxy. It starts by copying the creation code of the library, then stores the implementation address in storage, and finally returns the deployed code.
+
+The contract OpenID is used for managing OpenID related functionality, including validating ID tokens, managing public keys, and managing audiences.
+
+The contract includes the following features:
+
+1. Storage for OpenID public keys: The contract maintains a mapping of keccak256(issuer + key id) to public keys. These public keys are used for verifying the signatures of ID tokens.
+
+2. Storage for OpenID audiences: The contract also maintains a mapping of keccak256(issuer + audience) to a boolean flag indicating whether the audience is valid or not.
+
+3. Updating and deleting OpenID public keys: The contract provides functions to update and delete OpenID public keys. These functions can only be called by the contract admin.
+
+4. Adding and deleting OpenID audiences: The contract provides functions to add and delete OpenID audiences. These functions can only be called by the contract admin.
+
+5. Validating ID tokens: The contract includes a function to validate ID tokens. It verifies the signature of the ID token using the corresponding public key and checks the validity of the timestamp, issuer, audience, and other parameters.
