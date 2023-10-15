@@ -67,4 +67,14 @@ classes and interfaces related to DKIM (DomainKeys Identified Mail)
 - The `DkimParamsBase` class has a constructor, a static factory method `create`, and other utility methods for dealing with email headers and creating instances of the class.
 - The code uses various utility functions from the `ethers` library, such as `hexlify`, `solidityPack`, `toUtf8Bytes`, etc.
 
+### Unipass Contract
+
+UniPass Contract is a contract developed by UniPass that enables Role-Based Access Control (RBAC) key management and supports on-chain verification through DKIM/OpenID.
+
+Three main types of key management systems: 1) Multi-signature logic that allows 2/3, 3/5, etc. multi-signature setups. 2) Simple permission management that allows setting weights on keys and performing account operations with a threshold. 3) RBAC-based permission management that allows setting weights and roles on keys. Different roles can execute different operations, and each role has its threshold for activation.
+
+UniPass Contract is a versatile contract that creates smart wallets and mainly handles different types of keys and their permissions. In UniPass Contract, you can manage your account using various keys, each with a specific role and weights. By gathering signatures from keys that meet or exceed the required weights for a certain role, you can execute the permissions associated with that role through the UniPass Contract.
+
+Owner is the account's owner and has the ultimate authority when it comes to controlling the account's basic operations, including deployment, upgrade, and deletion. Operator is the executor of the account's assets and is in charge of all asset transfers, contract invocations, licensing, and other activities. The key that users most used. Guardian is the guardians of the account. Guardians can be used to retrieve the account if the keys are lost or deleted and the user no longer has access to it. On-chain email social recovery is one of the features that only UniPass has.
+
 
