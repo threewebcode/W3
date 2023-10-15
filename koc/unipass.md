@@ -55,4 +55,16 @@ The class provides various methods and functionalities, including:
 - `fromSessionKeyStore(store: SessionKeyStore, _wallet: Wallet, aesDecryptor: (aesKey: CryptoKey, sig: BytesLike) => Promise<string>)`: Creates a `SessionKey` instance from a session key store, wallet, and AES decryptor function.
 - `isSessionKey(v: any)`: Checks if a given object is an instance of `SessionKey`.
 
+The `emailHash` function takes an input email address and a pepper (a cryptographic salt) as parameters and returns a ZK hash for the email address. It first checks if the email address is not null, throws an error if it is, and then converts the email address to lowercase. It then splits the email address into two parts using the "@" symbol. If the second part of the split is one of the specified email domains (gmail.com, googlemail.com, protonmail.com, ptoton.me, pm.me), it removes any dots in the first part and concatenates it with the second part. Finally, it calls the `pureEmailHash` function with the modified email address and the pepper, and returns the result.
+
+The `pureEmailHash` function takes an email address and a pepper as parameters and returns a ZK hash for the email address. It uses the `sha256` function from ethers.utils to compute the hash of the concatenation of the UTF-8 bytes representation of the email address and the pepper.
+
+classes and interfaces related to DKIM (DomainKeys Identified Mail)
+
+- The module exports an interface called `Signature`, which represents a DKIM signature and contains properties for the signature itself, domain, and selector.
+- The module also exports an enum called `EmailType`, which defines different types of emails.
+- The module defines a class called `DkimParamsBase`, which represents the base DKIM parameters for an email. It has properties such as email type, email header, DKIM signature, from index, subject index, selector index, etc. It also provides methods for serialization, JSON conversion, and string conversion.
+- The `DkimParamsBase` class has a constructor, a static factory method `create`, and other utility methods for dealing with email headers and creating instances of the class.
+- The code uses various utility functions from the `ethers` library, such as `hexlify`, `solidityPack`, `toUtf8Bytes`, etc.
+
 
