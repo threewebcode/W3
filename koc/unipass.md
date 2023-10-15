@@ -39,4 +39,20 @@ The class takes in a set of options when instantiated, including the wallet addr
 
 The code also includes other supporting classes and interfaces used by the "Wallet" class, such as "Keyset" (representing a set of keys), "Relayer" (for relaying transactions), "Transaction" (representing an Ethereum transaction), and others.
 
+The class `SessionKey` represents a session key used for cryptographic operations in a wallet system. Here is a breakdown of its key features:
+
+- `userAddr`: A string representing the user's address.
+- `_isSessionKey`: A boolean flag indicating that the object is an instance of `SessionKey`.
+- `wallet`: An instance of `WalletEOA` representing the user's wallet.
+- `signType`: An enum value representing the type of signature used.
+- `permit`: An optional interface representing a permit for the session key.
+
+The class provides various methods and functionalities, including:
+
+- `digestPermitMessage(timestamp: number, weight: number)`: Generates the digest of a permit message using the user's address, wallet address, timestamp, and weight.
+- `generatePermit(timestamp: number, weight: number, wallet: Wallet, signerIndexes: number[])`: Generates a permit for the session key using the given parameters.
+- `generateSignature(digestHash: string)`: Generates a signature for the given digest hash using the session key's wallet and sign type.
+- `fromSessionKeyStore(store: SessionKeyStore, _wallet: Wallet, aesDecryptor: (aesKey: CryptoKey, sig: BytesLike) => Promise<string>)`: Creates a `SessionKey` instance from a session key store, wallet, and AES decryptor function.
+- `isSessionKey(v: any)`: Checks if a given object is an instance of `SessionKey`.
+
 
