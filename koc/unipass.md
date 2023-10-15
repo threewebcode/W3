@@ -98,3 +98,5 @@ The contract includes the following features:
 4. Adding and deleting OpenID audiences: The contract provides functions to add and delete OpenID audiences. These functions can only be called by the contract admin.
 
 5. Validating ID tokens: The contract includes a function to validate ID tokens. It verifies the signature of the ID token using the corresponding public key and checks the validity of the timestamp, issuer, audience, and other parameters.
+
+
