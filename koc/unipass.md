@@ -29,4 +29,14 @@ Another benefit of meta-transactions is that they can help to reduce the computa
 
 However, it's worth noting that meta-transactions also introduce some additional complexity and security risks. For example, because meta-transactions allow users to perform actions on behalf of another user, there is a risk that a malicious user could use a meta-transaction to impersonate another user and perform unauthorized actions. To mitigate this risk, it's important to carefully consider the security implications of using meta-transactions, and to implement appropriate safeguards to prevent unauthorized access to user accounts.
 
+### Code Navigation
+
+The unipass wallet SDK package is consisted of provider, transaction builder, wallet, session key, keys and network. The provider instance should be created at the fist step. The wallet can be got from the provider instance. The session key is constructed to build the transaction. The actual wallet is made by filling in the keys, RPC url, relayer. The transaction will be sent by the wallet.
+
+The "Wallet" class extends the "Signer" class from the ethers library, which allows it to sign Ethereum transactions. It has various methods for interacting with the Unipass Wallet, such as getting the wallet address, signing messages, estimating gas costs, sending transactions, and more.
+
+The class takes in a set of options when instantiated, including the wallet address, keyset (a set of keys associated with the wallet), context (the Unipass Wallet context), provider (Ethereum provider), and relayer (a relayer service for submitting transactions).
+
+The code also includes other supporting classes and interfaces used by the "Wallet" class, such as "Keyset" (representing a set of keys), "Relayer" (for relaying transactions), "Transaction" (representing an Ethereum transaction), and others.
+
 
