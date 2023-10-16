@@ -42,7 +42,7 @@ The code also includes other supporting classes and interfaces used by the "Wall
 The class `SessionKey` represents a session key used for cryptographic operations in a wallet system. Here is a breakdown of its key features:
 
 - `userAddr`: A string representing the user's address.
-- `_isSessionKey`: A boolean flag indicating that the object is an instance of `SessionKey`.
+- `isSessionKey`: A boolean flag indicating that the object is an instance of `SessionKey`.
 - `wallet`: An instance of `WalletEOA` representing the user's wallet.
 - `signType`: An enum value representing the type of signature used.
 - `permit`: An optional interface representing a permit for the session key.
@@ -52,7 +52,7 @@ The class provides various methods and functionalities, including:
 - `digestPermitMessage(timestamp: number, weight: number)`: Generates the digest of a permit message using the user's address, wallet address, timestamp, and weight.
 - `generatePermit(timestamp: number, weight: number, wallet: Wallet, signerIndexes: number[])`: Generates a permit for the session key using the given parameters.
 - `generateSignature(digestHash: string)`: Generates a signature for the given digest hash using the session key's wallet and sign type.
-- `fromSessionKeyStore(store: SessionKeyStore, _wallet: Wallet, aesDecryptor: (aesKey: CryptoKey, sig: BytesLike) => Promise<string>)`: Creates a `SessionKey` instance from a session key store, wallet, and AES decryptor function.
+- `fromSessionKeyStore(store: SessionKeyStore, wallet: Wallet, aesDecryptor: (aesKey: CryptoKey, sig: BytesLike) => Promise<string>)`: Creates a `SessionKey` instance from a session key store, wallet, and AES decryptor function.
 - `isSessionKey(v: any)`: Checks if a given object is an instance of `SessionKey`.
 
 The `emailHash` function takes an input email address and a pepper (a cryptographic salt) as parameters and returns a ZK hash for the email address. It first checks if the email address is not null, throws an error if it is, and then converts the email address to lowercase. It then splits the email address into two parts using the "@" symbol. If the second part of the split is one of the specified email domains (gmail.com, googlemail.com, protonmail.com, ptoton.me, pm.me), it removes any dots in the first part and concatenates it with the second part. Finally, it calls the `pureEmailHash` function with the modified email address and the pepper, and returns the result.
@@ -121,26 +121,26 @@ It defines several constant variables related to role thresholds. These threshol
 
 Here's a breakdown of the defined thresholds:
 
-- `OWNER_THRESHOLD`: This constant represents the number of individuals required to reach a consensus for owner-related actions.
-- `OWNER_CANCEL_TIMELOCK_THRESHOLD`: This constant represents the number of individuals required to cancel a timelock for owner-related actions.
-- `GUARDIAN_THRESHOLD`: This constant represents the number of individuals required to reach a consensus for guardian-related actions.
-- `GUARDIAN_TIMELOCK_THRESHOLD`: This constant represents the number of individuals required to reach a consensus for guardian-related actions that are timelocked.
-- `SYNC_TX_THRESHOLD`: This constant represents the number of individuals required to synchronize transactions.
-- `ASSETS_OP_THRESHOLD`: This constant represents the number of individuals required to perform asset-related operations.
+- `OWNERTHRESHOLD`: This constant represents the number of individuals required to reach a consensus for owner-related actions.
+- `OWNERCANCELTIMELOCKTHRESHOLD`: This constant represents the number of individuals required to cancel a timelock for owner-related actions.
+- `GUARDIANTHRESHOLD`: This constant represents the number of individuals required to reach a consensus for guardian-related actions.
+- `GUARDIANTIMELOCKTHRESHOLD`: This constant represents the number of individuals required to reach a consensus for guardian-related actions that are timelocked.
+- `SYNCTXTHRESHOLD`: This constant represents the number of individuals required to synchronize transactions.
+- `ASSETSOPTHRESHOLD`: This constant represents the number of individuals required to perform asset-related operations.
 
 These thresholds can be used within a contract system to enforce multi-signature or multi-factor authentication mechanisms for critical actions.
 
 FeeEstimator is used to estimate the fee amount incurred when calling a function on another contract.
 
 The `estimate` function takes several parameters:
-- `_token`: The address of the token (ERC20) used for the fee. If it is set to `address(0)`, it means the fee is in Ether.
-- `_feeReceiver`: The address that will receive the fee amount.
-- `_to`: The address of the contract on which the function will be called.
-- `_data`: The function call data.
+- `token`: The address of the token (ERC20) used for the fee. If it is set to `address(0)`, it means the fee is in Ether.
+- `feeReceiver`: The address that will receive the fee amount.
+- `to`: The address of the contract on which the function will be called.
+- `data`: The function call data.
 
 The function first determines the starting balance of the fee receiver before the function call. If the fee is in Ether, it checks the balance of the fee receiver's address. Otherwise, it uses the `balanceOf` function of the ERC20 token to determine the initial balance.
 
-Then, it measures the initial gas remaining before the function call and executes the function call using the provided `_to` and `_data` parameters.
+Then, it measures the initial gas remaining before the function call and executes the function call using the provided `to` and `data` parameters.
 
 After the function call, it calculates the gas used by subtracting the remaining gas from the initial gas.
 
@@ -154,16 +154,25 @@ The function returns a tuple with the following values:
 
 This contract is called "GasEstimator" and it provides a function called "estimate". 
 
-The "estimate" function takes two parameters: "_to" (an address) and "_data" (a byte array). It returns a tuple containing three values: "success" (a boolean indicating if the function call was successful), "result" (the result of the function call), and "gas" (the amount of gas used during the function call).
+The "estimate" function takes two parameters: "to" (an address) and "data" (a byte array). It returns a tuple containing three values: "success" (a boolean indicating if the function call was successful), "result" (the result of the function call), and "gas" (the amount of gas used during the function call).
 
-Inside the function, it first records the initial amount of gas using the "gasleft()" function. Then, it calls the "_to" address with the provided "_data" using the "call" function. After the function call, it calculates the amount of gas used by subtracting the current gas value from the initial gas value.
+Inside the function, it first records the initial amount of gas using the "gasleft()" function. Then, it calls the "to" address with the provided "data" using the "call" function. After the function call, it calculates the amount of gas used by subtracting the current gas value from the initial gas value.
 
 LibUnipassSig contains functions for parsing and validating various types of signatures used in the Unipass protocol. The library supports three types of key: Secp256k1, ERC1271Wallet, and OpenIDWithEmail. The library also includes functions for sub-digest calculation and key parsing for OpenIDWithEmail signatures.
 
 Solidity contract named "ModuleGuest" is a module that extends the "ModuleTransaction" contract and includes functions for executing transactions.
 
-The contract defines a function called "_subDigest" which calculates a digest based on the given parameters. It also includes a function named "execute" which takes an array of transactions as input and executes them.
+The contract defines a function called "subDigest" which calculates a digest based on the given parameters. It also includes a function named "execute" which takes an array of transactions as input and executes them.
 
 Within the "execute" function, each transaction in the array is processed sequentially. The gas limit is checked, and if there is not enough gas, an event is emitted or a revert occurs based on the transaction's "revertOnError" flag.
 
 The transaction is then executed using the "LibOptim.call" function, which is a utility for making contract calls. If the transaction is successful, an event is emitted. Otherwise, the contract reverts or returns an error based on the "revertOnError" flag.
+
+
+Solidity smart contract called ModuleMainGasEstimator is an implementation of several modules such as ModuleIgnoreAuthUpgradable, ModuleAccount, ModuleHooks, ModuleCall, ModuleSource. It also has dependencies on other contracts such as IDkimKeys, IOpenID, and IModuleWhiteList.
+
+The contract has a constructor that takes in several parameters including instances of the dependencies and sets them as immutable variables. It also has a few internal functions that override functions from the implemented modules.
+
+The contract is used for gas estimation purposes and includes functions for updating keyset hash, validating nonces, validating meta nonces, and requiring whitelist checks for hooks and implementations.
+
+
