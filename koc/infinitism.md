@@ -74,4 +74,38 @@ It is an interface for a Stake Manager contract in Solidity. It defines various 
 - It includes a struct called "DepositInfo" that holds information about an account's deposit, stake, unstake delay, and withdrawal time.
 - The interface provides functions to retrieve deposit information, check an account's balance, deposit funds, add stake with a specified unstake delay, unlock stake, withdraw stake, and withdraw from the deposit.
 
+It is a Solidity interface for a paymaster contract, which agrees to pay for the gas costs of a user's operation. The paymaster must hold a stake to cover the required entrypoint stake and also the gas for the transaction. 
+
+The interface includes two functions: 
+
+1. `validatePaymasterUserOp`: Payment validation function that checks if the paymaster agrees to pay for the gas costs of the user's operation. This function takes in the user operation, user operation hash, and the maximum cost of the transaction. It returns a context value to send to `postOp`, and a validation data value that includes the signature and time-range of the operation.
+
+2. `postOp`: Post-operation handler that is called after the user's operation is executed. This function takes in the mode (either opSucceeded, opReverted, or postOpReverted), the context value returned by `validatePaymasterUserOp`, and the actual gas used so far.
+
+It is a Solidity interface called "INonceManager". It defines two functions:
+
+1. `getNonce`: This function takes in the sender's address and a key as parameters and returns the next nonce for that sender. The nonce values are sequenced within a given key, starting from zero and incremented by one on each user operation. However, user operations with different keys can come in any order.
+
+2. `incrementNonce`: This function manually increments the nonce of the sender. It is not necessary for the account to call this function during validation or elsewhere, as the EntryPoint will update the nonce automatically. However, it can be used to initialize the nonces of different keys to one, so that future user operations will not pay extra for the first transaction with a given key.
+
+It is a Solidity interface called `IAggregator`. It defines a set of functions that can be implemented by a contract to validate and aggregate signatures for a list of `UserOperation` objects.
+
+The interface includes the following functions:
+
+1. `validateSignatures`: Validates an aggregated signature for a given array of `UserOperation` objects.
+
+2. `validateUserOpSignature`: Validates the signature of a single `UserOperation` and returns the value to put into the signature field of the `UserOperation` when calling `handleOps`.
+
+3. `aggregateSignatures`: Aggregates multiple signatures into a single value. This function is called off-chain to calculate the signature to pass with `handleOps`.
+
+It is a Solidity library called `UserOperationLib`. It provides utility functions for working with `UserOperation` structs. 
+
+The `UserOperationLib` library includes the following functions:
+
+1. `getSender`: Retrieves the sender address from a `UserOperation` struct.
+2. `gasPrice`: Calculates the gas price for a `UserOperation` struct. It checks if the `maxFeePerGas` is equal to `maxPriorityFeePerGas` and returns either of them. Otherwise, it returns the minimum value between `maxFeePerGas` and `maxPriorityFeePerGas` plus the `basefee` of the current block.
+3. `pack`: Packs the data of a `UserOperation` struct into bytes for hashing purposes.
+4. `hash`: Calculates the hash of a `UserOperation` struct by hashing the packed data.
+5. `min`: Returns the minimum value between two numbers.
+
 
