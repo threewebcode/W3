@@ -130,6 +130,40 @@ Here's a breakdown of the defined thresholds:
 
 These thresholds can be used within a contract system to enforce multi-signature or multi-factor authentication mechanisms for critical actions.
 
+FeeEstimator is used to estimate the fee amount incurred when calling a function on another contract.
 
+The `estimate` function takes several parameters:
+- `_token`: The address of the token (ERC20) used for the fee. If it is set to `address(0)`, it means the fee is in Ether.
+- `_feeReceiver`: The address that will receive the fee amount.
+- `_to`: The address of the contract on which the function will be called.
+- `_data`: The function call data.
 
+The function first determines the starting balance of the fee receiver before the function call. If the fee is in Ether, it checks the balance of the fee receiver's address. Otherwise, it uses the `balanceOf` function of the ERC20 token to determine the initial balance.
 
+Then, it measures the initial gas remaining before the function call and executes the function call using the provided `_to` and `_data` parameters.
+
+After the function call, it calculates the gas used by subtracting the remaining gas from the initial gas.
+
+Finally, it calculates the fee amount by comparing the final balance of the fee receiver with the initial balance. If the fee is in Ether, it subtracts the starting balance from the current balance. Otherwise, it uses the `balanceOf` function of the ERC20 token to determine the final balance and subtracts the initial balance.
+
+The function returns a tuple with the following values:
+- `success`: A boolean indicating whether the function call was successful.
+- `result`: The result of the function call.
+- `gas`: The gas used by the function call.
+- `feeAmount`: The calculated fee amount.
+
+This contract is called "GasEstimator" and it provides a function called "estimate". 
+
+The "estimate" function takes two parameters: "_to" (an address) and "_data" (a byte array). It returns a tuple containing three values: "success" (a boolean indicating if the function call was successful), "result" (the result of the function call), and "gas" (the amount of gas used during the function call).
+
+Inside the function, it first records the initial amount of gas using the "gasleft()" function. Then, it calls the "_to" address with the provided "_data" using the "call" function. After the function call, it calculates the amount of gas used by subtracting the current gas value from the initial gas value.
+
+LibUnipassSig contains functions for parsing and validating various types of signatures used in the Unipass protocol. The library supports three types of key: Secp256k1, ERC1271Wallet, and OpenIDWithEmail. The library also includes functions for sub-digest calculation and key parsing for OpenIDWithEmail signatures.
+
+Solidity contract named "ModuleGuest" is a module that extends the "ModuleTransaction" contract and includes functions for executing transactions.
+
+The contract defines a function called "_subDigest" which calculates a digest based on the given parameters. It also includes a function named "execute" which takes an array of transactions as input and executes them.
+
+Within the "execute" function, each transaction in the array is processed sequentially. The gas limit is checked, and if there is not enough gas, an event is emitted or a revert occurs based on the transaction's "revertOnError" flag.
+
+The transaction is then executed using the "LibOptim.call" function, which is a utility for making contract calls. If the transaction is successful, an event is emitted. Otherwise, the contract reverts or returns an error based on the "revertOnError" flag.
