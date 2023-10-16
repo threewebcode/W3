@@ -31,4 +31,18 @@ Please note that without additional context or specific requirements, it is diff
 
 **Solidity Codes**
 
+It is a Solidity library called "Exec" that contains utility functions for making different kinds of contract calls. It includes functions for regular calls (`call`), static calls (`staticcall`), and delegate calls (`delegateCall`). 
+
+The `call` function is used to make a call to another contract, specifying the target address, value (in wei) to send with the call, data to be executed, and the gas limit for the call. It returns a boolean value indicating the success of the call.
+
+The `staticcall` function is similar to `call`, but it is used for read-only operations as it does not modify the state of the contract. It returns a boolean value indicating the success of the call.
+
+The `delegateCall` function is used to make a delegate call to another contract, which allows the called contract to access the storage and code of the calling contract. It returns a boolean value indicating the success of the call.
+
+The `getReturnData` function is used to retrieve the returned data from the last call or delegate call. It takes a maximum length parameter and returns a byte array containing the returned data.
+
+The `revertWithData` function is used to revert the current transaction with explicit byte array data. It takes the return data as a parameter and reverts the transaction with that data.
+
+The `callAndRevert` function is a combination of `call` and `revertWithData`. It makes a call to another contract and reverts the transaction if the call is not successful, using the returned data as the revert reason.
+
 
