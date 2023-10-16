@@ -45,4 +45,33 @@ The `revertWithData` function is used to revert the current transaction with exp
 
 The `callAndRevert` function is a combination of `call` and `revertWithData`. It makes a call to another contract and reverts the transaction if the call is not successful, using the returned data as the revert reason.
 
+It is a Solidity interface called `IAccount`. It defines a function `validateUserOp` that takes in several parameters including a `UserOperation` struct, a hashed user request data, and the amount of missing funds on the account's deposit in the entry point.
+
+The purpose of this function is to validate the user's signature and nonce. If the validation is successful, the function should return a packaged `ValidationData` structure, which includes information such as the signature authorizer, the validity period of the operation, and other relevant data.
+
+It is the implementation of an Account-Abstraction (EIP-4337) singleton entry point in Solidity. It defines an interface called `IEntryPoint` that extends other interfaces such as `IStakeManager`, `INonceManager`, and `IAggregator`. The `IEntryPoint` interface declares several events and functions for handling user operations, executing batches of operations, generating request IDs, and retrieving counterfactual sender addresses.
+
+The purpose of this contract is to provide a centralized entry point for executing user operations on a blockchain network. It allows for the execution of multiple operations in a batch and provides events to track the success or failure of each operation. The contract also supports the use of aggregators for certain operations.
+
+It is a Solidity struct definition for a User Operation. It defines the structure and properties of a User Operation in a smart contract. The User Operation struct includes the following properties:
+
+- `sender`: The address of the sender account of the request.
+- `nonce`: A unique value used by the sender to verify that it is not a replay.
+- `initCode`: If set, it represents the constructor for creating the account contract.
+- `callData`: The method call to execute on the account.
+- `callGasLimit`: The gas limit passed to the method call.
+- `verificationGasLimit`: Gas used for validation purposes.
+- `preVerificationGas`: Gas not calculated by the `handleOps` method but added to the gas paid.
+- `maxFeePerGas` and `maxPriorityFeePerGas`: Parameters related to gas fees.
+- `paymasterAndData`: If set, it holds the paymaster address and paymaster-specific data. The paymaster will pay for the transaction instead of the sender.
+- `signature`: Sender-verified signature over the entire request, the EntryPoint address, and the chain ID.
+
+This struct is used to define the structure of a User Operation in a smart contract.
+
+It is an interface for a Stake Manager contract in Solidity. It defines various functions and events related to managing deposits and stakes. Here's a brief overview of the interface:
+
+- The interface defines events such as "Deposited", "Withdrawn", "StakeLocked", "StakeUnlocked", and "StakeWithdrawn" to emit certain actions or state changes.
+- It includes a struct called "DepositInfo" that holds information about an account's deposit, stake, unstake delay, and withdrawal time.
+- The interface provides functions to retrieve deposit information, check an account's balance, deposit funds, add stake with a specified unstake delay, unlock stake, withdraw stake, and withdraw from the deposit.
+
 
