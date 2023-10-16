@@ -2,6 +2,8 @@
 
 ### Solidity Contract
 
+**Deployment**
+
 The deployEntryPoint function deploys a contract called 'EntryPoint' using the Hardhat deployments plugin. It also deploys a Create2Factory contract using the Create2Factory class from '../src/Create2Factory'.
 
 The function starts by getting the signer's address from the provider. It then deploys the Create2Factory contract by calling its deployFactory function.
@@ -26,5 +28,7 @@ Here is a brief overview of the code:
 - Finally, the code includes a function called `sendQueuedUserOps` which sends queued UserOps in batches to an entry point contract.
 
 Please note that without additional context or specific requirements, it is difficult to provide a more detailed explanation or assistance.
+
+**Solidity Codes**
 
 
