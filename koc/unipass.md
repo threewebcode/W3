@@ -107,6 +107,28 @@ In Solidity, the using keyword is used to bring the functions of a library into 
 
 The using keyword is followed by the name of the library and the for keyword, and it is typically used inside a contract definition. In Solidity, the error grammar is a syntax that allows you to define custom error types. The error grammar was introduced in Solidity version 0.8.0 and provides a structured way to define and handle errors in contracts.
 
+t contains a function named "modexp" that computes the modular exponentiation of a base raised to an exponent modulo a given modulus.
+
+The function takes three parameters: "base" (bytes), "exponent" (bytes), and "modulus" (bytes). It returns a boolean value indicating the success of the computation and the result of the modular exponentiation as bytes.
+
+The function internally encodes the input parameters and calls the modexp precompile contract using inline assembly. The result is stored in the "output" variable.
+
+It provides two functions: "call" and "delegatecall" which are used for making external function calls in a more optimized way. The "call" function is used for making regular calls to other contracts, while the "delegatecall" function is used for making delegate calls. The library also includes a function called "returnData" which is used to retrieve the return data from a previous external call.
+
+In Solidity, a library is a reusable piece of code that defines functions and/or data structures that can be used by other contracts. Libraries are similar to contracts, but they cannot be deployed independently. Instead, they are meant to be used as shared code by other contracts.
+
+It defines several constant variables related to role thresholds. These thresholds determine the number of individuals required to perform certain actions or make certain decisions within a smart contract system.
+
+Here's a breakdown of the defined thresholds:
+
+- `OWNER_THRESHOLD`: This constant represents the number of individuals required to reach a consensus for owner-related actions.
+- `OWNER_CANCEL_TIMELOCK_THRESHOLD`: This constant represents the number of individuals required to cancel a timelock for owner-related actions.
+- `GUARDIAN_THRESHOLD`: This constant represents the number of individuals required to reach a consensus for guardian-related actions.
+- `GUARDIAN_TIMELOCK_THRESHOLD`: This constant represents the number of individuals required to reach a consensus for guardian-related actions that are timelocked.
+- `SYNC_TX_THRESHOLD`: This constant represents the number of individuals required to synchronize transactions.
+- `ASSETS_OP_THRESHOLD`: This constant represents the number of individuals required to perform asset-related operations.
+
+These thresholds can be used within a contract system to enforce multi-signature or multi-factor authentication mechanisms for critical actions.
 
 
 
