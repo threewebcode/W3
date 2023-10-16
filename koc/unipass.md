@@ -99,4 +99,15 @@ The contract includes the following features:
 
 5. Validating ID tokens: The contract includes a function to validate ID tokens. It verifies the signature of the ID token using the corresponding public key and checks the validity of the timestamp, issuer, audience, and other parameters.
 
+### Solidity Contracts
+
+It contains various functions for reading and manipulating byte arrays. The library is used to handle byte array operations efficiently in smart contracts.
+
+In Solidity, the using keyword is used to bring the functions of a library into the scope of a contract. It allows you to access and use the functions of a library directly without having to explicitly call the library name.
+
+The using keyword is followed by the name of the library and the for keyword, and it is typically used inside a contract definition. In Solidity, the error grammar is a syntax that allows you to define custom error types. The error grammar was introduced in Solidity version 0.8.0 and provides a structured way to define and handle errors in contracts.
+
+
+
+
 
