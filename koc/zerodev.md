@@ -90,4 +90,3 @@ Here are the main functionalities of the contract:
 4. It provides a function to get the account address based on the provided data and index.
 5. It provides functions related to staking, such as adding stake, unlocking stake, and withdrawing stake.
 
-
