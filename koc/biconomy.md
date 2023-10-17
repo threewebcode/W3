@@ -10,4 +10,74 @@ Building and sending UserOperations is a key offering of any toolkit designed fo
 
 The Biconomy account package achieves this by providing a comprehensive set of methods that enable developers to effortlessly create UserOperations. Combined with the sophisticated backend infrastructure of the Biconomy platform, it ensures efficient and reliable transmission of these operations across EVM networks.
 
+### Solidity Contract
+
+**Proxy**
+
+The Solidity contract Proxy is a basic proxy contract that delegates all calls to a fixed implementation contract. The implementation address is stored in the slot defined by the Proxy's address.
+
+The contract has a constructor that takes an implementation address as a parameter. It checks if the implementation address is valid (not equal to address(0)) and stores it in the contract's storage using the assembly code.
+
+The contract also has a fallback function that is triggered when a function is called on the contract that does not exist. Inside the fallback function, it retrieves the implementation address from storage and uses delegatecall to execute the function on the implementation contract. It also handles the return data and reverts if the delegatecall fails.
+
+**SmartAccount**
+
+A Smart Account is a modular and extensible contract wallet that allows users to manage assets, execute transactions, and interact with other contracts.
+
+Here are some key features of the Smart Account contract:
+
+- It is modular by nature, allowing for the addition and management of various modules such as Social Recovery, Session Key, and others.
+- It provides functionality to execute AA (EIP-4337) user operations. User operations and transaction validations are handled by Authorization Modules.
+- It allows for the reception and management of assets.
+- It manages modules and fallbacks.
+- It supports the deposit and withdrawal of native tokens.
+
+The contract includes various functions such as `init` for initializing the Smart Account, `execute` for executing a transaction, `enableModule` for enabling a module, `setFallbackHandler` for setting the fallback handler, and more.
+
+**Interfaces**
+
+An interface for signature validation includes a constant `EIP1271_MAGIC_VALUE` which represents the magic value that should be returned when the signature is valid. The `isValidSignature` function is a view function that takes a data hash and a signature as parameters and returns the magic value if the signature is valid. This function should not modify the contract's state and should allow external calls.
+
+The interface ISessionKeyManager defines a function called "validateSessionKey" which is used to validate a session key and its parameters.
+
+The function takes several parameters:
+- "userOpSender" is the smart account for which the session key is being validated.
+- "validUntil" is a timestamp indicating when the session key expires.
+- "validAfter" is a timestamp indicating when the session key becomes valid.
+- "sessionValidationModule" is the address of the Session Validation Module.
+- "sessionKeyData" is the session parameters (limitations/permissions) encoded as bytes.
+- "merkleProof" is an array of bytes32 values representing the merkle proof for the leaf which represents this session key and its parameters.
+
+If the function is called and does not revert, it means that the session key is considered valid.
+
+The authorization interface includes a function called `validateUserOp` which takes two parameters: a `UserOperation` struct and a `userOpHash` of type `bytes32`. The function returns a `uint256` value representing validation data.
+
+The `UserOperation` struct is likely defined in the `@account-abstraction/contracts/interfaces/UserOperation.sol` file, which is imported at the beginning of the contract.
+
+The purpose of this interface is to provide a way for modules to verify signatures that are signed over a `userOpHash`. The specific implementation of the `validateUserOp` function would depend on the requirements of the authorization module.
+
+**Abstract Contracts**
+
+The executor is an abstract contract that can execute transactions. It contains a function named "execute" which takes in parameters such as the destination address, value, data, operation type, and gas limit. The function uses assembly code to execute the transaction either through a delegate call or a regular call. It emits events to indicate the success or failure of the execution.
+
+The ModuleManager is a contract that manages modules that can execute transactions on behalf of a Smart Account. The contract allows for enabling and disabling modules, executing transactions from modules, and retrieving information about the modules.
+
+The FallbackManager is an abstract contract that manages fallback calls made to the Smart Account. Fallback calls are handled by a `handler` contract that is stored at the `FALLBACK_HANDLER_STORAGE_SLOT`. Fallback calls are not delegated to the `handler`, so they cannot directly change the Smart Account storage.
+
+The contract inherits from the "SelfAuthorized" contract and uses the "FallbackManagerErrors" library for error handling. It defines a constant `FALLBACK_HANDLER_STORAGE_SLOT` which is the keccak-256 hash of "fallback_manager.handler.address" subtracted by 1.
+
+The contract includes a fallback function that is triggered when a fallback call is made to the contract. Inside the fallback function, it retrieves the `handler` address from storage and if it is zero, the function returns. Otherwise, it copies the calldata and appends the caller's address to it. Then, it calls the `handler` contract with the modified calldata. If the call is successful, it returns the returndata. If the call fails, it reverts with the returndata.
+
+The contract also includes functions to set and get the fallback handler. The `setFallbackHandler` function allows adding a contract to handle fallback calls, and the `getFallbackHandler` function retrieves the current fallback handler address.
+
+**Delpoyer**
+
+The Deployer imports the "Create3" contract and provides two functions.
+
+1. The `deploy` function takes a salt and creation code as parameters and deploys a contract using the `create3` function from the Create3 contract. It emits an event with the address of the deployed contract.
+
+2. The `addressOf` function takes a salt as a parameter and returns the address of the contract that would be deployed using the given salt.
+
+The Create3 is used for deploying contracts using the EIP-3171 style. This library allows you to create a new contract with a given creation code and salt. It also provides functions to compute the resulting address of a deployed contract and check the size of the code on a given address.
+
 
