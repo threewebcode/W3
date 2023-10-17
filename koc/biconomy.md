@@ -80,4 +80,36 @@ The Deployer imports the "Create3" contract and provides two functions.
 
 The Create3 is used for deploying contracts using the EIP-3171 style. This library allows you to create a new contract with a given creation code and salt. It also provides functions to compute the resulting address of a deployed contract and check the size of the code on a given address.
 
+**Factory**
+
+The SmartAccountFactory is responsible for deploying Smart Accounts using CREATE2 and CREATE. The purpose of this contract is to deploy Smart Accounts as proxies pointing to a basic implementation that is immutable. This allows keeping the same address for the same Smart Account owner on various chains via CREATE2.
+
+The contract has functions such as `getAddressForCounterFactualAccount`, `deployCounterFactualAccount`, and `deployAccount` that facilitate the deployment of Smart Accounts. It also has an event `AccountCreation` that is emitted when a new account is created.
+
+The contract inherits from `Stakeable` and has a `basicImplementation` and `minimalHandler` as immutable variables.
+
+**Callback**
+
+The DefaultCallbackHandler implements several interfaces including IERC1155TokenReceiver, IERC777TokensRecipient, IERC721TokenReceiver, and IERC165.
+
+The contract is designed to handle token callbacks and EIP-1271 compliant isValidSignature requests. It provides functions to receive ERC1155, ERC721, and ERC777 tokens, and returns the appropriate selector for each token type.
+
+The supportsInterface function checks if the contract supports a specific interface by comparing the provided interfaceId with the interface IDs of the supported interfaces.
+
+**Module**
+
+Smart Contract Ownership Registry module allows for the validation of user operations signed by other smart contracts using the EIP-1271 standard.
+
+The main functionalities of the contract include:
+- Initializing the module for a Smart Account and setting the owner.
+- Transferring ownership of a Smart Account.
+- Renouncing ownership of a Smart Account.
+- Retrieving the owner of a Smart Account.
+- Validating user operations by verifying the signature.
+- Validating signatures for messages signed by a specific address.
+
+The contract also includes some error handling and events for ownership transfers.
+
+The ECDSA ownership authorization module allows for the validation of user operations signed by an EOA private key and ensures that the Smart Account can validate signed messages. It supports one owner per Smart Account and does not support outdated eth_sign flow for cheaper validations. The contract is EIP-1271 compatible and only supports EOA owners, not Smart Contract Owners. It allows for the initialization and transfer of ownership for a Smart Account and emits an event when ownership is transferred.
+
 
