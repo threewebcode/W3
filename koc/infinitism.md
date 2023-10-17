@@ -108,4 +108,39 @@ The `UserOperationLib` library includes the following functions:
 4. `hash`: Calculates the hash of a `UserOperation` struct by hashing the packed data.
 5. `min`: Returns the minimum value between two numbers.
 
+It is a Solidity abstract contract called "StakeManager". It is used to manage deposits and stakes in a decentralized application. Here are the main functionalities of this contract:
+
+1. It defines a struct called "DepositInfo" which contains information about an account's deposit and stake.
+2. It declares a mapping called "deposits" that maps addresses to their respective deposit information.
+3. It provides a function called "getDepositInfo" to retrieve the deposit information for a given account.
+4. It includes an internal function called "getStakeInfo" to retrieve only the stake information for a given account.
+5. It implements a function called "balanceOf" to return the deposit balance of an account.
+6. It defines a fallback function that allows the contract to receive Ether as a deposit by calling the "depositTo" function.
+7. It includes an internal function called "incrementDeposit" to increment an account's deposit.
+8. It implements a function called "depositTo" to increment an account's deposit by a specified amount.
+9. It implements a function called "addStake" to add to an account's stake with a specified unstake delay.
+10. It implements a function called "unlockStake" to unlock the stake after the unstake delay.
+11. It implements a function called "withdrawStake" to withdraw the unlocked stake after the unstake delay.
+12. It implements a function called "withdrawTo" to withdraw from the deposit by specifying an amount and a withdrawal address.
+
+It serves as a helper contract for another contract called "EntryPoint". The purpose of SenderCreator is to create and return the address of a new account by calling the "initCode" factory from a "neutral" address.
+
+The createSender function takes a parameter called initCode, which is a byte array. The first 20 bytes of initCode represent the factory address, followed by the calldata. The function then extracts the factory address and calldata from initCode and uses assembly code to call the factory with the provided calldata.
+
+If the call to the factory is successful, the function returns the address of the created account. Otherwise, it returns the zero address.
+
+It includes a mapping called `nonceSequenceNumber` that stores the next valid sequence number for a given nonce key. The contract also includes functions to retrieve the nonce for a given address and key, increment the nonce for a specific key, and validate and update the nonce for a given address and nonce value.
+
+It is a Solidity contract called "EntryPoint". It is an implementation of the Account-Abstraction (EIP-4337) singleton EntryPoint. The contract acts as an entry point for executing user operations and handles the validation and execution of these operations.
+
+The contract includes various interfaces and imports, such as IAccount, IPaymaster, and IEntryPoint, which define the required functions and structures.
+
+The contract also includes several internal functions for handling user operations, validating prepayments, executing operations, and handling post-operations. It utilizes other contracts such as StakeManager, NonceManager, SenderCreator, and Helpers for additional functionality.
+
+It is a Solidity contract named "BasePaymaster". It is an abstract contract that serves as a helper class for creating a paymaster. It implements the IPaymaster interface and extends the Ownable contract from the OpenZeppelin library.
+
+The contract has a constructor that takes an instance of the IEntryPoint interface as a parameter. The entryPoint variable is immutable and stores the provided entry point.
+
+The contract contains functions for validating paymaster user operations, handling post-operations, depositing and withdrawing funds, adding and withdrawing stake, unlocking stake, and validating calls from the entry point.
+
 
