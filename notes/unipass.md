@@ -208,4 +208,66 @@ Here is a breakdown of the class:
 - The `request` method handles different JSON-RPC requests. It checks the request method and performs the corresponding action, such as signing typed data, signing a message, sending a transaction, or forwarding the request to the JSON-RPC provider.
 - The `updateUpWalletConfig` method is used to update the UniPass wallet configuration based on the provided `chainId`.
 
+**Utility**
+
+The code includes various functions and interfaces related to handling messages and typed data in a popup window. 
+
+Here's a breakdown of the code:
+
+- The code imports necessary modules from packages like `@unipasswallet/popup-types` and `ethers`.
+- It defines an interface `TypedData` that represents a typed data object.
+- It exports functions like `encodeTypedDataHash`, `encodeTypedDataDigest`, `registerPopupHandler`, `unregisterPopupHandler`, and `postMessage`.
+- The `encodeTypedDataHash` function takes a `TypedData` object as input and returns the encoded hash of the typed data.
+- The `encodeTypedDataDigest` function takes a `TypedData` object as input and returns the encoded digest of the typed data as a `Uint8Array`.
+- The `registerPopupHandler` function registers a message handler for the popup window and sends a 'UP_READY' message to the SDK.
+- The `unregisterPopupHandler` function removes the registered message handler.
+- The `postMessage` function sends a message to the parent window.
+
+The utility code provides functions for verifying Ethereum account signatures. 
+
+The `verifyMessageSignature` function verifies the signature of a message. It takes the message, signature, account address, and an optional flag indicating whether the personal hash algorithm uses the EIP191 prefix. It returns a promise that resolves to a boolean indicating the signature's validity.
+
+The `verifyTypedDataSignature` function verifies the signature of a typed data message. It takes the typed data, signature, account address, and an optional provider for contract signature validation. It returns a promise that resolves to a boolean indicating the signature's validity.
+
+The `UniPassHashMessage` function generates the hash of a message using the UniPass Signed Message prefix.
+
+The `checkWalletSignature` function checks the signature of a message against an account address. It first tries to recover the address from the signature and compares it to the provided address. If they match, it returns true. Otherwise, it calls the `checkContractWalletSignature` function to perform contract signature validation.
+
+The `checkContractWalletSignature` function checks the signature of a message against a contract address using the EIP1271 ABI. It returns a promise that resolves to a boolean indicating the signature's validity.
+
+**Types**
+
+The code snippet defines various types and classes related to a user authentication and authorization system called UniPass. Here's a breakdown of the code:
+
+- The `Environment` type defines two possible values: 'test' and 'prod', representing different environments.
+- The `ChainType` type defines several possible blockchain types.
+- The `UPMessageType` type defines different message types that can be sent within the UniPass system.
+- The `UPAccount` class represents a user account and its associated properties.
+- The `UPEventType` enum defines a single event type called 'REGISTER'.
+- The `UPEvent` class represents an event within the UniPass system, with a type and a body (UPAccount).
+- The `UPEventListener` type is a function type that takes a UPEvent as a parameter and returns void.
+- The `UPAuthMessage` class represents an authentication message with various properties.
+- The `UPTransactionMessage` class represents a transaction message with properties such as sender, recipient, value, and data.
+- The `UPResponse` class represents a response message with a type ('APPROVE' or 'DECLINE') and data (UPAccount or string).
+- The `AppSettings` type represents settings for a UniPass app, including the blockchain chain, app name, app icon, and theme.
+- The `UPMessage` class represents a message within the UniPass system, with a type, payload, and app settings.
+- The `UniPassTheme` enum defines two theme options: 'LIGHT' and 'DARK'.
+- The `ConnectType` type defines different types of connections (e.g., 'google', 'email', 'both').
+- The `UPConnectOptions` type represents options for connecting to UniPass, including email, connect type, authorization, force login, and event listener.
+- The `MessageTypeProperty` interface represents a property of a message type, with a name and type.
+- The `MessageTypes` interface defines the structure of different message types, including the EIP712Domain type and additional properties.
+- The `TypedMessage` interface represents a typed message with types, primary type, domain, and message properties.
+
+**Authorize**
+
+The "authorize" function takes in two parameters: "message" of type UPAuthMessage and "config" of type PopupSDKConfig.
+
+Inside the function, it first retrieves the session account from storage using the "useStorage" function and the "UPA_SESSION_KEY" constant. It checks if there is a session account and if the "from" property of the message matches the address of the session account. If not, it throws an error indicating that authorization cannot be done without login.
+
+Next, it creates a new UPMessage object with the type "UP_SIGN_MESSAGE", the serialized "message" parameter, and the "appSettings" property from the "config" parameter.
+
+Then, it tries to execute the "execPop" function with the created message and awaits the response. If successful, it returns the response as a string. If there is an error, it throws an error with the error message.
+
+**Bridge**
+
 
