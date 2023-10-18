@@ -270,4 +270,85 @@ Then, it tries to execute the "execPop" function with the created message and aw
 
 **Bridge**
 
+The code handles communication between a web page and a browser extension called "UniPass Wallet". The function is named `execPop` and it takes several parameters:
+
+- `message`: This is an object that represents the message being sent to the browser extension.
+- `connectType`: This parameter specifies the type of connection to be established with the browser extension.
+- `forceLogin`: A boolean value indicating whether the user should be forced to login.
+- `listener`: An event listener function that will be called when a message is received from the browser extension.
+
+The function returns a Promise that resolves when an "APPROVE" response is received from the browser extension, and rejects when a "DECLINE" response is received or when an error occurs.
+
+Inside the function, there is a call to the `pop` function, which is not included in the code snippet you provided. This function is responsible for establishing a connection with the browser extension and managing the communication.
+
+The `onReady` callback is called when the connection is established and ready to send messages to the browser extension. It sends the initial message.
+
+The `onResponse` callback is called when a response is received from the browser extension. It parses the response and handles different cases based on the response type. If the response type is "APPROVE", the Promise is resolved with the response data and the connection is closed. If the response type is "DECLINE", the Promise is rejected with the response data. If the response data is "expired", it handles different cases based on the message type. If the message type is "UP_LOGIN", it does nothing. If the message type is "UP_LOGOUT", the Promise is resolved with the response data and the connection is closed. If the message type is "UP_TRANSACTION" or "UP_SIGN_MESSAGE", it disconnects from the browser extension, rejects the Promise with an error message, and closes the connection.
+
+The `onMessage` callback is called when a message is received from the browser extension. It parses the message and calls the `listener` function if it is provided.
+
+The `onClose` callback is called when the connection is closed externally. It rejects the Promise with an error message.
+
+**Config**
+
+This module exports various functions and types related to the UniPass wallet SDK. Here is a brief overview of the code:
+
+- The module exports an interface `UP_API_CONFIG` and a function `WalletURL` for configuring the UniPass wallet API URLs.
+- The `config` variable holds the default configuration for the UniPass wallet API URLs.
+- The `getConfig` function returns the current configuration.
+- The module also exports types `StorageType` and `PopupSDKConfig` for configuring the UniPass wallet SDK.
+- Constants `TEST_WALLET_URL` and `MAIN_WALLET_URL` define the URLs for the testnet and mainnet wallets respectively.
+- The `NODE_RPC_LIST` object holds the RPC URLs for different chains on the testnet and mainnet.
+- The `getDefaultConfigOption` function returns the default configuration options based on the environment and chain type.
+- The `getAppSettings` function returns the app settings for the UniPass wallet SDK.
+- The `getAuthProviderUrl` function returns the RPC URL for the Polygon chain based on the environment.
+- The `PopupSDKOption` type defines the configuration options for the UniPass wallet SDK.
+
+**Connect**
+
+This module contains functions related to connecting, disconnecting, and retrieving account information for a Unipass Wallet popup SDK.
+
+Here is a breakdown of the functions:
+
+1. `connect`: This function is used to establish a connection with the Unipass Wallet. It takes a configuration object (`config`) and an optional `options` object. It returns a promise that resolves to a `UPAccount` object.
+
+2. `getLocalAccount`: This function retrieves the locally stored account information from the specified storage type (`localStorage` or `sessionStorage`). It returns a `UPAccount` object if available, otherwise `undefined`.
+
+3. `disconnect`: This function is used to disconnect from the Unipass Wallet. It takes a boolean parameter `deep` which determines whether to perform a deep logout. If `deep` is `true`, it sends a logout message to the wallet using `execPop`. It also removes the account information from both `localStorage` and `sessionStorage`.
+
+4. `getAccount`: This function is responsible for retrieving the account information from the Unipass Wallet. It takes a configuration object (`config`) and an optional `options` object. It returns a promise that resolves to a `UPAccount` object. It sends a login message to the wallet using `execPop` and stores the account information in the specified storage type.
+
+**Core**
+
+The code defines a class called `UniPassPopupSDK` which provides various methods for interacting with UniPass, such as login, logout, sending transactions, signing messages, and verifying signatures. It also includes helper functions for hashing messages and getting the user's asset contract address.
+
+The class uses the `@ethersproject/providers` library for interacting with Ethereum JSON-RPC providers, and other libraries like `@unipasswallet/popup-types` and `@unipasswallet/popup-utils` for UniPass-specific functionality.
+
+**Pop**
+
+The `pop` function is used to open a popup window and communicate with it using the `window.postMessage` API.
+
+The `pop` function takes several parameters:
+
+- `message`: An object of type `UPMessage` that represents the initial message to be sent to the popup window.
+- `connectType`: An optional parameter of type `ConnectType` that specifies the type of connection to be used (e.g., 'google', 'email').
+- `forceLogin`: An optional boolean parameter that indicates whether to force the user to log in again.
+- `opts`: An optional object that contains callback functions for various events (e.g., `onClose`, `onMessage`, `onReady`, `onResponse`).
+
+The `pop` function returns an object with two functions: `send` and `close`. The `send` function is used to send messages to the popup window, while the `close` function is used to close the popup window.
+
+The `pop` function also defines several helper functions and constants, such as `serviceEndPoint`, which constructs the URL for various types of services based on the provided parameters.
+
+**Storage**
+
+This module defines a custom hook called `useStorage`. The hook allows you to interact with either `localStorage` or `sessionStorage` based on the `storageType` parameter passed to it.
+
+The `useStorage` hook initializes a variable `_storage` based on the `storageType` value. If `storageType` is set to `'localStorage'`, it assigns `window.localStorage` or `localStorage` to `_storage`. Otherwise, if it is set to any other value, it assigns `window.sessionStorage` or `sessionStorage` to `_storage`.
+
+The hook then defines three functions: `get`, `set`, and `remove`. These functions allow you to interact with the chosen storage type. 
+
+- The `get` function retrieves the value associated with a given `key` from the storage and returns it. If the value does not exist, it returns an empty string.
+- The `set` function sets the value of a given `key` in the storage to the provided `value`. If `value` is empty, it sets an empty string.
+- The `remove` function removes the entry associated with a given `key` from the storage.
+
 
