@@ -112,4 +112,35 @@ The contract also includes some error handling and events for ownership transfer
 
 The ECDSA ownership authorization module allows for the validation of user operations signed by an EOA private key and ensures that the Smart Account can validate signed messages. It supports one owner per Smart Account and does not support outdated eth_sign flow for cheaper validations. The contract is EIP-1271 compatible and only supports EOA owners, not Smart Contract Owners. It allows for the initialization and transfer of ownership for a Smart Account and emits an event when ownership is transferred.
 
+### SDK
+
+**Account**
+
+The ISmartAccount interface has four methods:
+
+1. `getSmartAccountAddress(_accountIndex: number): Promise<string>`: This method takes an account index as a parameter and returns a promise that resolves to a string representing the smart account address.
+
+2. `signUserOp(_userOp: UserOperation): Promise<UserOperation>`: This method takes a `UserOperation` object as a parameter and returns a promise that resolves to a signed `UserOperation`.
+
+3. `sendUserOp(_userOp: UserOperation): Promise<UserOpResponse>`: This method takes a `UserOperation` object as a parameter and returns a promise that resolves to a `UserOpResponse` object representing the response of sending the `UserOperation`.
+
+4. `sendSignedUserOp(_userOp: UserOperation): Promise<UserOpResponse>`: This method takes a signed `UserOperation` object as a parameter and returns a promise that resolves to a `UserOpResponse` object representing the response of sending the signed `UserOperation`.
+
+`INon4337Account` interface defines the methods that a Smart Contract Wallet (also known as Smart Account) should implement. It includes the following methods:
+
+- `estimateCreationGas(_initCode: string)`: Returns the estimated gas required to create the smart contract wallet.
+- `getNonce()`: Returns the current nonce of the smart contract wallet.
+- `signMessage(_message: Bytes | string)`: Signs a message using the smart contract wallet's private key.
+- `getAccountAddress(_accountIndex?: number)`: Returns the address of the smart contract wallet.
+
+`IBaseSmartAccount` interface extends `INon4337Account` and adds additional methods specific to a base smart account. It includes the following methods:
+
+- `getVerificationGasLimit(_initCode: BytesLike)`: Returns the gas limit required for verification of a specific initialization code.
+- `getPreVerificationGas(_userOp: Partial<UserOperation>)`: Returns the gas required for pre-verification of a user operation.
+- `signUserOp(_userOp: UserOperation)`: Signs a user operation.
+- `signUserOpHash(_userOpHash: string)`: Signs a user operation hash.
+- `getUserOpHash(_userOp: Partial<UserOperation>)`: Returns the hash of a user operation.
+- `getAccountInitCode()`: Returns the initialization code of the smart contract wallet.
+- `getDummySignature()`: Returns a dummy signature.
+
 
