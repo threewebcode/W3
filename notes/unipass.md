@@ -175,4 +175,18 @@ The contract has a constructor that takes in several parameters including instan
 
 The contract is used for gas estimation purposes and includes functions for updating keyset hash, validating nonces, validating meta nonces, and requiring whitelist checks for hooks and implementations.
 
+### SDK
+
+**Provider**
+
+The class UniPassProvider implements the `IEthereumProvider` interface and provides functionality for interacting with the Ethereum blockchain through the UniPass wallet.
+
+Here are the key features of this class:
+
+- It maintains the current chain ID and account information.
+- It uses a `JsonRpcProvider` instance as the signer for sending requests to the Ethereum network.
+- It handles various Ethereum provider methods such as `request`, `connect`, `disconnect`, `enable`, and more.
+- It emits events using the `EventEmitter` class to notify listeners about changes in connection, chain ID, etc.
+- It includes helper methods to check if the provider is a UniPass provider, if it is connected, and to retrieve the current chain ID and signer.
+
 
