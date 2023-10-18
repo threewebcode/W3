@@ -189,4 +189,23 @@ Here are the key features of this class:
 - It emits events using the `EventEmitter` class to notify listeners about changes in connection, chain ID, etc.
 - It includes helper methods to check if the provider is a UniPass provider, if it is connected, and to retrieve the current chain ID and signer.
 
+The type.ts file defines several interfaces and types. Here is a breakdown of what each interface represents:
+
+1. `RpcUrls`: This interface defines a set of URLs for different blockchain networks. Each URL is associated with a specific network, such as mainnet, testnet, or a specific chain.
+
+2. `Configurations`: This interface defines optional configurations for the UniPassProvider. It includes a boolean flag `onAuthChain` and a `walletUrl` property of type `WalletURL`.
+
+3. `UniPassProviderOptions`: This interface represents the options for the UniPassProvider. It includes the `chainId` property, which specifies the chain ID for the blockchain network. It also includes a boolean flag `returnEmail` to indicate whether the user's email should be returned. Additionally, it can include optional configurations (`configurations`), app settings (`appSettings`), and RPC URLs (`rpcUrls`).
+
+The TypeScript class JsonRpcProvider is used to interact with a JSON-RPC provider and the UniPassPopupSDK. 
+
+Here is a breakdown of the class:
+
+- The class has several private properties, including `appSetting`, `returnEmail`, `configurations`, `rpcUrls`, `chainId`, `http`, and `upWallet`.
+- The constructor takes in parameters such as `chainId`, `returnEmail`, `configurations`, `rpcUrls`, and `appSetting` to initialize the class properties.
+- The `connect` method is used to connect to the UniPass wallet and retrieve the connected account. If the account is already connected, it returns the account. Otherwise, it prompts the user to login with their email.
+- The `disconnect` method is used to disconnect the UniPass wallet.
+- The `request` method handles different JSON-RPC requests. It checks the request method and performs the corresponding action, such as signing typed data, signing a message, sending a transaction, or forwarding the request to the JSON-RPC provider.
+- The `updateUpWalletConfig` method is used to update the UniPass wallet configuration based on the provided `chainId`.
+
 
