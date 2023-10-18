@@ -143,4 +143,33 @@ The ISmartAccount interface has four methods:
 - `getAccountInitCode()`: Returns the initialization code of the smart contract wallet.
 - `getDummySignature()`: Returns a dummy signature.
 
+The interface IBiconomySmartAccount includes various methods and properties related to interacting with Biconomy's smart accounts. The interface extends another interface called ISmartAccount and defines additional methods such as initialization, executing calls, getting token balances, getting transaction details, and more. It also includes methods for attaching a signer and retrieving supported chains.
+
+The class BaseSmartAccount is an abstract class that provides a base implementation for a smart account. Some of the key functionalities provided by this class include:
+
+- Initializing the smart account with the necessary configuration parameters such as the entry point address, account address, paymaster, bundler, chain ID, and provider.
+- Validating and signing user operations.
+- Sending user operations to the bundler for execution.
+- Estimating gas values for user operations.
+- Handling contract deployment and verification.
+- Retrieving account addresses and transaction receipts.
+
+The SmartAccount class provides various methods and functionality related to smart contract operations. It includes functions for estimating gas values, signing user operations, sending user operations to a bundler, and more.
+
+The class has several dependencies and uses various interfaces and types from external libraries. It also includes abstract methods that need to be implemented in child classes.
+
+**Particle Auth**
+
+Particle Network leverages secure multiparty computation (MPC) for the protection and management of cryptographic keys and secrets, providing industry-grade MPC-based solutions for key management and protection. Sensitive keys and secrets are split into two random shares. The two shares are stored on separate, segregated parties. Each share reveals nothing about the key material. The Threshold Signature Scheme (TSS) is a cryptographic primitive for distributed key generation and signing. When signing transactions, we run a distributed signature generation between two parties. 
+
+**Web3 Auth**
+
+The component is called "UI" and It includes various elements such as social login buttons, an email login form, and options for external wallet login using MetaMask or Wallet Connect. The component receives a prop called "socialLogin" which is an instance of the "SocialLogin" class. The component also uses React hooks, specifically the useState hook, to manage the state of the email input field.
+
+Social Login SDK includes imports for various libraries and modules related to authentication, such as React, ethers, and web3auth. The code defines a class called SocialLogin, which provides methods for initializing the SDK, handling user authentication, and retrieving user information.
+
+The class includes methods for interacting with different wallet adapters, such as Openlogin, Metamask, and WalletConnect. It also provides methods for showing and hiding the login modal, retrieving user information, and logging out.
+
+Additionally, the code exports an instance of the SocialLogin class as well as a function for getting the initialized instance of the SDK.
+
 
