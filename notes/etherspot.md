@@ -22,4 +22,56 @@ Aggregators: These optional smart contracts can validate signatures for multiple
 
 EtherspotWallet is a EIP4337 compliant smart contract that acts as a multi-ownership wallet. It allows multiple owners to control a single account and execute transactions via an entry point contract. It also allows for guardian account recovery.
 
+### SDK
+
+They define the structure and behavior of different wallet and provider objects used in Ethereum development. Here's a brief explanation of each:
+
+- `WalletProvider`: An interface representing a wallet provider. It contains properties such as `type` (type of the provider), `wallet` (the wallet object), `address` (the address of the wallet), `address$` (a subject to observe changes in the address), `networkName` (the name of the network), and `networkName$` (a subject to observe changes in the network name). It also includes a method `signMessage` to sign a message.
+
+- `Web3Provider`: An interface representing a Web3 provider. It has a `send` method to send a payload and receive a callback response.
+
+- `RequestArguments`: An interface representing the arguments for a request to a Web3 provider. It includes properties `method` (the method name) and `params` (the parameters for the method).
+
+- `Web3eip1193Provider`: An interface representing a Web3 EIP-1193 provider. It has a `request` method to send a request with arguments.
+
+- `EthereumProvider`: A class representing an Ethereum provider. It includes properties such as `accounts` (array of accounts), `signer` (the signer instance), and `chainId` (the chain ID). It also provides methods like `request`, `sendAsync`, `disconnect`, `on`, `once`, `removeListener`, and `off` for interacting with the provider.
+
+- `WalletConnectConnector`: An interface representing a WalletConnect connector. It includes properties such as `accounts` (array of accounts) and `chainId` (the chain ID). It also provides methods like `signPersonalMessage`, `on` for event handling.
+
+- `WalletLike`: An interface representing a wallet-like object with `privateKey` property.
+
+- `WalletProviderLike`: A union type representing different types that can be used as a wallet provider. It can be a string, a `WalletLike` object, a `WalletProvider` object, or an `EthereumProvider` object.
+
+It is used to create a wallet provider that interacts with the Ethereum blockchain using a private key.
+
+Here's a breakdown of the code:
+
+- The `KeyWalletProvider` class has two properties: `type` and `address`. The `type` property is set to `'Key'`, indicating the type of wallet provider. The `address` property holds the Ethereum address associated with the private key.
+
+- The constructor of the class takes a `privateKey` parameter, which is used to create a new `Wallet` instance from the `ethers` library. The `Wallet` class represents an Ethereum wallet and provides methods for signing messages and transactions.
+
+- Inside the constructor, the `address` property is set to the address of the created wallet.
+
+- The `signMessage` method is implemented as an async function that takes a `message` parameter of type `BytesLike` (which represents a message to be signed). It uses the `wallet` property to sign the message using the `signMessage` method from the `ethers` library. The signed message is returned as a string.
+
+It is used to interact with the MetaMask wallet in a web application. Here's a breakdown of its features:
+
+- The class extends a `DynamicWalletProvider` class, which is not included in the code snippet.
+- The `ethereum` object is declared as a global variable and is expected to be available in the `window` object.
+- The class has a static method `detect()` that checks if MetaMask is installed and returns a boolean value.
+- The static method `connect()` is used to connect to MetaMask. It checks if MetaMask is detected, creates an instance of `MetaMaskWalletProvider`, and connects to MetaMask.
+- The class has a private static property `instance` to store the singleton instance of `MetaMaskWalletProvider`.
+- The constructor of `MetaMaskWalletProvider` initializes the parent class with the name 'MetaMask'.
+- The `signMessage()` method is used to sign a message using the personal_sign method of MetaMask.
+- The `connect()` method is used to establish a connection with MetaMask. It sets up event listeners for account changes and chain changes. It also retrieves the current chain ID and the user's address.
+- The `sendRequest()` method is a helper method to send requests to MetaMask using the `ethereum.request()` method.
+
+It extends the `DynamicWalletProvider` class and is used to provide wallet functionality using the WalletConnect protocol.
+
+The constructor of this class takes an `EthereumProvider` object as a parameter. It sets up event listeners for 'connect', 'session_event', and 'disconnect' events on the provider, and updates the address and network name accordingly.
+
+The `signMessage` method is used to sign a message using the `personal_sign` method of the provider's signer. It takes a `BytesLike` message as input and returns a Promise that resolves to a string, which is the signed message.
+
+The `updateSessionHandler` method is a callback function that is called when the provider emits a 'connect', 'session_event', or 'disconnect' event. It updates the address and network name based on the event payload.
+
 
