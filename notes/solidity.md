@@ -1,5 +1,7 @@
 # Solidity Language
 
+### Design Pattern
+
 Here are some best practices, design patterns, and security considerations to keep in mind when developing smart contracts using Solidity:
 
 Best Practices:
@@ -87,5 +89,7 @@ The BNF (Backus-Naur Form) grammar for the Solidity programming language is as f
 <special_char> ::= "'" | "\"" | "\\" | "\n" | "\t" | "\r"
 ```
 This BNF grammar defines the syntax of the Solidity programming language, including the structure of contracts and libraries, statements, expressions, literals, variables, function calls, array accesses, struct accesses, unary operators, binary operators, identifiers, numbers, strings, and special characters.
+
+### Grammar
 
 
