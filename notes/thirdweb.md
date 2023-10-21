@@ -141,4 +141,44 @@ Methods:
 - `setChain`: Switches the chain that the user's wallet is currently on.
 - `getEthersJsSigner`: Returns an Ethers.js compatible signer for interacting with the user's wallet
 
+### Wallet Hooks
+
+The wallet hooks contains a collection of custom React hooks related to interacting with different types of wallets in a decentralized application. These hooks are designed to be used within a `<ThirdwebProvider/>` component.
+
+Here's a brief overview of the available hooks:
+
+1. `useWallet`: Returns the current active wallet instance based on the provided wallet ID. If no wallet ID is provided, it returns the active wallet instance.
+
+2. `useWalletConfig`: Returns the configuration object of the current active wallet.
+
+3. `useWallets`: Returns the list of supported wallets configured in the `<ThirdwebProvider/>`.
+
+4. `useConnect`: Returns a method to connect to a wallet class.
+
+5. `useDisconnect`: Returns a method to disconnect from the current active wallet.
+
+6. `useConnectionStatus`: Returns the connection status of the wallet, which can be one of the following: `unknown`, `connecting`, `connected`, or `disconnected`.
+
+7. `useSetConnectionStatus`: Returns a method to set the connection status of the wallet.
+
+8. `useCreateWalletInstance`: Returns a method to create an instance of a given wallet class.
+
+9. `useSwitchChain`: Returns a method to connect the wallet to a network/chain with a given chain ID.
+
+10. `useSetConnectedWallet`: Returns a method to set a connected wallet instance.
+
+These hooks provide a convenient way to interact with different wallets in a decentralized application and handle wallet-related actions.
+
+### Wallet Provider
+
+The wallet provider module defines a React context and provider component for managing wallet connections in a decentralized application (dApp). 
+
+The code includes the following key components:
+
+- `ThirdwebWalletProvider`: This is the provider component that wraps the dApp and manages the wallet connection state. It takes in various props like `activeChain`, `supportedWallets`, `shouldAutoConnect`, etc., and provides the necessary context and functions to connect/disconnect wallets, switch chains, etc.
+
+- `useWalletContext`: This is a custom hook that can be used within the dApp to access the wallet context provided by the `ThirdwebWalletProvider`. It returns the context object containing various wallet-related information and functions.
+
+- Helper functions: The code includes helper functions like `getLastConnectedWalletInfo`, `saveLastConnectedWalletInfo`, and `timeoutPromise` to handle saving and retrieving wallet connection information and handling timeouts for auto-connect functionality.
+
 
