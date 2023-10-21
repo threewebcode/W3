@@ -1,7 +1,7 @@
 .PHONY: commit
 
 commit:
-	@echo "commit message:"
+	# @echo "commit message:"
 	@read message; \
 	git add -A && \
 	git commit -m "$$message" && \
