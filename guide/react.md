@@ -16,4 +16,8 @@ Here's how useCallback works:
 
     Optimization: By memoizing the callback function, React can optimize the rendering process. If a parent component renders and passes the callback function as a prop to multiple child components, those child components can refer to the same function instance instead of each having their own copy. This can prevent unnecessary re-renders of the child components when the parent component updates.
 
+### Dynamic Import
+
+Dynamic imports, introduced in ECMAScript 2018 (ES8), allow you to import modules or scripts dynamically at runtime, rather than at the top-level of your code. It provides a way to conditionally load modules or load them on-demand when they are needed.
+
 
