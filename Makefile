@@ -19,7 +19,7 @@ github:
 		echo "No changes to commit. Aborting."; \
 		exit 1; \
 	fi; \
-	git add -A && \
+	git add --all && \
 	git commit -m "$$message" && \
 	if [ $$? -eq 0 ]; then \
 		echo "Commit successful!"; \
