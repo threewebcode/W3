@@ -12,4 +12,7 @@ Emotion CSS offers several key features:
 
 4. **Performance optimizations**: Emotion CSS employs various performance optimizations, such as automatic critical CSS extraction, style caching, and efficient style injection. These optimizations help reduce the overhead and improve the runtime performance of your styled components.
 
+In Emotion CSS, template literals are used to define styles within the className prop of JSX components. The template literal is passed to the css function provided by Emotion CSS, which converts the styles into CSS and injects them into the document. The css function evaluates the template literal and converts it into a CSS string. It also generates a unique class name for the styles.
+
+
 
