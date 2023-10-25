@@ -81,4 +81,48 @@ In Solidity, there are different types of function calls that can be used to int
 5. View and Pure Function Calls: View functions and pure functions are read-only functions that do not modify the contract's state. They are used for retrieving data and performing computations. View functions can access the contract's state, while pure functions cannot. View and pure function calls are typically synchronous and can be made using the function name and required arguments.
 
 
+## Low-level Functions
+
+The `call`, `staticcall`, and `delegatecall` are low-level functions in Solidity used for contract interaction. Here are the differences between them and how they are used:
+
+1. `call`: The `call` function is the most basic and versatile method for contract interaction. It allows calling other contracts and sending Ether. It returns a boolean value indicating success or failure and allows the called contract to modify its own state.
+
+   Syntax: `address.call(bytes memory data) returns (bool success)`
+
+   Usage:
+   - Use `address.call(data)` for regular function calls.
+   - Use `address.call{value: amount}(data)` to send Ether along with the function call.
+
+   Important Points:
+   - The called contract can modify its own state, including storage variables.
+   - The calling contract's state remains unchanged.
+   - Gas estimation and error handling need to be implemented manually.
+   - Use the return value to check if the call was successful or failed.
+
+2. `staticcall`: The `staticcall` function is used for reading data from other contracts without modifying their state. It is primarily used for view and pure functions.
+
+   Syntax: `address.staticcall(bytes memory data) returns (bool success, bytes memory dataReturned)`
+
+   Usage:
+   - Use `address.staticcall(data)` to read data from the called contract.
+
+   Important Points:
+   - The called contract's state remains unchanged.
+   - The calling contract's state remains unchanged.
+   - Gas estimation and error handling need to be implemented manually.
+   - The return value includes the success status and the data returned by the called contract.
+
+3. `delegatecall`: The `delegatecall` function is used to execute code from another contract while preserving the calling contract's context. It allows the calling contract to access the called contract's storage and functions as if they were part of the calling contract.
+
+   Syntax: `address.delegatecall(bytes memory data) returns (bool success, bytes memory dataReturned)`
+
+   Usage:
+   - Use `address.delegatecall(data)` to execute code from the called contract.
+
+   Important Points:
+   - The called contract's code is executed within the calling contract's context.
+   - The called contract can modify the calling contract's state, including storage variables.
+   - Gas estimation and error handling need to be implemented manually.
+   - The return value includes the success status and the data returned by the called contract.
+
 
