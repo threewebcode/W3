@@ -62,4 +62,23 @@ When calling contract functions in Solidity, there are a few important concepts 
 
 6. Asynchronous Calls: Solidity does not directly support asynchronous function calls. However, you can use external libraries or frameworks like Web3.js or ethers.js to make asynchronous calls to contract functions. These libraries provide additional features and utilities for interacting with smart contracts.
 
+## Call Types
+
+In Solidity, there are different types of function calls that can be used to interact with contract functions. These types of function calls have different characteristics and are suited for specific use cases. Here are the main types of function calls in Solidity:
+
+1. External Function Calls: External function calls are used to invoke functions in other contracts. They are made using the contract's address and ABI. External function calls can be synchronous or asynchronous.
+
+   - Synchronous External Calls: Synchronous calls are made using the `.call()` or `.call{value: amount}()` syntax. They wait for the called function to complete execution and return the result or revert with an error. Synchronous calls are useful when you need to receive a response from the called function immediately.
+
+   - Asynchronous External Calls: Asynchronous calls are made using the `contract.call{gas: gasLimit, value: amount}(abi.encodeWithSignature("functionName(type1,type2)", arg1, arg2))` syntax. They are executed asynchronously, and the response is received in a callback or a Promise. Asynchronous calls are useful when you want to perform other tasks concurrently while waiting for the response.
+
+2. Internal Function Calls: Internal function calls are used to invoke functions within the same contract. They can be made directly by using the function name and providing the required arguments. Internal calls are executed synchronously, and they have access to the contract's internal state and functions.
+
+3. Private Function Calls: Private functions are similar to internal functions, but they cannot be called from derived contracts. They are only accessible within the contract that defines them. Private function calls are made directly using the function name and required arguments.
+
+4. Public Function Calls: Public functions can be called internally within the contract and externally from other contracts or accounts. Public function calls can be made directly using the function name and required arguments.
+
+5. View and Pure Function Calls: View functions and pure functions are read-only functions that do not modify the contract's state. They are used for retrieving data and performing computations. View functions can access the contract's state, while pure functions cannot. View and pure function calls are typically synchronous and can be made using the function name and required arguments.
+
+
 
