@@ -14,5 +14,12 @@ Emotion CSS offers several key features:
 
 In Emotion CSS, template literals are used to define styles within the className prop of JSX components. The template literal is passed to the css function provided by Emotion CSS, which converts the styles into CSS and injects them into the document. The css function evaluates the template literal and converts it into a CSS string. It also generates a unique class name for the styles.
 
+The return type of the css function in Emotion CSS is a unique class name or a combination of class names. The css function generates a unique identifier for the defined styles and returns it as a string.
+
+The Emotion CSS function, css, does not require parentheses around the template literal because it is a tagged template literal function. Tagged template literals in JavaScript are a feature that allows you to customize the behavior of template literals by prefixing them with a function name.
+
+When you use the css function from Emotion CSS, it acts as a tag for the template literal. The template literal is passed as an argument to the css function without the need for explicit parentheses.
+
+A tagged template literal function is a feature in JavaScript that allows you to customize the behavior of template literals by prefixing them with a function name. It provides a way to process template literals in a specialized manner, enabling you to perform custom logic or transformations on the template literal's contents.
 
 
