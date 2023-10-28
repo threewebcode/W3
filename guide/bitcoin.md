@@ -24,4 +24,33 @@ Sequence numbers were meant to allow multiple signers to agree to update a trans
 
 **Wallet**
 
+Three necessary, but separable, parts of a wallet system: a public key distribution program, a signing program, and a networked program. The simplest wallet is a program which performs all three functions: it generates private keys, derives the corresponding public keys, helps distribute those public keys as necessary, monitors for outputs spent to those public keys, creates and signs transactions spending those outputs, and broadcasts the signed transactions. To increase security, private keys can be generated and stored by a separate wallet program operating in a more secure environment. These signing-only wallets work in conjunction with a networked wallet which interacts with the peer-to-peer network.
+
+### Inheritance
+
+Bitcoin Cash: Bitcoin Cash is a fork of Bitcoin that was created in 2017. It was created to address some of the scalability issues of Bitcoin by increasing the block size limit from 1 MB to 8 MB.
+
+Bitcoin SV: Bitcoin SV is a fork of Bitcoin Cash that was created in 2018. It was created to restore the original vision of Bitcoin as outlined in the Bitcoin whitepaper.
+
+### Advancement
+
+Lightning Network: The Lightning Network is a layer 2 scaling solution for Bitcoin that allows for faster and cheaper transactions. It works by creating payment channels between users, which can be used to send and receive Bitcoin without having to wait for confirmations on the blockchain.
+
+Segregated Witness: Segregated Witness, or SegWit, is a soft fork that was activated in 2017. It separates the digital signature from the transaction data, which allows for more transactions to be included in each block and reduces transaction fees.
+
+Taproot: Taproot is a proposed soft fork that is currently being developed. It aims to improve privacy and scalability by allowing for more complex smart contracts to be executed off-chain.
+
+### Scaling
+
+
+Lightning Network: Lightning Network is a layer 2 scaling solution for Bitcoin that allows for faster and cheaper transactions. It works by creating payment channels between users, which can be used to send and receive Bitcoin without having to wait for confirmations on the blockchain. Binance, the largest exchange in the world, has already integrated Lightning Network for BTC withdrawals and deposits.
+
+Rootstock: Rootstock is a smart contract platform that is built on top of the Bitcoin blockchain. It allows for the creation of decentralized applications (DApps) and smart contracts, which can be executed off-chain to improve scalability.
+
+Stacks: Stacks is a layer 2 scaling solution that allows for the creation of smart contracts on the Bitcoin blockchain. It uses a unique consensus mechanism called Proof of Transfer (PoX) to secure the network and enable cross-chain interoperability.
+
+Liquid Network: Liquid Network is a sidechain that is built on top of the Bitcoin blockchain. It allows for faster and more confidential transactions between exchanges and other large Bitcoin holders.
+
+Rollups: Rollups are a type of layer 2 scaling solution that bundle multiple transactions together and process them off-chain. There are two types of rollups: validity rollups and optimistic rollups. Validity rollups are more secure but require more on-chain data, while optimistic rollups are less secure but require less on-chain data.
+
 
