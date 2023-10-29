@@ -42,7 +42,6 @@ Taproot: Taproot is a proposed soft fork that is currently being developed. It a
 
 ### Scaling
 
-
 Lightning Network: Lightning Network is a layer 2 scaling solution for Bitcoin that allows for faster and cheaper transactions. It works by creating payment channels between users, which can be used to send and receive Bitcoin without having to wait for confirmations on the blockchain. Binance, the largest exchange in the world, has already integrated Lightning Network for BTC withdrawals and deposits.
 
 Rootstock: Rootstock is a smart contract platform that is built on top of the Bitcoin blockchain. It allows for the creation of decentralized applications (DApps) and smart contracts, which can be executed off-chain to improve scalability.
