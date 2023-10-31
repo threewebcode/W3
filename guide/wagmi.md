@@ -41,4 +41,22 @@ Here's how it works:
 21. It stores the shimDisconnectKey in storage if the shimDisconnect property is enabled.
 22. Finally, it returns an object with the connected account, chain information, and provider.
 
+**WalletConnect Connector**
+
+The WalletConnectConnector connector is used for integrating with the WalletConnect protocol, which allows users to connect their wallets to decentralized applications (dApps) using a QR code scanning process.
+
+Here are the technical principles of the connector:
+
+1. The connector imports necessary dependencies such as the WalletConnectProvider, EthereumProviderOptions, and various utility functions.
+2. It defines the types and options required for configuring the connector.
+3. The connector class extends a base class called "Connector" and implements the necessary methods and properties.
+4. The connector has an ID ("walletConnect") and a name ("WalletConnect").
+5. The connector is always ready for use.
+6. The connector creates an instance of the WalletConnectProvider and initializes it with the provided options.
+7. The connector provides methods for connecting and disconnecting from the wallet.
+8. The connector can retrieve the connected account and chain ID.
+9. The connector can switch to a different chain if supported by the wallet and requested chain is approved.
+10. The connector handles events such as account changes, chain changes, disconnections, and display of QR code URI.
+11. The connector emits events to notify the application about changes and messages from the wallet.
+
 
