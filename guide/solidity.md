@@ -148,4 +148,71 @@ Here's a comprehensive explanation of value transfer during contract function ca
 6. Gas Considerations: When transferring value along with a function call, additional gas is required to cover the cost of the value transfer. Ensure that sufficient gas is provided in the transaction to avoid out-of-gas errors.
 
 
+## Contract Composition
+
+The structure and composition of a Solidity contract follow a specific format. Here's an overview of the contract structure and its composition in Solidity:
+
+1. Contract Declaration:
+   A contract is declared using the `contract` keyword, followed by the contract name. For example:
+   ````solidity
+   contract MyContract {
+       // Contract code goes here
+   }
+   ```
+
+2. State Variables:
+   State variables are declared within the contract body and represent the contract's persistent state. They can have various data types, including elementary types (e.g., uint, bool), complex types (e.g., struct, enum), or user-defined types. State variables can be accessed and modified by the contract functions and can have visibility modifiers such as `public`, `private`, `internal`, or `external`.
+
+3. Constructor:
+   The constructor is a special function declared with the same name as the contract. It is executed once during contract deployment and is used to initialize the contract's state variables. The constructor can have parameters and modifiers. For example:
+   ````solidity
+   constructor(uint initialAmount) {
+       // Constructor code goes here
+   }
+   ```
+
+4. Functions:
+   Functions in Solidity define the behavior and capabilities of the contract. They can be declared with various visibility modifiers (`public`, `private`, `internal`, `external`) to control access. Functions can have parameters, return values, and can modify the state of the contract. For example:
+   ````solidity
+   function doSomething(uint value) public returns (bool) {
+       // Function code goes here
+   }
+   ```
+
+5. Events:
+   Events are used to emit information from the contract that can be captured by external applications. They are declared using the `event` keyword and can define parameters to provide additional data in the emitted event. Events are typically used to notify external systems about specific occurrences within the contract. For example:
+   ````solidity
+   event MyEvent(address indexed sender, uint value);
+
+   function doSomething() public {
+       // Emit the event
+       emit MyEvent(msg.sender, 123);
+   }
+   ```
+
+6. Modifiers:
+   Modifiers are reusable code snippets that can be applied to functions to modify their behavior. They provide a way to add preconditions or postconditions to function execution. Modifiers are declared using the `modifier` keyword and can be applied to functions using the `modifierName` syntax. For example:
+   ````solidity
+   modifier onlyOwner() {
+       require(msg.sender == owner, "Only owner can call this function");
+       _;
+   }
+
+   function changeOwner(address newOwner) public onlyOwner {
+       owner = newOwner;
+   }
+   ```
+
+7. Inheritance:
+   Solidity supports contract inheritance, allowing contracts to inherit properties and functions from other contracts. Inheritance is declared using the `is` keyword, and multiple inheritance is possible. Contracts can inherit from both abstract and concrete contracts. For example:
+   ````solidity
+   contract BaseContract {
+       // Base contract code
+   }
+
+   contract DerivedContract is BaseContract {
+       // Derived contract code
+   }
+   ```
+
 
