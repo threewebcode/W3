@@ -52,4 +52,12 @@ Liquid Network: Liquid Network is a sidechain that is built on top of the Bitcoi
 
 Rollups: Rollups are a type of layer 2 scaling solution that bundle multiple transactions together and process them off-chain. There are two types of rollups: validity rollups and optimistic rollups. Validity rollups are more secure but require more on-chain data, while optimistic rollups are less secure but require less on-chain data.
 
+### Scripting
+
+The scripting language is made up of a set of 186 opcodes which each conduct operations on the processing stack. Any node that wishes to process transactions on the Bitcoin network must ensure that their node client implementation is processing each of the opcodes in a way that exactly matches the outcomes expected by every other node on the network at that time, including whether or not those opcodes are enabled or not.
+
+All data items in Bitcoin Script are a byte sequence. Some operations interpret their parameters as numeric or boolean values and require the item to fulfil the specifications of those types. Some operations produce items on the stack which are valid numeric or boolean values.
+
+The complete script consists of two sections, the unlocking script (scriptSig) and the locking script (scriptPubKey). The locking script is from the transaction output that is being spent, while the unlocking script is included in the transaction input that is spending the output.
+
 
