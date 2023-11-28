@@ -11,3 +11,8 @@
 9. https://github.com/hironate/token-airdrop-contract/blob/master/contracts/Airdrop.sol
 10. https://github.com/iosiro/airdropper/blob/master/contracts/Airdropper.sol
 11. https://github.com/petr-hejda/solidity-merkle-airdrop/blob/master/contracts/MyToken.sol
+
+
+# Gaming Contract
+
+1. https://github.com/HelheimLabs/autochessia
