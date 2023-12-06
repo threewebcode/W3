@@ -16,6 +16,9 @@
 # Gaming Contract
 
 1. https://github.com/HelheimLabs/autochessia
+2. https://github.com/BraianVaylet/buildspace-epic-game-ui
+3. https://github.com/proyecto26/thecryptopurge
+4. https://github.com/eneax/nft-game
 
 # Raffle Contract
 
