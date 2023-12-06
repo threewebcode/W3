@@ -16,3 +16,7 @@
 # Gaming Contract
 
 1. https://github.com/HelheimLabs/autochessia
+
+# Raffle Contract
+
+1. https://github.com/InfiniteAengus/nft-raffle-contract
