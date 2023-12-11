@@ -21,6 +21,9 @@
 4. https://github.com/proyecto26/thecryptopurge
 5. https://github.com/eneax/nft-game
 6. https://github.com/emre-cil/elevenhero.games
+7. https://github.com/changjiashuai/nft-game-project
+8. https://github.com/Ruchi016/nft_card_game
+9. https://github.com/paulobordignon/epic-game
 
 # Raffle Contract
 
