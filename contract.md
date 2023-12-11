@@ -24,6 +24,8 @@
 7. https://github.com/changjiashuai/nft-game-project
 8. https://github.com/Ruchi016/nft_card_game
 9. https://github.com/paulobordignon/epic-game
+10. https://github.com/mickey951112/nftcardgame
+11. https://github.com/Wtheodoro/NFT-card-game
 
 # Raffle Contract
 
