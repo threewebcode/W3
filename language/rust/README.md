@@ -16,4 +16,10 @@ An item is a component of a crate. Items are organized by a nested set of module
 
 A module without a body is loaded from an external file. The path attribute can influence the directories and files for loading the external file module. A use declaration is used to shorten the path required to refer to a module item. The use declaration is private to the containing module. A function consists of a block,along with a name, a set of parameters and an output type. A type alias defines a new name for existing type. 
 
+A trait describes an abstract interfaces that the type implements. The interface consists of associated items. The associated items cann be constant, types and functions. All traits have an implicit type which refers to the concrete type which implements that trait. The associated type must never define the type, the type may only be specified in the implementation.
+
+Inherent implementation can contain associated functions and constants, but can not include the type alias. A type can have multiple inherent implementations. The inherent implementation must be defined in the same crate as the original type.
+
+The implementation may contain the outer attributes and inner attributes. The non exhaustive attribute indicates that a type may have more fields or variants added in the future.
+
 
