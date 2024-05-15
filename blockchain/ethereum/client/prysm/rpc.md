@@ -21,4 +21,9 @@ The code snippet of block write operation as below:
 
 The `PublishBlock` acts as the main handler for the POST http request. The main procedures of `PublishBlock` method can be summaried as below:
 
+1. determine the request type. If it is ssz version, go through the ssz handler function.
+2. read the request body and unmarshall it to beacon block type.
+3. validate and broadcast the block to p2p network.
+4. process the block at the local node.
+
 
