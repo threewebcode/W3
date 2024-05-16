@@ -26,4 +26,12 @@ The `PublishBlock` acts as the main handler for the POST http request. The main 
 3. validate and broadcast the block to p2p network.
 4. process the block at the local node.
 
+This server side's API is consumed by the validator client. It is invoked in the body of method `ProposeBlock` from the validator instance.
+
+The main steps in the `ProposeBlock` method:
+
+1. get the beacon block by the conditions of slot, randao and graffiti.
+2. sign the block.
+3. call ProposeBeaconBlock method to send the beacon block.
+
 
