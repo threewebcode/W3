@@ -22,4 +22,8 @@ Inherent implementation can contain associated functions and constants, but can 
 
 The implementation may contain the outer attributes and inner attributes. The non exhaustive attribute indicates that a type may have more fields or variants added in the future.
 
+Rust deals with the low-level details of memory management, data representation, and concurrency. Cargo is the build system and package manager. By default, the variable is immutable. Every value is of a certain data type.
+
+A scalar type represents a single value. An integer is a number without fractional component. Compound types can group multiple values into one type. A tuple is a generic way of grouping together a number of types into one component type. 
+
 
