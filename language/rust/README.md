@@ -40,4 +40,6 @@ A pointer is a general concept for a variable that contains an address in memory
 
 Boxes allow you to store the data on the heap rather than on the stack. Implementing the Deref trait allows you to customize the behavior of deference operator. The body of the drop function is where you would place any logic that you want to run when an instance of your type goes out of the scope. The reference counting type keeps track of the number of reference to a value to determine whether or not the value is still in use. 
 
+The rust program uses one system thread per language thread. The closure function is passed when creating a new thread. A channel is a general programing concept by which the data is passed from one thread to another. A channel has two halves: a transmitter and a receiver. 
+
 
