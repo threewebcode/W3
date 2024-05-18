@@ -34,4 +34,6 @@ When the code organization should be considered, the path, module, crate and pac
 
 The generic function can reduce duplicate codes. The generics data type can be used in the function definition, struct definition, enumeration definition, method definition. The trait is introduced to define the shared behaviors. The trait can be implemented on a type. The trait can be used as the input parameters. Multiple traits can be added together. 
 
+The where clause can specify the trait boundary for each generics. The type constraint is more clearer when using the where clause. The main aim of life time is to prevent danling reference. It ensures that the reference is still existed when it is consumed in the another place.
+
 
