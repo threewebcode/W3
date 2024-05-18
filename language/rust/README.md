@@ -32,4 +32,6 @@ Patterns can be made up of literal values, variable names, wildcard, and many ot
 
 When the code organization should be considered, the path, module, crate and package should be adopted and applied. The codes are break down into small units and grouped together. The vector, string and hash map are the collection data structures from standard libraries. The revoverable errors are handled by the Result enum type. There are two instances of Result types. The Success is used in the positive situation while the Error type is used in the wrong situation.
 
+The generic function can reduce duplicate codes. The generics data type can be used in the function definition, struct definition, enumeration definition, method definition. The trait is introduced to define the shared behaviors. The trait can be implemented on a type. The trait can be used as the input parameters. Multiple traits can be added together. 
+
 
