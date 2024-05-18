@@ -26,4 +26,10 @@ Rust deals with the low-level details of memory management, data representation,
 
 A scalar type represents a single value. An integer is a number without fractional component. Compound types can group multiple values into one type. A tuple is a generic way of grouping together a number of types into one component type. 
 
+The statments are the instructions that perform actions and do not return a value. The expressions are evaludated to a result value. Ownership is a set of rules that govern how a program manages memory. Memory is managed through a system of ownership with a set of rules that the compiler checks. 
+
+Patterns can be made up of literal values, variable names, wildcard, and many other things. The values can be wrapped in the body of enumeration items. The match clause examines each enum type and pass the values to the matched branch. 
+
+When the code organization should be considered, the path, module, crate and package should be adopted and applied. The codes are break down into small units and grouped together. The vector, string and hash map are the collection data structures from standard libraries. The revoverable errors are handled by the Result enum type. There are two instances of Result types. The Success is used in the positive situation while the Error type is used in the wrong situation.
+
 
