@@ -36,4 +36,6 @@ The generic function can reduce duplicate codes. The generics data type can be u
 
 The where clause can specify the trait boundary for each generics. The type constraint is more clearer when using the where clause. The main aim of life time is to prevent danling reference. It ensures that the reference is still existed when it is consumed in the another place.
 
+A pointer is a general concept for a variable that contains an address in memory. The most common kind of pointer is a reference. Smart pointers are data structures that act like a pointer, but also have additional metadata and capabilities. Smart pointers are usually implemented using structs. The smart pointer pattern is a general design pattern. 
+
 
