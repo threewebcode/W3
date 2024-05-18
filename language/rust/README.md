@@ -38,4 +38,6 @@ The where clause can specify the trait boundary for each generics. The type cons
 
 A pointer is a general concept for a variable that contains an address in memory. The most common kind of pointer is a reference. Smart pointers are data structures that act like a pointer, but also have additional metadata and capabilities. Smart pointers are usually implemented using structs. The smart pointer pattern is a general design pattern. 
 
+Boxes allow you to store the data on the heap rather than on the stack. Implementing the Deref trait allows you to customize the behavior of deference operator. The body of the drop function is where you would place any logic that you want to run when an instance of your type goes out of the scope. The reference counting type keeps track of the number of reference to a value to determine whether or not the value is still in use. 
+
 
