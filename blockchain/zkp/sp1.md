@@ -12,4 +12,8 @@ All items are exposed in the module file. It includes the items from module decl
 
 The runtime is responsible for executing a user program and tracing important events which occure during execution. The user program usually read the values from the memory and register, perform some computations and write back into the storage. The trace of user program execution can include two facets: cpu operation and memory operatrion. The cpu operation is driven by the operation codes. When the operation code is executed, the corresponding events are emitted and recorded as trace input. The state happens in the memory and they are also recorded as the execution trace.
 
+The instruction is the abstraction over the operation codes. It can represent generic operation code. The instruction is equal to the operation code. The input and output stands for data operation which reads data from a device or writes data into a device.
+
+The memory is a hardware device which provides the data container for the upper layer. The software implementation can act as the same emulation as the low level hardware. The operation codes are specific definitions instead of generic definitions because they are used only in the cases of zero knowledge proof. The virtual machine is domaim specific virtual machine. The zero knowledge programs are run in the virtual machine.
+
 
