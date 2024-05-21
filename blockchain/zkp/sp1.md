@@ -16,4 +16,10 @@ The instruction is the abstraction over the operation codes. It can represent ge
 
 The memory is a hardware device which provides the data container for the upper layer. The software implementation can act as the same emulation as the low level hardware. The operation codes are specific definitions instead of generic definitions because they are used only in the cases of zero knowledge proof. The virtual machine is domaim specific virtual machine. The zero knowledge programs are run in the virtual machine.
 
+A program should encompass the instructions for computation and state transfer, possess the program counter for the base addresss and start address, and own the memory space for variables. A record of the execution of program contains event data for everything that happened during the execution period.
+
+The register is a storage slot that comes from the hardware layer. The state is used to describe the status of a program in the different time spots. The system call is an enumeration type which depicts the limited number of system call operation codes. The system call is offered as the precompile function. The sysyem call operation code has one-to-one relationship with the precompile function. 
+
+There are various operation functions around the program verification. Some of these operations are particular for the field element. Field mathematics is used to do the cryptographic computations. 
+
 
