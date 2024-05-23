@@ -6,4 +6,6 @@ All of the mathematic problem can be solved in the function. The cubic operation
 
 The commands are offered through the main entry function. The instruction set is appended with cryptographic instructions. The cryptographic instructions are also operation codes of mathematic algorithms on the finite field.
 
+The field structure is particular data structure created by the Jolt team. The commitment scheme is also a special data structure. The byte code, instruction, memory, rank one constraint system are verified by the virtual machine. The memory can be read and written by the program. 
+
 
