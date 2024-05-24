@@ -4,4 +4,6 @@ The macro rules are a functional macro embedded in the rust compiler. The power 
 
 The macro has different aspects such as creation, styles and invocation. The macro has name and code block. There is annonymous function or closure function inside the block body. The input parameters of macro process function are special and language segment orientation. The syntax and type are captured and operated by the macro function.
 
+The type and regular expression is used to parse and analyze the input arguments. The different pieces are splitted and manipulated to new form. The process from the operation syatem is implemented by the command structure in the rust language.
+
 
