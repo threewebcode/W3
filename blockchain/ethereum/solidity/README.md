@@ -12,4 +12,6 @@ The visitor is accepted by the node and the node acts as the input parameter of 
 
 The enumeration type is used to describe the experimental features. The constructor function is harnessed to control the behaviors of the class's instances. The different types are defined and their fields and behaviors are described. 
 
+Each type has its member list and storage information. The application binary interface can be generated from the contract definition. The input is a json file and the output is also a json file. The work of compilation is just to do the transformation. All of language items in the source file are parsed and recognized, converted into the representation of the object.
+
 
