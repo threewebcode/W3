@@ -10,4 +10,6 @@ The source unit has the source file name and path. It has node list as well as l
 
 The visitor is accepted by the node and the node acts as the input parameter of visit method. The visit method will transform the syntax node to other format. 
 
+The enumeration type is used to describe the experimental features. The constructor function is harnessed to control the behaviors of the class's instances. The different types are defined and their fields and behaviors are described. 
+
 
