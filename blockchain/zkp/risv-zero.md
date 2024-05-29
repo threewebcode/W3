@@ -12,4 +12,6 @@ The source code items are included in the file and they are scoped according to 
 
 Heterogeneous architecture layer is supported and central process unit, univeral device architecture are adopted as well as the metal machine. These are related to hardware side and its implementations. The emunator is written in the software to simulate the hardware interfaces. 
 
+The zk virtual machine emulates a small risc-v computer, allowing it to run any arbitrary codes in any language. The program is represented by a method. During the execution of method, the guest and host inside the virtual machine can communicate with each other.
+
 
