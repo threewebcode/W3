@@ -24,4 +24,6 @@ The data like struct, list and iterator can tagged which means that the tag stri
 
 The polynomial arithemetics, bit operation, digest mathematics are included in the zero knowledge protocol. Thedigest hash function has several implementation and algorithm. The zkp directory is all about the protocol level. The bottom layer under the protocol is the circuit implementation. 
 
+The system call is described by the rust language and linked with c library code, passed to kernel through c functions. 
+
 
