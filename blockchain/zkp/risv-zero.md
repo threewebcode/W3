@@ -14,4 +14,6 @@ Heterogeneous architecture layer is supported and central process unit, univeral
 
 The zk virtual machine emulates a small risc-v computer, allowing it to run any arbitrary codes in any language. The program is represented by a method. During the execution of method, the guest and host inside the virtual machine can communicate with each other.
 
+The command line application is created and each command is represented as one instance of enumeration types.The concrete command class is wrapped as the value inside the enumeration type. When the enumeration is matched, the instance of concrete command is excuted in the corresponding branch. 
+
 
