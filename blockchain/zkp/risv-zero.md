@@ -16,4 +16,8 @@ The zk virtual machine emulates a small risc-v computer, allowing it to run any 
 
 The command line application is created and each command is represented as one instance of enumeration types.The concrete command class is wrapped as the value inside the enumeration type. When the enumeration is matched, the instance of concrete command is excuted in the corresponding branch. 
 
+The struct type can have no field in the rust language. The environment and execution program is needed when calling the prove method of the host server. The proof receipt is received as the resutl. The receipt is equal to the proof. The zk virtual machine and method are involved in this process.
+
+The different functions are used to compute the control id. If the program is recusive program, the control id is calculated in the manner of merkle proof. The program is in the format of elf form and the program image id is produced on the basis of program elf data. The program data structure in the rust language is created to represent and describe the elf program. When the elf program is read and loaded, its data can be parsed and used to manufacture the program object.
+
 
