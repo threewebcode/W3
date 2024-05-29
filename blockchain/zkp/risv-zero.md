@@ -20,4 +20,8 @@ The struct type can have no field in the rust language. The environment and exec
 
 The different functions are used to compute the control id. If the program is recusive program, the control id is calculated in the manner of merkle proof. The program is in the format of elf form and the program image id is produced on the basis of program elf data. The program data structure in the rust language is created to represent and describe the elf program. When the elf program is read and loaded, its data can be parsed and used to manufacture the program object.
 
+The data like struct, list and iterator can tagged which means that the tag string is hashed and added into the whole data. As a result, the data types can be verified. The build arguments and options are different for different languages and platforms. 
+
+The polynomial arithemetics, bit operation, digest mathematics are included in the zero knowledge protocol. Thedigest hash function has several implementation and algorithm. The zkp directory is all about the protocol level. The bottom layer under the protocol is the circuit implementation. 
+
 
