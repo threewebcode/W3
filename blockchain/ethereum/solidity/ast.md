@@ -12,6 +12,6 @@ The scanner is acted as the token lookup. The token is scanned and recorded. The
 
 The token has name, string value and precedence. The token may be keyword type token or normal type token. All of them are sketched as enumeration type. The token is divided into different sections. Each token has a integer value. The range of tokens can be found by comparing their number value. 
 
-The symbol is loaded by the name with the help of loader. The various algorithms are adopted to perform the rules and relationship checks on the variables and statements. 
+The symbol is loaded by the name with the help of loader. The various algorithms are adopted to perform the rules and relationship checks on the variables and statements. The class has the public and private sections of scoped declarations. The statement algorithms are used to execute the assertions on the variables and statements.
 
 
