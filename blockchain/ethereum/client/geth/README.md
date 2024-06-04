@@ -43,3 +43,18 @@ Ethereum execution client in Go language
             - set up scheduler and block synchronizer
             - instantiate `Client` object
 3. beacon block synchronization 
+    - file name: `block_sync.go`
+    - file content
+        - declare beacon block synchronizer struct type
+        - struct fields
+            - recent blocks
+            - map locks for beacon api server
+            - sever heads
+            - head tracker
+            - last head information
+            - chain head event feed
+        - functionality
+            - process the event
+            - update event feed
+            - request the block
+            - update the head
