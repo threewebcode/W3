@@ -58,3 +58,15 @@ Ethereum execution client in Go language
             - update event feed
             - request the block
             - update the head
+4. engine client
+    - file name: `engineclient.go`
+    - file content
+        - define engine client struct type with its fields
+        - start and stop the engine client
+        - golang loop routine
+            - context done channel
+            - block head event channel
+                - call new payload
+                - call fork choice update
+
+### xxx
