@@ -2,6 +2,10 @@
 
 Ethereum execution client in Go language
 
+## Startup
+
+The ethereum node is launched by the command `geth`. The story of `geth` command is analyzed [here](startup.md)
+
 ## Beacon
 
 ### Block Synchronization
