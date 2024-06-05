@@ -39,3 +39,62 @@
 
 6. Call Message
     - from address
+    - to address
+    - gas
+    - gas price
+    - value
+    - data
+    - access list
+    - blob gas fee
+    - blob hashes
+
+7. Contract Caller
+    - call contract
+        - context
+        - call message
+        - block number
+
+8. FilterQuery
+    - block hash
+    - from block
+    - to block
+    - address list
+    - topic list
+
+9. LogFilter
+    - filter logs
+        - context
+        - filter query
+    - subscribe filter log
+        - context
+        - filter query
+        - log channel
+
+10. Transaction Sender
+    - send transaction
+        - context
+        - transaction
+
+11. Gas Pricer
+    - suggest gas price
+        - context
+
+12. Fee History Reader
+    - fee history
+        - oldest block
+        - reward
+        - base fee
+        - gas used ratio
+
+13. Pending State Reader
+    - pending balance at address
+    - pending storage at key and address
+    - pendinf code at address
+    - pending nonce at address
+    - pending transaction count
+
+14. Gas Estimator
+
+15. Block Number Reader
+
+16. Chain ID Reader
