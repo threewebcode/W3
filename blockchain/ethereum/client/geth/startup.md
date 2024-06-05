@@ -29,4 +29,36 @@
         - wait for node's shutdown
 
 2. node class
-
+    - file location: `node/node.go`
+    - main content
+        - definition of `Node` structure
+            - configuration
+            - account manager
+            - log
+            - key directory
+            - directory lock
+            - termination notification channel
+            - p2p network server and layer
+            - mutual exclude lock
+            - lifecycle services
+            - rpc api list
+            - http, ws, ipc server
+        - factory function
+            - function name: `New`
+            - check data directory
+            - make a new rpc server instance
+            - make a new node instance
+            - collect all apis
+            - open data directory
+            - assign the key directory
+            - assign node key
+            - assign node name
+            - create http servers
+        - start method
+            - method name: `Start`
+            - method body
+                - lock the entrancy
+                - assign node running state
+                - start p2p and rcp endpoints
+                - start lifecycle services
+                - exit when errors happen
