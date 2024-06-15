@@ -8,4 +8,6 @@ The synchronization mode is detected by trying method. If the snapshot mode is l
 
 The essence of synchronization is to obtain the forward or backward data from remote peers and catch up with peers. The synchronization is delegated to handler and finished by the downloader. The handler is a big object which is shared by different components. The raw data type of synchronization mode is integer and its string format is seen when it is necessary. 
 
-The three import objects are downloader, skeleton and state synchronizer.
+The three import objects are downloader, skeleton and state synchronizer. When the state root is provided, the state synchronization can begin. The task and status are written into the specific channels. The state fetcher reads the state synchronization task from the channel and starts to do its work. The snapshot synchronizer is used to synchronize the state root. 
+
+
