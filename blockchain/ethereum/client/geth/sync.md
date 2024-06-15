@@ -10,4 +10,4 @@ The essence of synchronization is to obtain the forward or backward data from re
 
 The three import objects are downloader, skeleton and state synchronizer. When the state root is provided, the state synchronization can begin. The task and status are written into the specific channels. The state fetcher reads the state synchronization task from the channel and starts to do its work. The snapshot synchronizer is used to synchronize the state root. 
 
-
+Regarding to the synchronization, three aspects need to be considered. They are synchronization algorithm, best peer selection and state coordination. 
