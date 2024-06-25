@@ -8,4 +8,6 @@ The final step is `main_loop` function. There is a function which can detect tha
 
 The environment variable is another import aspect which can affect the behaviors of the vim editor. The statement is selected on the basis of conditional variable's value. 
 
+The `vim.h` header file contains almost everything about the vim editor. The keyboard is used to replace the mouse. All features and capabilities of mouse are depicted by the constant variables. The variables of vim is prefixed by double v characters. 
+
 
