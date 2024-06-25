@@ -10,4 +10,6 @@ The environment variable is another import aspect which can affect the behaviors
 
 The `vim.h` header file contains almost everything about the vim editor. The keyboard is used to replace the mouse. All features and capabilities of mouse are depicted by the constant variables. The variables of vim is prefixed by double v characters. 
 
+There are different modes of each action. The characters can be used to do the search and position the cursor. The special characters are used to denote the text block. When the character is typed, it undoes or redoes previous typing. 
+
 
