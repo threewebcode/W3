@@ -10,4 +10,8 @@ The essence of synchronization is to obtain the forward or backward data from re
 
 The three import objects are downloader, skeleton and state synchronizer. When the state root is provided, the state synchronization can begin. The task and status are written into the specific channels. The state fetcher reads the state synchronization task from the channel and starts to do its work. The snapshot synchronizer is used to synchronize the state root. 
 
-Regarding to the synchronization, three aspects need to be considered. They are synchronization algorithm, best peer selection and state coordination. 
+Regarding to the synchronization, three aspects need to be considered. They are synchronization algorithm, best peer selection and state coordination. The block and state are synchronized from the remote peers. The block and state are categoried into full synchronization types and snapshot synchronization types. The block and state date are fetched in the range and batch manner. The most important parts of state are the account and smart contracts.
+
+When the accounts and storage slots are downloaded from the remote peer, the state trie can be reconstructed withe provided data. All of error scenarios are predicted and handled. The heal processor is used to cope with the unexpected situation. The synchronizer will assign the account, bytecode and storage tasks to idle peers. The seperate routine is used to handle the received data. The snapshot protocol is composed of data types and interfaces. 
+
+
