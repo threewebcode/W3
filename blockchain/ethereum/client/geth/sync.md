@@ -12,6 +12,8 @@ The three import objects are downloader, skeleton and state synchronizer. When t
 
 Regarding to the synchronization, three aspects need to be considered. They are synchronization algorithm, best peer selection and state coordination. The block and state are synchronized from the remote peers. The block and state are categoried into full synchronization types and snapshot synchronization types. The block and state date are fetched in the range and batch manner. The most important parts of state are the account and smart contracts.
 
-When the accounts and storage slots are downloaded from the remote peer, the state trie can be reconstructed withe provided data. All of error scenarios are predicted and handled. The heal processor is used to cope with the unexpected situation. The synchronizer will assign the account, bytecode and storage tasks to idle peers. The seperate routine is used to handle the received data. The snapshot protocol is composed of data types and interfaces. 
+When the accounts and storage slots are downloaded from the remote peer, the state trie can be reconstructed withe provided data. All of error scenarios are predicted and handled. The heal processor is used to cope with the unexpected situation. The synchronizer will assign the account, bytecode and storage tasks to idle peers. The seperate routine is used to handle the received data. 
+
+The snapshot protocol is composed of data types and interfaces. The interfaces are the contracts and constraints. The data types are the input and output data. When the response is returned from the remote peer, the peer information and data packet are known. The snapshot protocol follows the p2p protocol. The lifecycle of peer methods are handled by the handle processor. The message type is recognized by the code property of the message. The dispatcher is sending the request and processing the response. 
 
 
