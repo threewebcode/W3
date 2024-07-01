@@ -8,4 +8,3 @@ The modules are nested and have the relative position and reference relationship
 
 The environment and database are the context and dependent objects for the clarity virtual machine. The claritysmart contract are analyzed and stored into the database. The enironment is composed of global context, contract context, call stack, sender, caller and sponsor. When the transaction is executed, the result is returned with the inclusion of result, events and costs. 
 
-
