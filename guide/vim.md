@@ -16,4 +16,6 @@ Each event has a list of autocommands. The order of autocommands are important. 
 
 The autocommands can be managed by the command line and the command name is autocmd. The command executed in the command mode is prefixed with `do` word. The current file information can be obtained from the file command. 
 
+The column and row could be figured out when the cursor is known. The expression is evaluated and found the matched text around the cursor. The character is insert command. The different character means different insert commands. The insert command can be insert, replace and append. The edit command can happen in the visual mode. The first letter is `g` character. One function is used to support all kinds of edit modes. 
+
 
