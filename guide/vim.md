@@ -18,6 +18,6 @@ The autocommands can be managed by the command line and the command name is auto
 
 The column and row could be figured out when the cursor is known. The expression is evaluated and found the matched text around the cursor. The character is insert command. The different character means different insert commands. The insert command can be insert, replace and append. The edit command can happen in the visual mode. The first letter is `g` character. One function is used to support all kinds of edit modes. 
 
-The command could be completed when the command expansion is enabled. The function is composed of prefix `ex` plus command name. When the command name is typed, the command action function is executed. The smile command can print out the characters whick is like a smile picture. All of the commands can be found in the file named `ex_cmds.c`. 
+The command could be completed when the command expansion is enabled. The function is composed of prefix `ex` plus command name. When the command name is typed, the command action function is executed. The smile command can print out the characters whick is like a smile picture. All of the commands can be found in the file named `ex_cmds.c`. The commands are listed in the header file. The command name and codes are mapped. 
 
-
+The command line can be executed to change the content. It has the language capability. The control flow clauses can be used to orchestrate the commands. 
