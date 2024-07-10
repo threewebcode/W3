@@ -10,4 +10,8 @@ The dependent crates can be external and internal. The internal crates can be in
 
 The discovery is the network protocol built on the p2p network. The peers who join the network will be discovered and shared between the peers. The peer can find and connect with other peers through the discovery protocol. This protocol is implemented as the boot node. 
 
+The signature is produced by the message digest and private key. The signatures can be aggregated. Usually, there are two necessary parts around the crypto data: the original data and crypto proof. The presets comes from the format file. The yaml format is used here. The keyword struct and impl are used to depict one plain data type. The struct has its type name and member fields. The impl bounds the methods with the struct type. The actions are added on the struct type so that it has the behavior capability. 
+
+The unsigned 64 bits type denotes one integer type in Rust. The 64 bits stand for the value range. The committee is cached by the data object. If the first parameter is not the self word, it means that this method is static method. A complete set of operations are achieved by the function definition. The validator is allowed to exit the validation role. The exit cache is the data object which records this aspect. 
+
 
