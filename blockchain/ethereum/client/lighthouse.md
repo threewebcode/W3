@@ -14,4 +14,6 @@ The signature is produced by the message digest and private key. The signatures 
 
 The unsigned 64 bits type denotes one integer type in Rust. The 64 bits stand for the value range. The committee is cached by the data object. If the first parameter is not the self word, it means that this method is static method. A complete set of operations are achieved by the function definition. The validator is allowed to exit the validation role. The exit cache is the data object which records this aspect. 
 
+The beacon state is partial data of the whole beacon block. The genesis time and state are a special moment. The latter state has a previous state. The states are linked together. The balances are changed between each epoch. The statistics of progressive balances can be carried out for each epoch. The public key makes use of the map data container to store the public keys. 
+
 
