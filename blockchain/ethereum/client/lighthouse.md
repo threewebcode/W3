@@ -16,4 +16,8 @@ The unsigned 64 bits type denotes one integer type in Rust. The 64 bits stand fo
 
 The beacon state is partial data of the whole beacon block. The genesis time and state are a special moment. The latter state has a previous state. The states are linked together. The balances are changed between each epoch. The statistics of progressive balances can be carried out for each epoch. The public key makes use of the map data container to store the public keys. 
 
+The validator has the identity of validator index which is number type. The slasher cache tells us which validators are punished and its slot time. The hash set is suitable for this scene. The validator is activated in the epoch unit. The activation queue calculates the activation quantity of the validator in each epoch. The main data of the attestation is the block root hash as well as the slot and final checkpoints. 
+
+The attestation is composed of the attestation data, validator bit list and aggregated signature. The block body is full of certain fields. The payload of the block body is related to the upgrade name. The beacon block header consists of slot number, proposer index, parent root hash, state root hash and body root hash. 
+
 
