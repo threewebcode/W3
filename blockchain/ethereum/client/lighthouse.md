@@ -24,4 +24,6 @@ The committee is determined by the slot number, committee index and committee me
 
 The execution change is made up of the validator index, public key and account address. The account address is the receipt account of transaction fees and gases. The chain specification has the complete data sets of variable names and their values. The epoch and block root hash constitutes a checkpoint. The checkpoint is used to check the finality of block root hash at the specific point of epoch. In an epoch, there should be one valid block root hash which represents the finality of the blockchain ledger. 
 
+The rewards are mathematical calculation. The deposit is verified by the merkle tree. The deposit data are the leaf on the tree. The deposit data is organized by the merkle tree. The validators participating in the attestation can be calculated from the committee and attestation bit list. The attestation bit list indexes the validators who take part in the attesting activity. 
+
 
