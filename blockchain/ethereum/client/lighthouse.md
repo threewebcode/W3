@@ -20,4 +20,6 @@ The validator has the identity of validator index which is number type. The slas
 
 The attestation is composed of the attestation data, validator bit list and aggregated signature. The block body is full of certain fields. The payload of the block body is related to the upgrade name. The beacon block header consists of slot number, proposer index, parent root hash, state root hash and body root hash. 
 
+The committee is determined by the slot number, committee index and committee members. The validators are the members of the committee. The validator is identified by the its index number. There are fields in the definition of beacon state type. The binary large object is identified by the block hash and its location index. The binary large object is located inside of the blob sidecar. The blob sidecar has the blob index and actual blob data as well as its proof. 
+
 
