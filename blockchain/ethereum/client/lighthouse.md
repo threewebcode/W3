@@ -22,4 +22,6 @@ The attestation is composed of the attestation data, validator bit list and aggr
 
 The committee is determined by the slot number, committee index and committee members. The validators are the members of the committee. The validator is identified by the its index number. There are fields in the definition of beacon state type. The binary large object is identified by the block hash and its location index. The binary large object is located inside of the blob sidecar. The blob sidecar has the blob index and actual blob data as well as its proof. 
 
+The execution change is made up of the validator index, public key and account address. The account address is the receipt account of transaction fees and gases. The chain specification has the complete data sets of variable names and their values. The epoch and block root hash constitutes a checkpoint. The checkpoint is used to check the finality of block root hash at the specific point of epoch. In an epoch, there should be one valid block root hash which represents the finality of the blockchain ledger. 
+
 
