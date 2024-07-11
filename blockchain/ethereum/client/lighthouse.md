@@ -26,4 +26,6 @@ The execution change is made up of the validator index, public key and account a
 
 The rewards are mathematical calculation. The deposit is verified by the merkle tree. The deposit data are the leaf on the tree. The deposit data is organized by the merkle tree. The validators participating in the attestation can be calculated from the committee and attestation bit list. The attestation bit list indexes the validators who take part in the attesting activity. 
 
+The indexed attestation compasses the attestation data and validator indices who vote the attestation. Every validator has its balance in the beacon state. This balance can be increased or decreased according the reward and penalty. The epoch is the key and unit. The epoch-related data are stored in the cache. There are pre and post hook for block processing. The valid blocks are selected from the block list and replayed again the current state.
+
 
