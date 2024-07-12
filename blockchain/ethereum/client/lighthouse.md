@@ -30,4 +30,6 @@ The indexed attestation compasses the attestation data and validator indices who
 
 The command line application has several commands. Each command is one instance of command data type. Every command has the complete properties like name, description and arguments. The command collects the data from the command terminal. The execution of the command in the match clause. There is configuration object with many setting items. 
 
+If the validator is attesting the block honestly and correctly, his right behavior could be rewarded. The attestation reward is calculated at the last slot of next epoch. The attestation reward is computed for every validator with the help of the beacon state data. 
+
 
