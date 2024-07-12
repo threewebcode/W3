@@ -28,4 +28,6 @@ The rewards are mathematical calculation. The deposit is verified by the merkle 
 
 The indexed attestation compasses the attestation data and validator indices who vote the attestation. Every validator has its balance in the beacon state. This balance can be increased or decreased according the reward and penalty. The epoch is the key and unit. The epoch-related data are stored in the cache. There are pre and post hook for block processing. The valid blocks are selected from the block list and replayed again the current state.
 
+The command line application has several commands. Each command is one instance of command data type. Every command has the complete properties like name, description and arguments. The command collects the data from the command terminal. The execution of the command in the match clause. There is configuration object with many setting items. 
+
 
