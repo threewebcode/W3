@@ -36,4 +36,6 @@ The block hash is calculated according to the rules of execution layer. To compu
 
 The different hash algorithms may be used so that there may be some differences between the sides. The execution block is at the side of execution layer. The execution block is correlated with the beacon block. Both of them have the same data structure and synchronized with each other. The validator has to do staking to take part in the consensus process. The stating is equal to the deposit in the execution layer. The beacon node has ethereum package for this deposit aspect. 
 
+The deposit staking is the one kind of transaction in the execution layer. This kind of transactions are included in the block. The beacon node can fetch the execution block and get the deposit data from the deposit transactions in the block. 
+
 
