@@ -34,4 +34,6 @@ If the validator is attesting the block honestly and correctly, his right behavi
 
 The block hash is calculated according to the rules of execution layer. To compute the block hash, the parent block hash and payload body should be known. The data are encoded by the RLP protocol. The execution block has the enough details in the side of execution layer. More upgrades, more fields in the execution payload. The API capability is the state of boolean flags. 
 
+The different hash algorithms may be used so that there may be some differences between the sides. The execution block is at the side of execution layer. The execution block is correlated with the beacon block. Both of them have the same data structure and synchronized with each other. The validator has to do staking to take part in the consensus process. The stating is equal to the deposit in the execution layer. The beacon node has ethereum package for this deposit aspect. 
+
 
