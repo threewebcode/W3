@@ -32,4 +32,6 @@ The command line application has several commands. Each command is one instance 
 
 If the validator is attesting the block honestly and correctly, his right behavior could be rewarded. The attestation reward is calculated at the last slot of next epoch. The attestation reward is computed for every validator with the help of the beacon state data. 
 
+The block hash is calculated according to the rules of execution layer. To compute the block hash, the parent block hash and payload body should be known. The data are encoded by the RLP protocol. The execution block has the enough details in the side of execution layer. More upgrades, more fields in the execution payload. The API capability is the state of boolean flags. 
+
 
