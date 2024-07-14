@@ -38,4 +38,6 @@ The different hash algorithms may be used so that there may be some differences 
 
 The deposit staking is the one kind of transaction in the execution layer. This kind of transactions are included in the block. The beacon node can fetch the execution block and get the deposit data from the deposit transactions in the block. 
 
+The data are chunked pieces. The vector is used to represent the collection of chunked data. The chunked data should be iterated for each piece. The chunked data should be written and read. There are memory storage and file system storage. The level database is the formatted file system storage. The data of transaction, payload, block and world state are stored. The attestation, slash, reward, aggregation synchronization and execution change are main operations in the consensus layer. 
+
 
