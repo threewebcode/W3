@@ -8,4 +8,6 @@ The starknet state is a comprehensive snapshot maintained through the merkle tre
 
 The sequencer must be reliable and high available. The main task of the approver is to validate the work of the sequencers. After processing the transactions in the block, the prover generates a correct proof of transaction processing. The proof is sent to layer one network for validation in the final step. In contract to the sequencer, the prover operates asynchronously and can execute multiple tasks in parallel. 
 
+The node serves the auditors of the network, maintaining the state of the network. They maintain the network state by processing the transactions and preserving a record of all transactions. The node can replay all the transactions, trust the consensus of the sequencer nodes, and check the proof validation on the layer one network.
+
 
