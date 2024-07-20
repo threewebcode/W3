@@ -6,4 +6,6 @@ Cario is a programming language that can be used to write any kinds of software 
 
 The module is placed or nested in the one crate. The crate keyword can stand for the current crate where it is located. The crate can be used as module path to reference other modules. The mod keyword is just to declare the module. The module reference is done by the use keyword. 
 
+There are two types of macros in the Rust language. They are declarative macro and procedural macro. The declarative macro is defined by the `macro_rules` macro. There are basic and meta macros in the language, therefore custom macros can be created by these native macros in the language. 
+
 
