@@ -14,4 +14,6 @@ The function procedural macro has the same effect as the function created by the
 
 The parser is derive macro for the command line struct. The command line application is attribute macro which is applied to the command line structure type. The command line application attribute macro can be used on struct type, field level with different attribute field name. The enumeration type is derived by the attribute procedural macro and marked as the child commands. 
 
-The main function is annotated by the tokio procedural macro so that current main function can be executed in the asynchronous style.
+The main function is annotated by the tokio procedural macro so that current main function can be executed in the asynchronous style. The dependent module items are brought into current namespace by the use keyword. The constant variables are the first items defined in the first lines of the source code file. The visibility of the constant variables can be public or private.
+
+
