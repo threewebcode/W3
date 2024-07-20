@@ -18,4 +18,6 @@ The main function is annotated by the tokio procedural macro so that current mai
 
 They are two virtual machines acted as the execution engine. It is depicted as the enumeration type. The program can be executed in the virtual machine. The node structure is composed of several fields. The capability of the node structure can be inferred from its member number and their types. The node is able to receive block and transaction. It has storage and can execute program. 
 
+The implement keyword should be used to add instance methods to the node structure type. The method is formatted as method name plus parentheses plus the input parameter name, colon, type plus right arrow plus output type. The result type is enumeration type which has the success and error instance values. The smart contract is a program written by the specific languages. The interface can be called by the external users and the smart contract is executed by the virtual machine inside the blockchain network.
+
 
