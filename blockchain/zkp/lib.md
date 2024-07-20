@@ -16,4 +16,6 @@ The parser is derive macro for the command line struct. The command line applica
 
 The main function is annotated by the tokio procedural macro so that current main function can be executed in the asynchronous style. The dependent module items are brought into current namespace by the use keyword. The constant variables are the first items defined in the first lines of the source code file. The visibility of the constant variables can be public or private.
 
+They are two virtual machines acted as the execution engine. It is depicted as the enumeration type. The program can be executed in the virtual machine. The node structure is composed of several fields. The capability of the node structure can be inferred from its member number and their types. The node is able to receive block and transaction. It has storage and can execute program. 
+
 
