@@ -24,4 +24,4 @@ The command line can be executed to change the content. It has the language capa
 
 The keyboard event is captured and character is read. The function is invoked when the character is recognized. The content and screen is updated by the functions. The function has a related action name and keyboard character. The terminal and signal are used to capture the processing points. 
 
-The window and prompt is defined in the terminal library. The particular header files are needed for the window system. 
+The window and prompt is defined in the terminal library. The particular header files are needed for the window system. The command is read to process the current file. 
