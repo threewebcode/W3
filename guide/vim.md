@@ -28,4 +28,4 @@ The window and prompt is defined in the terminal library. The particular header 
 
 The vim editor has the power of checking spell. The define directive is used to define the constant items. The structure type is used to represent the suggestion collection. The function prototype and concrete implementation are declared. 
 
-The vim command arguments can affect the vim's behaviors during the startup period. When the file is loaded by the vim editor, the settings can be changed through the command line window. 
+The vim command arguments can affect the vim's behaviors during the startup period. When the file is loaded by the vim editor, the settings can be changed through the command line window. There are built-in commands and external commands. The window can also be spitted for different purpose. 
