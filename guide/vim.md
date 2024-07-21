@@ -24,4 +24,6 @@ The command line can be executed to change the content. It has the language capa
 
 The keyboard event is captured and character is read. The function is invoked when the character is recognized. The content and screen is updated by the functions. The function has a related action name and keyboard character. The terminal and signal are used to capture the processing points. 
 
-The window and prompt is defined in the terminal library. The particular header files are needed for the window system. The command is read to process the current file. 
+The window and prompt is defined in the terminal library. The particular header files are needed for the window system. The command is read to process the current file. The vim editor has block operation and script language. The command history can be used in the vim session. The command history can be listed by the history keyword. The command history can be scrolled by the key combination. 
+
+The vim editor has the power of checking spell. The define directive is used to define the constant items. The structure type is used to represent the suggestion collection. The function prototype and concrete implementation are declared. 
