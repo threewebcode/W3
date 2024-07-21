@@ -27,3 +27,5 @@ The keyboard event is captured and character is read. The function is invoked wh
 The window and prompt is defined in the terminal library. The particular header files are needed for the window system. The command is read to process the current file. The vim editor has block operation and script language. The command history can be used in the vim session. The command history can be listed by the history keyword. The command history can be scrolled by the key combination. 
 
 The vim editor has the power of checking spell. The define directive is used to define the constant items. The structure type is used to represent the suggestion collection. The function prototype and concrete implementation are declared. 
+
+The vim command arguments can affect the vim's behaviors during the startup period. When the file is loaded by the vim editor, the settings can be changed through the command line window. 
