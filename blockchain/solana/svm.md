@@ -8,4 +8,6 @@ The transactions are a collection of instructions for the blockchain to execute.
 
 The accounts on the solana network can store the state and executable programs. The executable program and program state are separated on the solana network. The transactions sent to the solana network are made up of instructions. These instructions are offered by the executable programs. The instruction tells how the account's state is updated.
 
+The cross program invocation context is needed when one program wants to invoke another program. There are native programs in the solana network. All of account data are included into account information data structure. The program can be the owner of the account. The account holds the state data. There is a full list of native programs. 
+
 
