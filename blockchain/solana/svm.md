@@ -10,4 +10,6 @@ The accounts on the solana network can store the state and executable programs. 
 
 The cross program invocation context is needed when one program wants to invoke another program. There are native programs in the solana network. All of account data are included into account information data structure. The program can be the owner of the account. The account holds the state data. There is a full list of native programs. 
 
+The transaction is an envelope with inside documents. The instructions of transaction should know the accounts and data. A few specific fee types on the solana network are transaction fee, priority fee and rent fee. The onchain storage space is rented for storing the programs and states. 
+
 
