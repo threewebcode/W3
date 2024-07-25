@@ -6,4 +6,6 @@ The debug procedural macro is applied to the structure type as the derive annota
 
 The transactions are a collection of instructions for the blockchain to execute. The account is leveraged for data and state storage. The program is the executable codes used to perform actions on the blockchain network. The program can be composed so that they can interact with each other. 
 
+The accounts on the solana network can store the state and executable programs. The executable program and program state are separated on the solana network. The transactions sent to the solana network are made up of instructions. These instructions are offered by the executable programs. The instruction tells how the account's state is updated.
+
 
