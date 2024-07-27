@@ -4,4 +4,6 @@ There are three parts: client, pallet and runtime. The runtime interface provide
 
 The macro function is the meta-programming style. The input parameter are the source items provided by the developers. The output will be the generated new codes. The codes can be generated dynamically and implanted into the placeholder during the compile time.
 
+The input parameter of the macro attribution function is the token stream. The token stream type can be coerced into the concrete types. The information of this concise type can be parsed. The current module can use other module's code items. The single quote is used to stand for the lifetime constraint for the reference. The root module organizes the modules and exposes the public items. 
+
 
