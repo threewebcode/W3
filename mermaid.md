@@ -99,3 +99,34 @@ flowchart LR
     G[(无效节点)] --> |退出| 区块链网络
     G[(无效节点)] --> |管控| 节点发现服务
 ```
+
+4. Verifiable Data
+
+```mermaid
+flowchart LR
+    
+    subgraph 区块链网络
+        A[(全节点)]
+        B[(全节点)]
+        A <-- P2P协议 --> B
+    end
+
+    subgraph 门户网络
+        direction TB
+        C(状态数据)
+        D(历史数据)
+        E(索引数据)
+        F(区块头数据)
+        G(交易数据)
+        J(服务接口)
+        C ~~~ D
+        E ~~~ F
+        G ~~~ J
+    end
+
+    门户网络 --> |同步| 区块链网络
+    H[(轻节点)] --> |同步| 区块链网络
+    I[验证数据] --> |请求| 门户网络 & H
+```
+
+
