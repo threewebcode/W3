@@ -37,5 +37,41 @@ flowchart LR
 
 2. Editable Blockchain
 
+```mermaid
+flowchart LR
+    subgraph 密码功能
+        direction TB
+        A[加密]
+        B[解密]
+        C[哈希]
+        D[签名]
+        E[验签]
+        A ~~~ B ~~~ C ~~~ D ~~~ E
+    end
 
+    subgraph 抽象层
+        F(接口抽象)
+        G(统一封装)
+        F ~~~ G
+    end
+
+    subgraph 实现层
+
+        subgraph 国际算法
+            H[软件实现]
+            I[硬件实现]
+        end
+
+        subgraph 国密算法
+            J[软件实现]
+            K[硬件实现]
+        end
+
+        国际算法 ~~~ 国密算法
+
+    end
+
+    密码功能 --> |实现| 抽象层 --> |调用| 实现层
+
+```
 
