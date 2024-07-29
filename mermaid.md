@@ -129,4 +129,30 @@ flowchart LR
     I[验证数据] --> |请求| 门户网络 & H
 ```
 
+3. Research Target
 
+```mermaid
+block-beta
+    columns 11 
+    a["科学问题"]:3 space:1 b["研究内容"]:3 space:1 c["研究目标"]:3
+    block:g1:3
+        columns 1
+        d("交易性能")
+        e("共识效率")
+        f("兼容性")
+    end
+    space:1
+    block:g2:3
+        columns 3
+        g("多核CPU处理能力")
+        h("高并发转移集")
+        i("可信账本数据库“)
+  
+    end
+    space:1
+    block:g3:3
+        o("bbb")
+    end
+    g1 --> g2
+    g2 --> g3    
+```
