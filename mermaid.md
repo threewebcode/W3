@@ -156,3 +156,49 @@ block-beta
     g1 --> g2
     g2 --> g3    
 ```
+
+4. Key Technologies
+
+```mermaid
+block-beta
+    columns 11 
+    a["科学问题"]:3 space:1 b["研究内容"]:4 space:1 c["研究目标"]:2
+    
+    block:ga:3
+            columns 1
+            d("交易性能")
+            e("共识效率")
+            f("兼容性")
+    end
+    space:1
+ 
+    block:gb:4
+            columns 2
+            h("多核CPU处理")
+            i("高并发转移集")
+            j("可信账本数据库")
+            k("交易事务并行处理")
+            l("多源设备分布式存储")
+            m("共识算法")
+            n("DID零知识证明")
+            o("跨链技术")
+            p("节点自适应网络技术")
+            q("数据完整性验证")            
+    end   
+
+    space
+
+    block:gc:2
+        columns 1
+        u("通过关键技术提高交易性能")
+        v("通过关键技术提供共识效率")
+        w("通过关键技术提供网络兼容性")
+    end
+
+    ga --> gb 
+    gb --> gc
+```
+
+5. Application
+
+
