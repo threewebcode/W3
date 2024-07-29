@@ -201,4 +201,9 @@ block-beta
 
 5. Application
 
+```mermaid
+flowchart LR
+    a["核心关键技术"] --> b["新型区块链软硬件平台"] --> c["示范应用"] --> d["供应链金融"] & e["数据治理"] & f["电池供应链溯源"]
+```
+
 
