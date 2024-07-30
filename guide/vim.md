@@ -32,4 +32,6 @@ The vim command arguments can affect the vim's behaviors during the startup peri
 
 If you want to know the value of vim settings, you can use the set command plus the key name and question mark. The version command can tell you where are the paths used for loading the vim run commands. The shell command can be executed in the vim editor and the content can be also regarded as the command. The percent character in the command mode refers to the current file. However, it is the pair matching operator in the normal mode.
 
+The vim has its grammar as the editing language. The macro and register is special powerful. All of the configurations and customizations can be done through the vim runtime commands files. The plugins and packages can also be added to expand its capabilities.
+
 
