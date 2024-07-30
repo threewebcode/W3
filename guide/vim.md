@@ -34,4 +34,4 @@ If you want to know the value of vim settings, you can use the set command plus 
 
 The vim has its grammar as the editing language. The macro and register is special powerful. All of the configurations and customizations can be done through the vim runtime commands files. The plugins and packages can also be added to expand its capabilities.
 
-
+In the visual mode, you can select the content by character, line or block. The operations can be performed on the selected content. 
