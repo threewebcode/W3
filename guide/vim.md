@@ -29,3 +29,7 @@ The window and prompt is defined in the terminal library. The particular header 
 The vim editor has the power of checking spell. The define directive is used to define the constant items. The structure type is used to represent the suggestion collection. The function prototype and concrete implementation are declared. 
 
 The vim command arguments can affect the vim's behaviors during the startup period. When the file is loaded by the vim editor, the settings can be changed through the command line window. There are built-in commands and external commands. The window can also be spitted for different purpose. 
+
+If you want to know the value of vim settings, you can use the set command plus the key name and question mark. The version command can tell you where are the paths used for loading the vim run commands. The shell command can be executed in the vim editor and the content can be also regarded as the command. The percent character in the command mode refers to the current file. However, it is the pair matching operator in the normal mode.
+
+
