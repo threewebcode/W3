@@ -36,4 +36,6 @@ The vim has its grammar as the editing language. The macro and register is speci
 
 In the visual mode, you can select the content by character, line or block. The operations can be performed on the selected content. The window can be also separated for different purpose. When the help command is executed, a separate window is added. The shortcut keys are available for managing the windows. 
 
-Multiple actions can be performed in the one mode. The mode can be switched. However, you can still do other mode's manipulations when keeping your current mode. 
+Multiple actions can be performed in the one mode. The mode can be switched. However, you can still do other mode's manipulations when keeping your current mode. The registers can be listed. If the register name is known, the pattern `register name + command` can be executed. There is a known register named system clipboard register. It name is called `+`. The clipboard is leveraged by manipulating this register.
+
+
