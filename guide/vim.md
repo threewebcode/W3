@@ -40,4 +40,6 @@ Multiple actions can be performed in the one mode. The mode can be switched. How
 
 The vim run command file can contain the vim scripts. The scripts and codes in the vim run command file will be executed when the vim is opened. The double quote is used to add the comments in the vim script file. Since many commands can be used in the vim editor, the commands can be grouped together as a vim script file. When the question marked is used, the set command will tell the current value of the option name. 
 
+The key can be mapped with the existing command. When the new key is pressed, the correlated action is executed on the text object. The mode name is prefixed when you want to remap the new key. The abbreviation is same like mapping, but it has its own special scenarios. 
+
 
