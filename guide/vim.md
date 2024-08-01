@@ -38,4 +38,6 @@ In the visual mode, you can select the content by character, line or block. The 
 
 Multiple actions can be performed in the one mode. The mode can be switched. However, you can still do other mode's manipulations when keeping your current mode. The registers can be listed. If the register name is known, the pattern `register name + command` can be executed. There is a known register named system clipboard register. It name is called `+`. The clipboard is leveraged by manipulating this register.
 
+The vim run command file can contain the vim scripts. The scripts and codes in the vim run command file will be executed when the vim is opened. The double quote is used to add the comments in the vim script file. Since many commands can be used in the vim editor, the commands can be grouped together as a vim script file. When the question marked is used, the set command will tell the current value of the option name. 
+
 
