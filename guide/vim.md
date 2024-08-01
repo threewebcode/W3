@@ -42,4 +42,6 @@ The vim run command file can contain the vim scripts. The scripts and codes in t
 
 The key can be mapped with the existing command. When the new key is pressed, the correlated action is executed on the text object. The mode name is prefixed when you want to remap the new key. The abbreviation is same like mapping, but it has its own special scenarios. 
 
+The motion has direction and scope. The direction are up, down, left, right. The scope is character, word, block, paragraph. The window can be splitted, switched and closed. 
+
 
