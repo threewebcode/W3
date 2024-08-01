@@ -6,4 +6,4 @@ When you put the cursor on the word, the next occurrences of this same word will
 
 The module has the path attribute. This attribute can be configured through the configuration attribute macro. When the items has the life time, its lifetime must be static when the constant item's instance is created. The storage of constant variables are in the register. The static items are stored with the fixed memory address. 
 
-
+Both function and closure are function type. The expression is composed of place expression and value expression. 
