@@ -48,7 +48,7 @@ The rust program uses one system thread per language thread. The closure functio
 
 The string type is represented by the `String` type in the rust language. The `String` type provides several methods of creating and converting the string type.
 
-method list:
+Method list:
     - new method: create a empty string instance and push string content into this instance
     - from method: pass the string literal and create a string instance
     - index access and modification: square bracket with integer index
