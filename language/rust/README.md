@@ -53,4 +53,10 @@ Method list:
 - new method: create a empty string instance and push string content into this instance
 - from method: pass the string literal and create a string instance
 - index access and modification: square bracket with integer index
+- string slice
+    * pass as the input parameter
+    * invoke `to_string` method
+    * it is string slice when the string is borrowed
+- `str` is a primitive string and use pointer to reference its continuous memory region
+
 
