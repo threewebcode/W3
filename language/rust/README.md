@@ -59,4 +59,12 @@ Method list:
     * it is string slice when the string is borrowed
 - `str` is a primitive string and use pointer to reference its continuous memory region
 
+### Funtion Type
+
+1. function form
+- function keyword
+- function name
+- input parameters
+- output type
+- function body
 
