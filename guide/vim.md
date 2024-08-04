@@ -46,4 +46,6 @@ The motion has direction and scope. The direction are up, down, left, right. The
 
 The command list has call, cd, chdir, command, compiler, delete, edit, echo, eval, execute, exit, file, function, grep, insert, list, last, move, make, mark, normal, open, perl, python, pwd, read, right, ruby, shell, silent, visual, write and others. All of these commands can be executed in the command mode. 
 
+The function in the `normal.c` file supports the operations in the normal mode. The help command provides the user manuals and developer manual. All of information can be referenced from the help command. It is important to know that vim is a programming language editor. It means that you can write the codes to make changes to the text objects. The grep, sed, awk commands are absorbed into this editor. 
+
 
