@@ -13,4 +13,9 @@ The steps of `Start` function:
 10. assign the synchronization work in the round robin method
 11. mark the completeness of synchronization step.
 
+The function body of `markSynced` function:
+1. The field synced is the atomic boolean type
+2. set the correct boolean value
+3. close the channel
+
 
