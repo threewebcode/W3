@@ -48,4 +48,6 @@ The command list has call, cd, chdir, command, compiler, delete, edit, echo, eva
 
 The function in the `normal.c` file supports the operations in the normal mode. The help command provides the user manuals and developer manual. All of information can be referenced from the help command. It is important to know that vim is a programming language editor. It means that you can write the codes to make changes to the text objects. The grep, sed, awk commands are absorbed into this editor. 
 
+The content can be indented in the insert mode or visual mode. The key combination of control and t or d are used to perform the indent and unindent actions. This requirement can also be achieved in the command line mode. If you want to move the cursor in the command line mode, the arrow key can be used or the key combination is used as the shortcut way or abbreviation approach. 
+
 
