@@ -18,4 +18,13 @@ The function body of `markSynced` function:
 2. set the correct boolean value
 3. close the channel
 
+The body of `waitForMinimumPeers` function:
+1. determine the required from command line and configuration file;
+2. get the finalized checkpoint from the chain object
+
+3. pass the epoch as the parameter and get the matched peers
+
+4. wait for some time interval if the peers are not ready
+5. for loop to wait for the peers.
+
 
