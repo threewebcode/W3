@@ -21,6 +21,9 @@ The function body of `markSynced` function:
 The body of `waitForMinimumPeers` function:
 1. determine the required from command line and configuration file;
 2. get the finalized checkpoint from the chain object
+    1. The checkpoint is composed of state, epoch and root hash.
+    2. The finalization state is obtained by the fetcher
+    3. The finalized checkpoint is retrieved from the fork store
 
 3. pass the epoch as the parameter and get the matched peers
 
