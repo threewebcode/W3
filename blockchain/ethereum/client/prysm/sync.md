@@ -24,7 +24,16 @@ The body of `waitForMinimumPeers` function:
     1. The checkpoint is composed of state, epoch and root hash.
     2. The finalization state is obtained by the fetcher
     3. The finalized checkpoint is retrieved from the fork store
-
+	1. The finalized checkpoint is a field of the store structure type
+	2. The store is a member of the forkchoice object.
+	3. The finalized checkpoint of store can be updated through the fork choice's method.
+	    1. The update action is triggered when the blockchain service starts
+	    2. The blockchain service starts from the saved state
+		1. The finalized state at start time is a configuration item.
+		2. If the state is not nil, just start the service from this state
+		3. It will start from the execution chain if the state is empty
+		4. The genesis state or the state from the database will be marked as the startup state.
+	    3. The finalized checkpoint is retrieved from the beachon database
 3. pass the epoch as the parameter and get the matched peers
 
 4. wait for some time interval if the peers are not ready
