@@ -50,4 +50,10 @@ All aspects of request context are defined in the request file. The enumeration 
 
 Self, crate, super, parent are the path keywords in the rust language. Its meaning should be clarified when it appears in the use statements. The request can be divided into range request or no range request. The categories of range request can be either forward lookup or backfill request. The batch id is used to identify the request. The empty curly bracket and curly brace with colon are equal. The placeholder is replaced by the string format of the target object which implements the display trait. If the target object implements the debug trait, it can be well printed by the curly brace with colon and other symbols like question mark, hash tag and hex indication.
 
+The peer is recognized by the peer id and selected from the peer list. When the peer is known, the request is sent to it for data extraction. 
 
+2. Peer Type
+
+The remote peer may be fully synchronized with local peer. It may be advanced or behind than the local peer. The local peer should synchronize with the advanced remote peer. The synchronization information is the record data of state information of each peer. The peer type is determined by the synchronization information and its comparison 
+
+3. 
