@@ -48,4 +48,6 @@ The queue and worker are used to process the messages from the network. When the
 
 All aspects of request context are defined in the request file. The enumeration type is used to list all possible errors which may happen during block lookup verification. The block and blob are two kinds of data that should be fetched from the whole network. The request for block and blob data are described and its response is also correlated. 
 
+Self, crate, super, parent are the path keywords in the rust language. Its meaning should be clarified when it appears in the use statements. The request can be divided into range request or no range request. The categories of range request can be either forward lookup or backfill request. The batch id is used to identify the request. The empty curly bracket and curly brace with colon are equal. The placeholder is replaced by the string format of the target object which implements the display trait. If the target object implements the debug trait, it can be well printed by the curly brace with colon and other symbols like question mark, hash tag and hex indication.
+
 
