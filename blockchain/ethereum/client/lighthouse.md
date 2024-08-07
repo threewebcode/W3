@@ -42,4 +42,10 @@ The data are chunked pieces. The vector is used to represent the collection of c
 
 The queue and worker are used to process the messages from the network. When the node starts, it should catch up the latest state or start from the genesis state. The configuration or command line options can change the execution routine and behavior. The checkpoint is safe and quick way of synchronizing the state with the remote peers.
 
+## State Synchronization
+
+1. Network Context
+
+All aspects of request context are defined in the request file. The enumeration type is used to list all possible errors which may happen during block lookup verification. The block and blob are two kinds of data that should be fetched from the whole network. The request for block and blob data are described and its response is also correlated. 
+
 
