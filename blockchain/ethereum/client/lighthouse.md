@@ -60,4 +60,8 @@ The remote peer may be fully synchronized with local peer. It may be advanced or
 
 The backfill structure is very abstract and can be suitable for different beacon chain types. As a result, the generic type is annotated in the definition of type declaration. The module is defined and the items in the module is imported and exported. If there is another word instead of use keyword, it would be better.
 
+4. Range Synchronization
+
+The batch is the slot range. It is a scope of beginning slot and end slot. The block root is managed by the fork choice. There are two chains. One is the finalized chain, the other is the head chain. The synchronization information is compared between the local peer and remote peer. The finalized epoch and current head should be compared to know the distance between the local peer and remote peer.
+
 
