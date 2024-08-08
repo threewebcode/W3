@@ -64,4 +64,6 @@ The backfill structure is very abstract and can be suitable for different beacon
 
 The batch is the slot range. It is a scope of beginning slot and end slot. The block root is managed by the fork choice. There are two chains. One is the finalized chain, the other is the head chain. The synchronization information is compared between the local peer and remote peer. The finalized epoch and current head should be compared to know the distance between the local peer and remote peer.
 
+The closure function can be passed as the input parameter and executed in the function body. The chain collection is data structure which has the chain data fields and offers the methods to operate on these chain data. The operations include updates and processes the chain data. 
+
 
