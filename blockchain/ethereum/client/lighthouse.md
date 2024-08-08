@@ -56,4 +56,8 @@ The peer is recognized by the peer id and selected from the peer list. When the 
 
 The remote peer may be fully synchronized with local peer. It may be advanced or behind than the local peer. The local peer should synchronize with the advanced remote peer. The synchronization information is the record data of state information of each peer. The peer type is determined by the synchronization information and its comparison 
 
-3. 
+3. Backfill Synchronization
+
+The backfill structure is very abstract and can be suitable for different beacon chain types. As a result, the generic type is annotated in the definition of type declaration. The module is defined and the items in the module is imported and exported. If there is another word instead of use keyword, it would be better.
+
+
