@@ -76,4 +76,6 @@ The message queue and topic mechanism are used in the peer to peer communication
 
 The module can be used internally or externally. The peer manager structure type is managing and handling the peer's reputation and connection status. The events happened in the peer's activities are incoming connection, outgoing connection, disconnection, status, ping, ban, unban, discover and subnet. The module entry file brings other module items into the current scope and export the main peer manager object which utilizes the imported module items.
 
+The libp2p crate is the important dependency in the lighthouse network. The traits from the libp2p are implemented for the peer manager so that the peer manager can take part in the network activity. The hash map is used to store the known peers. The peer's reputation is represented by its score. 
+
 
