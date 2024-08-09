@@ -78,4 +78,10 @@ The module can be used internally or externally. The peer manager structure type
 
 The libp2p crate is the important dependency in the lighthouse network. The traits from the libp2p are implemented for the peer manager so that the peer manager can take part in the network activity. The hash map is used to store the known peers. The peer's reputation is represented by its score. 
 
+## Beacon Chain
+
+1. Data Types
+
+There are beacon store and forkchoice store. The hot and code data are separated. The beacon chain type is the generic type parameter of the beacon chain structure type. The three main actions of beacon chain are choosing the head chain, importing the blocks and block operations. The canonical head, finalized checkpoint, justified checkpoint are stored in the block ledger store. 
+
 
