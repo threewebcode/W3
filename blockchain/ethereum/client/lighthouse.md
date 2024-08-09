@@ -72,4 +72,8 @@ The closure function can be passed as the input parameter and executed in the fu
 
 The message queue and topic mechanism are used in the peer to peer communication. The database is harnessed to store the peer data. The node has its peer identity and ethereum node record. The client is derived from the peer information. Each message is an instance of enumeration type. The actual data is embedded into the enumeration object. 
 
+2. Peer Manager
+
+The module can be used internally or externally. The peer manager structure type is managing and handling the peer's reputation and connection status. The events happened in the peer's activities are incoming connection, outgoing connection, disconnection, status, ping, ban, unban, discover and subnet. The module entry file brings other module items into the current scope and export the main peer manager object which utilizes the imported module items.
+
 
