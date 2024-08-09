@@ -66,4 +66,10 @@ The batch is the slot range. It is a scope of beginning slot and end slot. The b
 
 The closure function can be passed as the input parameter and executed in the function body. The chain collection is data structure which has the chain data fields and offers the methods to operate on these chain data. The operations include updates and processes the chain data. 
 
+## Network
+
+1. P2P Network
+
+The message queue and topic mechanism are used in the peer to peer communication. The database is harnessed to store the peer data. The node has its peer identity and ethereum node record. The client is derived from the peer information. Each message is an instance of enumeration type. The actual data is embedded into the enumeration object. 
+
 
