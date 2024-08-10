@@ -105,3 +105,4 @@ The data structure of state cache:
     - chain specification
 
 The state root acts as the key and the state itself as the value. This pair is used to store the state in the cache storage. 
+
