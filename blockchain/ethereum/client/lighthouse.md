@@ -97,4 +97,8 @@ The member fields of the pending execute block:
     - consensus context
     - payload verification result
 
+The data structure of state cache:
+    - state vector
+    - beacon store
+    - chain specification
 
