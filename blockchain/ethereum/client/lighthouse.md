@@ -84,4 +84,6 @@ The libp2p crate is the important dependency in the lighthouse network. The trai
 
 There are beacon store and forkchoice store. The hot and code data are separated. The beacon chain type is the generic type parameter of the beacon chain structure type. The three main actions of beacon chain are choosing the head chain, importing the blocks and block operations. The canonical head, finalized checkpoint, justified checkpoint are stored in the block ledger store. 
 
+The beacon chain is a very big data structure with many fields. It means that it is a complex object and act as the important role. The order of the slot is used to determine the state of block. If the slot is finalized, the state caused by the slot is also finalized. The forkchoice is persisted in the database by its special key. 
+
 
