@@ -86,4 +86,15 @@ There are beacon store and forkchoice store. The hot and code data are separated
 
 The beacon chain is a very big data structure with many fields. It means that it is a complex object and act as the important role. The order of the slot is used to determine the state of block. If the slot is finalized, the state caused by the slot is also finalized. The forkchoice is persisted in the database by its special key. 
 
+2. Data Availability
+
+The member fields of the pending execute block:
+    - signed beacon block
+    - state root and its hash 256 value
+    - parent block
+    - parent finalized data at the execution side
+    - confirmed state roots
+    - consensus context
+    - payload verification result
+
 
