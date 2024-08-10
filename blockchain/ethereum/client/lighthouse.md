@@ -89,6 +89,7 @@ The beacon chain is a very big data structure with many fields. It means that it
 2. Data Availability
 
 The member fields of the pending execute block:
+
     - signed beacon block
     - state root and its hash 256 value
     - parent block
@@ -98,7 +99,9 @@ The member fields of the pending execute block:
     - payload verification result
 
 The data structure of state cache:
+
     - state vector
     - beacon store
     - chain specification
 
+The state root acts as the key and the state itself as the value. This pair is used to store the state in the cache storage. 
