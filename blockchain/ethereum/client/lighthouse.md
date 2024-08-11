@@ -108,9 +108,9 @@ The state root acts as the key and the state itself as the value. This pair is u
 
 The data structure of pending component:
 
-    - block root
-    - verified blobs
-    - verified data column
-    - executed block
+  - block root
+  - verified blobs
+  - verified data column
+  - executed block
 
 
