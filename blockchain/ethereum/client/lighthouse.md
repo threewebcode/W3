@@ -113,4 +113,14 @@ The data structure of pending component:
   - verified data column
   - executed block
 
+The methods of pending component:
+  * is available
+  * make available
+  * get epoch from the block or from the verified blob's slot
+  * blob index and data in the block
+  * block index as key to store blob in the cache
+
+The state cache and chain specification are used to do the validation and verification of data availability. The blob can be extracted by its index. The move keyword can be applied into the closure function and asynchronous codes. It is loop statement which execute the proposer preparation. The task is executed after some time duration. The macro rules are utilized to add more code items into the existing type. 
+
+
 
