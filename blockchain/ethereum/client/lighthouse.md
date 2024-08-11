@@ -122,7 +122,10 @@ The methods of pending component:
 
 The state cache and chain specification are used to do the validation and verification of data availability. The blob can be extracted by its index. The move keyword can be applied into the closure function and asynchronous codes. It is loop statement which execute the proposer preparation. The task is executed after some time duration. The macro rules are utilized to add more code items into the existing type. 
 
-
 When the blob, block commitment and proof are provided, their relationship is verified by the cryptographic algorithm. There are three factors for the verification: blob data, commitment and proof. The tuple structure is harnessed to track the head. The tuple element is hash map type. The key of hash map is the head root and the value is the block slot number. 
+
+The fork choice's slot is updated when the fork choice completes its process. The execution payload should be prepared at the execution layer. It contains transactions. The reference of execution layer is obtained for the next action. The block hash for the execution payload is calculated. The block hash is leveraged to get the payload from the execution layer. The let keyword can be used to introduce a new variable.
+
+
 
 
