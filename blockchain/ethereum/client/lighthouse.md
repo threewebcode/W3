@@ -139,4 +139,6 @@ The body of compute reward function:
   * produce the total block reward
   * put the values into the structure data type and return this object
 
+The blinded block will become signed block. The signed block will become verified block. The signature verified block will become execution pending block. The execution pending block will become justified and finalized block. Many errors may happen with execution payload. These errors are enumerated as the enumeration type. The state object has the epoch field. 
+
 
