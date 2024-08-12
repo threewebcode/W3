@@ -126,6 +126,17 @@ When the blob, block commitment and proof are provided, their relationship is ve
 
 The fork choice's slot is updated when the fork choice completes its process. The execution payload should be prepared at the execution layer. It contains transactions. The reference of execution layer is obtained for the next action. The block hash for the execution payload is calculated. The block hash is leveraged to get the payload from the execution layer. The let keyword can be used to introduce a new variable.
 
+The asynchronous function is defined and executed with the await keyword. The execution payload is constructed from the execution layer. The payload attribute can generate the unique identity. The checkpoint may be either justified or finalized. 
 
+The body of compute reward function:
+  * compare the slot and ensure that the block slot is equal to the state slot
+  * pass the state as input parameter and update the reward cache
+  * get the total active balance from the state
+  * get the intersection set of attestations between the block and state
+  * iterate the attestation set and compute the attestation reward
+  * sum the total attestation reward
+  * compute the sync committee reward
+  * produce the total block reward
+  * put the values into the structure data type and return this object
 
 
