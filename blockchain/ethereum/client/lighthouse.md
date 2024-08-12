@@ -159,6 +159,48 @@ The body of block header:
   * parent root
   * state root
   * body root
-The header block tell us when and who proposes this block and its data relationship internally and externally. It has several methods to support its operations. 
+
+The header block tell us when and who proposes this block and its data relationship internally and externally. It has several methods to support its operations. The header can be derived from the block. The block has the block body. The block body is a big data structure with many fields.
+
+The data structure of the blob sidecar:
+  * blob index
+  * blob data
+  * kzg commitment
+  * kzg proof
+  * signed block header
+  * commitment inclusion proof
+
+The beacon state is a general term and has several fields which are used to cover the necessary data in the network. 
+
+The composition of beacon state data structure:
+  * genesis time
+  * genesis validator root
+  * slot number
+  * fork data
+  * block header
+  * block roots
+  * state roots
+  * historical roots
+  * eth1 data
+  * eth1 data votes
+  * validators
+  * balances
+  * random mixes
+  * slashings
+  * previous epoch attestations
+  * current epoch attestations
+  * previous epoch participation
+  * current epoch participation
+  * justification bits
+  * previous justified checkpoint
+  * current justified checkpoint
+  * finalized checkpoint
+  * inactivity scores
+  * current sync committees
+  * next sync committees
+  * latest execution payload header
+  * next withdrawal 
+
+The method set is added to allow the operations on the member fields. The block, payload and state are data objects which need to be stored into persistent storage. 
 
 
