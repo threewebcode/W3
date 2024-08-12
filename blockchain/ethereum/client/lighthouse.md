@@ -149,4 +149,56 @@ The state root is a member of the block header. The checkpoint includes the epoc
 
 ## Consensus
 
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+1. Data Types
+
+The balance is made up of amount and minimum. Both of them are unsigned integer type. The public key is the identifier of the validator. The validator index is its position in the validator list. 
+
+The body of block header:
+  * slot
+  * proposer index
+  * parent root
+  * state root
+  * body root
+The header block tell us when and who proposes this block and its data relationship internally and externally. It has several methods to support its operations. 
+
 
