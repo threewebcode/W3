@@ -203,4 +203,18 @@ The composition of beacon state data structure:
 
 The method set is added to allow the operations on the member fields. The block, payload and state are data objects which need to be stored into persistent storage. 
 
+The method set of fork choice store trait:
+  * get current slot
+  * set current slot
+  * on verified block
+  * justified checkpoint
+  * justified balances
+  * finalized checkpoint
+  * unrealized justified checkpoint
+  * unrealized finalized checkpoint
+  * set justified checkpoint
+  * set finalized checkpoint
+  * set unrealized justified checkpoint
+  * set unrealized finalized checkpoint
+
 
