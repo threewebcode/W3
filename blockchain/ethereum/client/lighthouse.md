@@ -219,4 +219,10 @@ The method set of fork choice store trait:
 
 The beginning and end slot of epoch can be calculated. The slot knows which epoch it is located. The update parameter of fork choice includes head root, head hash, justified hash, finalized hash. The fork choice provides the view of head block root, justified checkpoint and finalized checkpoint. 
 
+The member fields of fork choice data structure:
+  * fork choice store
+  * protocol buffer array
+  * vector queue of attestations
+  * fork choice update parameter
+  
 
