@@ -217,4 +217,6 @@ The method set of fork choice store trait:
   * set unrealized justified checkpoint
   * set unrealized finalized checkpoint
 
+The beginning and end slot of epoch can be calculated. The slot knows which epoch it is located. The update parameter of fork choice includes head root, head hash, justified hash, finalized hash. The fork choice provides the view of head block root, justified checkpoint and finalized checkpoint. 
+
 
