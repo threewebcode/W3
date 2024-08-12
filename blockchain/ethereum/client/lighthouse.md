@@ -143,4 +143,8 @@ The blinded block will become signed block. The signed block will become verifie
 
 The objected is encoded and serialized before it is written into local file. The block contains the blob indexes. The identifier of blob is the combination of block root plus the blob index. The fork choice can be reverted to the finalized checkpoint or to the trust and safe boundary when it is necessary. 
 
+The composition of beacon snapshot is beacon block, block root and beacon state. The proposer is composed of the fork and its index value. The proposer data is cached. The key is the tuple type with elements of epoch and block root hash. The value indexed by the key is the proposer index value in the validator list. 
+
+The state root is a member of the block header. The checkpoint includes the epoch and block root hash. The versions between the memory and persisted storage can be converted. 
+
 
