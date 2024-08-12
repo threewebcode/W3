@@ -141,4 +141,6 @@ The body of compute reward function:
 
 The blinded block will become signed block. The signed block will become verified block. The signature verified block will become execution pending block. The execution pending block will become justified and finalized block. Many errors may happen with execution payload. These errors are enumerated as the enumeration type. The state object has the epoch field. 
 
+The objected is encoded and serialized before it is written into local file. The block contains the blob indexes. The identifier of blob is the combination of block root plus the blob index. The fork choice can be reverted to the finalized checkpoint or to the trust and safe boundary when it is necessary. 
+
 
