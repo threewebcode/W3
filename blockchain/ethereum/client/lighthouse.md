@@ -147,4 +147,6 @@ The composition of beacon snapshot is beacon block, block root and beacon state.
 
 The state root is a member of the block header. The checkpoint includes the epoch and block root hash. The versions between the memory and persisted storage can be converted. 
 
+## Consensus
+
 
