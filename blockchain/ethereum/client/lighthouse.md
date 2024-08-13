@@ -228,11 +228,11 @@ The member fields of fork choice data structure:
 The anchor fork choice can be from the genesis state or the finalized checkpoint. The execution status is confirmed from the execution layer side. 
 
 The statements of get head function in the fork choice object:
-  1. update the time with the system time current slot
-  2. get the data from the fork choice store and use them as the condition to get head from protocol array
-  3. use the head root to find the block
-  4. use the justified hash to find the block and get the block hash from the block
-  5. use the finalized hash to find the block and get the block hash from the block
-  6. put the head root into the result enumeration and return it as the function output
+    1. update the time with the system time current slot
+    2. get the data from the fork choice store and use them as the condition to get head from protocol array
+    3. use the head root to find the block
+    4. use the justified hash to find the block and get the block hash from the block
+    5. use the finalized hash to find the block and get the block hash from the block
+    6. put the head root into the result enumeration and return it as the function output
 
 
