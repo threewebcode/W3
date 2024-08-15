@@ -235,4 +235,8 @@ The statements of get head function in the fork choice object:
   - use the finalized hash to find the block and get the block hash from the block 
   - put the head root into the result enumeration and return it as the function output
 
+## Genesis
+
+To reduce the length, the word is shorted. The deposit data is one part of the genesis state. The deposit data and proof constitute the whole deposit object. Since the beacon side needs to know the deposit data and some block information from the execution layer, the genesis service is created to fulfill this responsibility. The genesis state can be initialized from the execution layer data.
+
 
