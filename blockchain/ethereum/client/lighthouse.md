@@ -245,4 +245,8 @@ The client is a term which is used to describe the beacon node. The synchronizat
 
 The network is one kind of services in the beacon node. The network service is an asynchronous service with its start method. In the static start method, it uses its build static method to create the network instance. The router is spawn in the build method. The router service starts the synchronization manager. After the network service is instantiated, other services associated with network service are spawned and executed by the task executor.
 
+In the Rust programming language, the `mpsc` (Multiple Producer, Single Consumer) package provides a way to implement asynchronous communication between different parts of a program. The `mpsc` module includes two types of channels: the bounded channel and the unbounded channel.
+
+The main difference between the bounded and unbounded channels in the `mpsc` package is the handling of backpressure. The bounded channel will block the sender when the channel's capacity is reached, while the unbounded channel will not block the sender, potentially leading to increased memory usage.
+
 
