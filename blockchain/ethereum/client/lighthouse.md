@@ -241,4 +241,8 @@ To reduce the length, the word is shorted. The deposit data is one part of the g
 
 The client is a term which is used to describe the beacon node. The synchronization is included in the network service. 
 
+## Network
+
+The network is one kind of services in the beacon node. The network service is an asynchronous service with its start method. In the static start method, it uses its build static method to create the network instance. The router is spawn in the build method. The router service starts the synchronization manager. After the network service is instantiated, other services associated with network service are spawned and executed by the task executor.
+
 
