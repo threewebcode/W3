@@ -239,4 +239,6 @@ The statements of get head function in the fork choice object:
 
 To reduce the length, the word is shorted. The deposit data is one part of the genesis state. The deposit data and proof constitute the whole deposit object. Since the beacon side needs to know the deposit data and some block information from the execution layer, the genesis service is created to fulfill this responsibility. The genesis state can be initialized from the execution layer data.
 
+The client is a term which is used to describe the beacon node. The synchronization is included in the network service. 
+
 
