@@ -8,4 +8,10 @@ The contract language is function c style. It is compiled into assembly codes. T
 
 The smart contract is made of codes and data. The data is the state and the code is logic. The language has strict types. The error during the compilation time can detect the problem ahead of runtime. Here is a [tutorial](http://tonhelloworld.com/02-contract/) for reference.
 
+The explorer used for ton network is [tonviewer](https://tonviewer.com/). The open network has its own enhanced [proposals](https://github.com/ton-blockchain/TEPs). To be like the ethereum, it also has its research [hub](https://tonresear.ch/). 
+
+## FunC Language
+
+A cell can be transformed into a slice. The slice bits can be loaded from the cell. The [blueprint](https://github.com/ton-org/blueprint) is all-in-one tool for writing, testing and deploying FunC smart contract. The token contracts implemented by the FunC language can be founder [here](https://github.com/ton-blockchain/token-contract)
+
 
