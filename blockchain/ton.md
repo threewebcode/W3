@@ -14,4 +14,9 @@ The explorer used for ton network is [tonviewer](https://tonviewer.com/). The op
 
 A cell can be transformed into a slice. The slice bits can be loaded from the cell. The [blueprint](https://github.com/ton-org/blueprint) is all-in-one tool for writing, testing and deploying FunC smart contract. The token contracts implemented by the FunC language can be founder [here](https://github.com/ton-blockchain/token-contract)
 
+The ton official provides some [examples](https://docs.ton.org/develop/smart-contracts/examples) of smart contracts and they can used as reference. 
+
+## Token Contract
+
+The standard specifies the transfer, retrieval and display of fungible tokens and its interfaces. All of the interactions are specified and clarified. The data format are confirmed. The main actions of fungible token are transfer, display and query. 
 
