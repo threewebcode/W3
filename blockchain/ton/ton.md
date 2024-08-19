@@ -20,3 +20,8 @@ The ton official provides some [examples](https://docs.ton.org/develop/smart-con
 
 The standard specifies the transfer, retrieval and display of fungible tokens and its interfaces. All of the interactions are specified and clarified. The data format are confirmed. The main actions of fungible token are transfer, display and query. 
 
+## Standard Functions
+
+The get data function is used to access the persistent storage for the contract. The set data function is used to modify the state storage of the contract. The send raw message is able to send the message to other contract. The receive internal function is capable of handling the messages from the other contracts. The receive external function is responsible for processing the messages from the users. 
+
+
