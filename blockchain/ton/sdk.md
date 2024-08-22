@@ -57,4 +57,61 @@ The value list of reserve mode:
   - before balance minus this amount
   - leave before balance minus this amount
 
+The enumeration list of send mode:
+  - carry all remaining balance
+  - carry all remaining incoming value
+  - destroy account if zero
+  - pay gas separately
+  - ignore errors
+  - none
+
+The member fields of shard identity:
+  - shard prefix bits
+  - work chain id
+  - shard prefix
+
+The interface definition of state initialization:
+  - split depth
+  - special
+  - code
+  - data
+  - libraries
+
+The property list of storage information:
+  - used storage
+  - last paid
+  - due payment
+
+The data structure of transaction type:
+  - address
+  - timestamp
+  - previous transaction hash
+  - previous transaction logical time
+  - out messages count
+  - old status
+  - end status
+  - in message
+  - out messages
+  - total fees
+  - state update
+  - transaction description
+  - raw cell data
+  - hash value
+
+The attribute list of transaction action phase:
+  - boolean value of success
+  - boolean value of valid
+  - boolean value of no funds
+  - account status change
+  - total forward fee
+  - total action fees
+  - result code
+  - result arguments
+  - total actions
+  - special actions
+  - skipped actions
+  - message created
+  - action list hash
+  - total message size
+
 
