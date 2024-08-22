@@ -118,4 +118,6 @@ The attribute list of transaction action phase:
 
 The build variable is one instance of runner type. The runner is a function type. This function selects the compiler and runs the build task. The record is the collection of runner. The runner is found and executed as the command line. The first argument is used to detect the runner name and its mapping function.
 
+The string manipulation and file system location are used to find the compiler and its target directory. The code items are imported from the specified file. The interface can only have the fields and empty method set. The configuration includes the network and plugins. The new type can be created by the equal operator. The interface is created by the definition syntax and does not use any operators. 
+
 
