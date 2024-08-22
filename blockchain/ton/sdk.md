@@ -114,4 +114,8 @@ The attribute list of transaction action phase:
   - action list hash
   - total message size
 
+# BluePrint
+
+The build variable is one instance of runner type. The runner is a function type. This function selects the compiler and runs the build task. The record is the collection of runner. The runner is found and executed as the command line. The first argument is used to detect the runner name and its mapping function.
+
 
