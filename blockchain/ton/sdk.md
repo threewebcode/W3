@@ -134,4 +134,6 @@ All aspects of the network provider:
   - open method to produce the opened contract
   - ui method to manufacture the ui provider
 
+The item can be added, obtained and removed through the storage interface. The actual implementation of this storage is json file in the file system. The whole utilities are divided into the subfields which contains the object, time, ton and selection. The compilable files can be found by the pattern and collection filter. The scripts can be found by the directory name and file extension.
+
 
