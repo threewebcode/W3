@@ -136,4 +136,6 @@ All aspects of the network provider:
 
 The item can be added, obtained and removed through the storage interface. The actual implementation of this storage is json file in the file system. The whole utilities are divided into the subfields which contains the object, time, ton and selection. The compilable files can be found by the pattern and collection filter. The scripts can be found by the directory name and file extension.
 
+The name and path are enough fields to describe a file. The question mark is used to detect whether the object is null or undefined. The error is found ahead of the method invocation. When the question mark appears the end of the fields, it means that this field is optional. The intersection two types can produce a new type. The compile hooks can be performed before and after the compile step.
+
 
