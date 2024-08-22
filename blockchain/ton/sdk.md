@@ -122,4 +122,16 @@ The string manipulation and file system location are used to find the compiler a
 
 One plugin has the array of plugin runners. The plugin runner is runnable. The local variable declaration is let keyword plus the variable name plus the colon plus the variable type. 
 
+All aspects of the network provider:
+  - interface type
+  - network method to tell the which network is used
+  - sender method to find the message sender
+  - api method to return the ton client
+  - contract provider to offer the contract provider object by the input parameters
+  - is contract deployed to detect whether the contract is on the chain
+  - wait for deploy
+  - deploy method to publish the contract on the ton chain
+  - open method to produce the opened contract
+  - ui method to manufacture the ui provider
+
 
