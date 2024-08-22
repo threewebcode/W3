@@ -120,4 +120,6 @@ The build variable is one instance of runner type. The runner is a function type
 
 The string manipulation and file system location are used to find the compiler and its target directory. The code items are imported from the specified file. The interface can only have the fields and empty method set. The configuration includes the network and plugins. The new type can be created by the equal operator. The interface is created by the definition syntax and does not use any operators. 
 
+One plugin has the array of plugin runners. The plugin runner is runnable. The local variable declaration is let keyword plus the variable name plus the colon plus the variable type. 
+
 
