@@ -138,4 +138,6 @@ The item can be added, obtained and removed through the storage interface. The a
 
 The name and path are enough fields to describe a file. The question mark is used to detect whether the object is null or undefined. The error is found ahead of the method invocation. When the question mark appears the end of the fields, it means that this field is optional. The intersection two types can produce a new type. The compile hooks can be performed before and after the compile step.
 
-The special file name is leveraged to denote its particular purpose because it is easy to be recognized. The method id is a function specifier which tells ton chain that this is query function in the smart contract. 
+The special file name is leveraged to denote its particular purpose because it is easy to be recognized. The method id is a function specifier which tells ton chain that this is query function in the smart contract. The ton address has two parts: work chain and hash part. The bag of cells is the vector of cells. The bit in the string format has the value and length. 
+
+The builder serves the purpose of producing the cell object. The actor model processes incoming messages,changes the internal state, and generate the outbound messages as a result. Every actor has an address and able to receive messages from other actors. The chain id of master chain is -1 and negative number. 
