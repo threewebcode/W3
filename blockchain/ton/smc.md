@@ -13,4 +13,12 @@ The namespace serves the purpose of separating the code items. The symbol value 
 
 The position and offset of source code can be obtained from the source location structure type. It is a story of parsing the source codes and putting the lexical items into the symbol table. The source code is a text and string type. The string operators are used to accomplish this parsing work. Since language rules are specified and known, the language items are recognized by applying pattern on the given text.
 
+# Compiler
+
+The aim of the compiler is to convert the source codes into the assembly codes. The input may be from the file or from the standard input. The result can be written into file or print to standard output. The getopt function is harnessed to recognize each options and assign the value to the field of the object. 
+
+The keywords related to type are int, cell, slice, builder, tuple, continuation, There are equations between the source codes and assembly codes. The code format is transitioned from the source codes into the assembly codes by applying the equation transformation. The intermedium format is the operation codes on the stack manipulation. 
+
+The character, special character and their combination constitute the list of keyword. The operator is one kind of keywords. If the character dot or tilde appears in the expression, its subclass is extracted. The line content is outputted into the standard output. The include path is the vector of paths. 
+
 
