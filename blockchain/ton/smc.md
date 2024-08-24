@@ -10,8 +10,9 @@
 2. 
 
 
-Multiple comments are enclosed by the curly brace and hyphen characters. The include directive is similar to the c language. Two semicolon is indicated for the single line comment. The impure specifier means that the function can have some side effects which can not be ignored. If the function is called exactly once, the inline specifier is the best. If it is called multiple times, The line ref specifier is more better choice. 
+Multiple comments are enclosed by the curly brace and hyphen characters. The include directive is similar to the c language. Two semicolon is indicated for the single line comment. The impure specifier means that the function can have some side effects which can not be ignored. If the function is called exactly once, the inline specifier is the best. If it is called multiple times, The line ref specifier is more better choice. The inline reference function is placed into a separate cell by the virtual machine. 
 
+The declaration of function is the function without body. To define a function means that the function is implemented completely. The underscore in the function return area indicates that this function is a modifying function and some of its return parameters are ignored because they are unused in the following code statements.
 
 # Parser
 
