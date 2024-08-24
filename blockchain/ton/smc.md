@@ -23,4 +23,5 @@ The character, special character and their combination constitute the list of ke
 
 The file is sourced and interpreted when the fift command is executed. The context is created for the interpretation process. The file could be a file in the memory or a file in the file system. The state of virtual machine is responsible for the cell creation, register and loading. Before running the codes in the virtual machine, certain conditions must be prepared and make them available during the execution. 
 
+The elements of input parameter list are the code, stack, current state, virtual machine flags, log settings, gas limits, dependent libraries, and other optional data items. The register is introduced to help the stack data manipulation of the virtual machine. 
 
