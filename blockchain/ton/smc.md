@@ -7,8 +7,18 @@
 - use the cell to store the data
 - parse the cell and get the slice
 
-2. 
-
+2. receive external message
+- slice type of incoming message
+- load the signature from the slice and its length is 512 bits and 64 bytes. 
+- load the sequence number and valid date from the slice message
+- use throw if function to handle exception
+- get the sequence number and public key from the contract cell storage
+- use throw unless to validate the condition and process errors
+- use public key to check the signature
+- accept the message
+- load the send mode and message from the incoming message
+- send the raw message for further process
+- store the sequence number and public key data
 
 Multiple comments are enclosed by the curly brace and hyphen characters. The include directive is similar to the c language. Two semicolon is indicated for the single line comment. The impure specifier means that the function can have some side effects which can not be ignored. If the function is called exactly once, the inline specifier is the best. If it is called multiple times, The line ref specifier is more better choice. The inline reference function is placed into a separate cell by the virtual machine. 
 
