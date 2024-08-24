@@ -21,4 +21,6 @@ The keywords related to type are int, cell, slice, builder, tuple, continuation,
 
 The character, special character and their combination constitute the list of keyword. The operator is one kind of keywords. If the character dot or tilde appears in the expression, its subclass is extracted. The line content is outputted into the standard output. The include path is the vector of paths. 
 
+The file is sourced and interpreted when the fift command is executed. The context is created for the interpretation process. The file could be a file in the memory or a file in the file system. The state of virtual machine is responsible for the cell creation, register and loading. Before running the codes in the virtual machine, certain conditions must be prepared and make them available during the execution. 
+
 
