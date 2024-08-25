@@ -42,3 +42,17 @@ The file is sourced and interpreted when the fift command is executed. The conte
 
 The elements of input parameter list are the code, stack, current state, virtual machine flags, log settings, gas limits, dependent libraries, and other optional data items. The register is introduced to help the stack data manipulation of the virtual machine. 
 
+# Application
+
+1. create application
+
+```bash
+npm create ton@lastest
+npx blueprint help
+```
+
+2. cli
+
+```bash
+pip install toncli
+```
