@@ -49,6 +49,8 @@ The elements of input parameter list are the code, stack, current state, virtual
 ```bash
 npm create ton@lastest
 npx blueprint help
+export WALLET_VERSION="v4"
+export WALLET_MNEMONIC=""
 ```
 
 2. cli
