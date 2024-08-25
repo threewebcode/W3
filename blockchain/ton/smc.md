@@ -58,5 +58,6 @@ export WALLET_MNEMONIC=""
 ```bash
 wget https://github.com/ton-blockchain/ton/releases/download/v2024.08/func-linux-x86_64
 wget https://github.com/ton-blockchain/ton/releases/download/v2024.08/fift-linux-x86_64
+wget https://github.com/ton-blockchain/ton/releases/download/v2024.08/lite-client-linux-x86_64
 pip install toncli
 ```
