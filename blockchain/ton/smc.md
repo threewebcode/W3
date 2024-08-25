@@ -62,3 +62,6 @@ wget https://github.com/ton-blockchain/ton/releases/download/v2024.08/lite-clien
 pip install toncli
 pip install bitstring==3.1.9
 ```
+3. ecosystem
+
+
