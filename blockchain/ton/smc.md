@@ -53,7 +53,7 @@ export WALLET_VERSION="v4"
 export WALLET_MNEMONIC=""
 ```
 
-2. cli
+2. command line usage
 
 ```bash
 wget https://github.com/ton-blockchain/ton/releases/download/v2024.08/func-linux-x86_64
