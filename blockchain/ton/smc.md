@@ -50,6 +50,7 @@ The elements of input parameter list are the code, stack, current state, virtual
 npm create ton@lastest
 npx blueprint help
 export WALLET_VERSION="v4"
+export type WalletVersion = 'v1r1' | 'v1r2' | 'v1r3' | 'v2r1' | 'v2r2' | 'v3r1' | 'v3r2' | 'v4';
 export WALLET_MNEMONIC=""
 ```
 
