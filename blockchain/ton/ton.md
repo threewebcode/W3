@@ -38,4 +38,8 @@ Fift supports the following data types:
 - `String`: UTF-8 strings
 - `Bytes`: Arbitrary sequences of bytes
 
+Fift has a set of built-in primitives, or words, that can be used to perform various operations on the stack. These include arithmetic operations, cell manipulation, string handling, and more. The full list of primitives is documented in the Fift documentation.
+
+Users can define new words (functions or macros) in Fift by using the `: name ... ;` syntax. These new words can then be used just like the built-in primitives.
+
 
