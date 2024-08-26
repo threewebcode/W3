@@ -24,4 +24,18 @@ The standard specifies the transfer, retrieval and display of fungible tokens an
 
 The get data function is used to access the persistent storage for the contract. The set data function is used to modify the state storage of the contract. The send raw message is able to send the message to other contract. The receive internal function is capable of handling the messages from the other contracts. The receive external function is responsible for processing the messages from the users. 
 
+## Assembly Language
+
+The syntax of assembly language is like this: operand + operator. That is to say, the value is pushed on the stack firstly. The operation is performed on the stack secondly. The constant variable is one word of the assembly wordlist. The new word is defined by the following format: director block + colon + word name. 
+
+Fift supports the following data types:
+- `Integer`: Signed 257-bit integers
+- `Cell`: TVM cells
+- `Slice`: Partial views of cells, used for parsing
+- `Builder`: Used for building new cells
+- `Null`: A special "null" value
+- `Tuple`: Ordered collections of values
+- `String`: UTF-8 strings
+- `Bytes`: Arbitrary sequences of bytes
+
 
