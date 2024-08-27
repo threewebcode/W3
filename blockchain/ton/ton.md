@@ -42,4 +42,6 @@ Fift has a set of built-in primitives, or words, that can be used to perform var
 
 Users can define new words (functions or macros) in Fift by using the `: name ... ;` syntax. These new words can then be used just like the built-in primitives.
 
+The operations are represented by the enumeration instructions. The instruction data is constructed by corresponding functions. The instruction is passed to program entry point and handled by the processor. The data are packed into slice and persisted into state.
+
 
