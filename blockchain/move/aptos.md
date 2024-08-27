@@ -12,4 +12,24 @@ npm i @aptos-labs/ts-sdk
 git clone --depth 1 https://github.com/aptos-labs/aptos-ts-sdk
 npm init && npm add -D typescript @types/node ts-node && npx tsc --init && mkdir src && echo 'async function example() { console.log("Running example!")}; example()' > src/quickstart.ts
 ```
+The account is created from the private key. The abstract account is composed of public key, address, signing schema and different generation functions. The signer has the private key and account address. The account is implemented by different cryptography algorithm. There are normal account, keyless account, multiple keys account, single key account.
+
+The apis are constructed around the account object and able to do query and post requests. The domain name service is also provided by the aptos network. The aptos is the entry point and facet of all other specific apis. It collects all apis as below:
+
+```
+applyMixin(Aptos, Account, "account");
+applyMixin(Aptos, ANS, "ans");
+applyMixin(Aptos, Coin, "coin");
+applyMixin(Aptos, DigitalAsset, "digitalAsset");
+applyMixin(Aptos, Event, "event");
+applyMixin(Aptos, Faucet, "faucet");
+applyMixin(Aptos, FungibleAsset, "fungibleAsset");
+applyMixin(Aptos, General, "general");
+applyMixin(Aptos, Staking, "staking");
+applyMixin(Aptos, Transaction, "transaction");
+applyMixin(Aptos, Table, "table");
+applyMixin(Aptos, Keyless, "keyless");
+applyMixin(Aptos, AptosObject, "object");
+```
+
 
