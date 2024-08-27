@@ -31,5 +31,6 @@ applyMixin(Aptos, Table, "table");
 applyMixin(Aptos, Keyless, "keyless");
 applyMixin(Aptos, AptosObject, "object");
 ```
+The codes under the transactions directory supply all kinds of transaction factory approaches. After the transaction is constructed, the signer can send it through the client and API. The account sequence number, asynchronous queue, and transaction worker should be managed. The transaction builder is used to produce the transactions. 
 
 
