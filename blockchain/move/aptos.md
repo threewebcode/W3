@@ -33,4 +33,5 @@ applyMixin(Aptos, AptosObject, "object");
 ```
 The codes under the transactions directory supply all kinds of transaction factory approaches. After the transaction is constructed, the signer can send it through the client and API. The account sequence number, asynchronous queue, and transaction worker should be managed. The transaction builder is used to produce the transactions. 
 
+The transaction has the transaction arguments and transaction payload. There are raw transaction, simple transaction and signed transaction. The simple transaction can include the raw transaction. The simple transaction becomes the signed transaction after its signature is signed. 
 
