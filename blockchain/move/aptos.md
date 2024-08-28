@@ -35,3 +35,5 @@ The codes under the transactions directory supply all kinds of transaction facto
 
 The transaction has the transaction arguments and transaction payload. There are raw transaction, simple transaction and signed transaction. The simple transaction can include the raw transaction. The simple transaction becomes the signed transaction after its signature is signed. 
 
+When the contract is called, the sender, function, function arguments are needed. The transaction is sent out with the transaction and its signature. The fungible asset is queried by its specific function interface. 
+
