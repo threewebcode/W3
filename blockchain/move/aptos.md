@@ -37,3 +37,6 @@ The transaction has the transaction arguments and transaction payload. There are
 
 When the contract is called, the sender, function, function arguments are needed. The transaction is sent out with the transaction and its signature. The fungible asset is queried by its specific function interface. 
 
+There are two ways of developing the smart contracts. One is to use the generic types for different cases. The other is to use the object and bundle them together from the resource's perspective. 
+
+
