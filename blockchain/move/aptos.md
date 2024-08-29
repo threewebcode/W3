@@ -39,4 +39,6 @@ When the contract is called, the sender, function, function arguments are needed
 
 There are two ways of developing the smart contracts. One is to use the generic types for different cases. The other is to use the object and bundle them together from the resource's perspective. 
 
+The name format of a module is unique identifier + double colon + module name. The module is a collection of code items. The use keyword brings dependent items into current module. The syntax of constant variable is constant keyword + variable name + colon + type + equal + initial value. The structure type is used to describe data objects and store them into ledger. 
+
 
