@@ -41,4 +41,6 @@ There are two ways of developing the smart contracts. One is to use the generic 
 
 The name format of a module is unique identifier + double colon + module name. The module is a collection of code items. The use keyword brings dependent items into current module. The syntax of constant variable is constant keyword + variable name + colon + type + equal + initial value. The structure type is used to describe data objects and store them into ledger. 
 
+The relationship between the objects can be association and management. The account is a signer type in the move language. The account has the objects and it is their owner. The object can have an address and there are method of creating the address for the object. 
+
 
