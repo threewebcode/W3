@@ -1,0 +1,9 @@
+# Token Contract
+
+There are data, func, and tests item in the each section. The data is fift file. The func is all of source codes. The tests are about test codes in the func language. The smart contract address can be string format and can be converted into different parts by operator. The combination of dollar and smca are the operator of pack or unpack this conversion. The combination of file, arrow and B are the operator of perform the conversion between the file content and bytes. The string of character B, x and dot is able to output the bytes in the hex format. The transformation between the bag of cell and bytes are accomplished by the sequence of boc, B and arrow. There are slice and string append operation. 
+
+The unsigned binary and ref cell can be appended into the stack. Each operation code has its name and number value. Every operation code can represent by a constant variable. The variable name is the name of the operation code and its value is the number format of the operation code. The constant variable is defined and exported from its own module. The compiler configuration is to tell all source code files which are to be compiled by the language compiler. 
+
+The empty object corresponds to one empty cell bag. The concrete class is created to implement the contract interface. The parameters of constructor function are the contract address and initial state. The initial state includes the compiled binary code and initial data. The wallet is created from the provided address. The address is created on the basis of work chain id and initial data. The balance is the wallet data only if the state of the wallet is active. As a result, the state should be checked before fetching any data. 
+
+To produce the message is the process of constructing the bag of cell. 
