@@ -10,4 +10,6 @@ To produce the message is the process of constructing the bag of cell. The doubl
 
 The load data has the inline specifier and used in several place for data loading. The return type of the load data function is a tuple of several different type items. All of them are storage items. The get data function is standard library function of loading data from the contract storage. In essence, the get data function fetches a state storage tree under the hood. 
 
+Both of impure and inline are the function specifiers of the save data function. The return type is an empty tuple. However, the input parameters are all of the data which need to be stored in the current program. The set data in the standard interface for data storage into the global chain storage. The nft item index and its owner address are the initial data of the initial state. The initial state of the nft item are its item code and its specific initial data. 
+
 
