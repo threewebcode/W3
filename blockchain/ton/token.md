@@ -6,4 +6,6 @@ The unsigned binary and ref cell can be appended into the stack. Each operation 
 
 The empty object corresponds to one empty cell bag. The concrete class is created to implement the contract interface. The parameters of constructor function are the contract address and initial state. The initial state includes the compiled binary code and initial data. The wallet is created from the provided address. The address is created on the basis of work chain id and initial data. The balance is the wallet data only if the state of the wallet is active. As a result, the state should be checked before fetching any data. 
 
-To produce the message is the process of constructing the bag of cell. 
+To produce the message is the process of constructing the bag of cell. The double semicolon indicates the comments. Royalty parameters include royalty factor, royalty base, and royalty address. The comments state what kinds of data are storage in the current contract program. The storage items are owner address, next nft item index, cell reference(collection content and common content cell), nft item code, royalty parameters. 
+
+
