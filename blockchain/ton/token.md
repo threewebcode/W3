@@ -8,4 +8,6 @@ The empty object corresponds to one empty cell bag. The concrete class is create
 
 To produce the message is the process of constructing the bag of cell. The double semicolon indicates the comments. Royalty parameters include royalty factor, royalty base, and royalty address. The comments state what kinds of data are storage in the current contract program. The storage items are owner address, next nft item index, cell reference(collection content and common content cell), nft item code, royalty parameters. 
 
+The load data has the inline specifier and used in several place for data loading. The return type of the load data function is a tuple of several different type items. All of them are storage items. The get data function is standard library function of loading data from the contract storage. In essence, the get data function fetches a state storage tree under the hood. 
+
 
