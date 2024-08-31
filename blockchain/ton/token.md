@@ -16,12 +16,16 @@ The item index in the collection, item binary code, amount, content data must be
 
 The storage of nft item are the index in the collection, collection address, owner address and its content. The first item is flag value which indicates the different specific cases. The input parameters of send raw message are the message body and send mode. 
 
-# Chinese Parts
+## Chinese Parts
 
 智能合约地址包含两个部分：链标识和地址，目前只有一个主链和一个工作链，地址的总长度是4个字节加上32字节，当钱包
 发送消息时，会检查目的地地址的合法性。地址具有测试网和主网的标识符，等同于说，一个地址可能只属于一个网络，如果
 目标地址是未初始化状态的话，默认会强制关闭消息的弹回属性。所有权实体的描述和变更，首先有一个分类或者品类，具体
 实体与这个品类关联并属于这个类别。不可拆分代币需要实现相关内部消息的处理接口，转移的接口的技术规范上对参数作出
 了要求，有查询标识符，新所有者，响应地址，可选自定义数据项，发向新所有者的金额，发送给新所有者的数据包。
+
+## TypeScript
+
+Both integer and float point number are number types in the ts language. String is a type of representing the textual data. The boolean type represents a logical value. The null represents an intentional absence of any value. The symbol is a unique and immutable primitive value. The bigint represents integers with arbitrary precision. The object represents a non-primitive types. It includes array, function and user-defined type. There are two ways of declaring the array type. One is to use square bracket, the other is to use the array symbol type. The tuple is fixed-size array and each index can have different data type. The enumeration is a way to define a set named constants. The any type allows any kinds of values. The unknown type is similar to any, but it is more safer because type check is still performed. The void type indicates that the function does not return a value. The never type represents the values never occur. The union type allows a variable to have multiple types. The intersection type combines multiple types into one type.
 
 
