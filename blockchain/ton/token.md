@@ -12,4 +12,16 @@ The load data has the inline specifier and used in several place for data loadin
 
 Both of impure and inline are the function specifiers of the save data function. The return type is an empty tuple. However, the input parameters are all of the data which need to be stored in the current program. The set data in the standard interface for data storage into the global chain storage. The nft item index and its owner address are the initial data of the initial state. The initial state of the nft item are its item code and its specific initial data. 
 
+The item index in the collection, item binary code, amount, content data must be known when the nft item is planned to be deployed into the open network. The begin cell and end cell are the pair functions of building a cell type of data. The fist item in the cell message are the type or flag of the message which determines how the messages are processed. The sender address is the second item in the message cell. The operation code and query id are first and second items in the message body. 
+
+The storage of nft item are the index in the collection, collection address, owner address and its content. The first item is flag value which indicates the different specific cases. The input parameters of send raw message are the message body and send mode. 
+
+# Chinese Parts
+
+智能合约地址包含两个部分：链标识和地址，目前只有一个主链和一个工作链，地址的总长度是4个字节加上32字节，当钱包
+发送消息时，会检查目的地地址的合法性。地址具有测试网和主网的标识符，等同于说，一个地址可能只属于一个网络，如果
+目标地址是未初始化状态的话，默认会强制关闭消息的弹回属性。所有权实体的描述和变更，首先有一个分类或者品类，具体
+实体与这个品类关联并属于这个类别。不可拆分代币需要实现相关内部消息的处理接口，转移的接口的技术规范上对参数作出
+了要求，有查询标识符，新所有者，响应地址，可选自定义数据项，发向新所有者的金额，发送给新所有者的数据包。
+
 
