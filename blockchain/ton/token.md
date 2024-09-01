@@ -43,4 +43,6 @@ The anatomy of Contract class:
 - different header data for internal and external message
 - some common methods embedded into the method object
 
+The data object has the power of accepting the data input and output. It is a container of data for data writing and reading. 
+
 
