@@ -30,4 +30,8 @@ Both integer and float point number are number types in the ts language. String 
 
 The software development kits of ton network includes the wallet, contract, provider, ledger and data type as well as the data serialization. All of these stuffs can attach to one class or object. This object is imported and leveraged when beginning to interact with the ton network. 
 
+## TonWeb
+
+The core dependent object is fetch object implemented by the node.js language. It is used to send the http request. The different request has different request payload. The payload is determined by the function name. The recursive function is used to perform the block fetch and achieve the block subscription. Some actions can be executed when some block conditions are met. The memory is one area of data storage. 
+
 
