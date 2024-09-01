@@ -34,4 +34,13 @@ The software development kits of ton network includes the wallet, contract, prov
 
 The core dependent object is fetch object implemented by the node.js language. It is used to send the http request. The different request has different request payload. The payload is determined by the function name. The recursive function is used to perform the block fetch and achieve the block subscription. Some actions can be executed when some block conditions are met. The memory is one area of data storage. 
 
+The anatomy of Contract class:
+- constructor function: provider and options as the input parameters
+- address from the state initialization function
+- code cell and data cell
+- combination of code cell and data cell as the initial state
+- include the library if it is existed
+- different header data for internal and external message
+- some common methods embedded into the method object
+
 
