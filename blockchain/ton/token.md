@@ -45,4 +45,8 @@ The anatomy of Contract class:
 
 The data object has the power of accepting the data input and output. It is a container of data for data writing and reading. 
 
+## TVM
+
+It is a stack based language and it has the stack, control registers, and operation codes. The ton virtual machine is initialized during the compute state of the smart contract. 
+
 
