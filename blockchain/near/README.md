@@ -13,4 +13,6 @@ The merkle root can verify the merkle proof. The users send the transactions to 
 
 Types in the typescript language can be defined using type alias, interface, class, enumeration and imported types from other modules. Values are created through variable declaration, module declaration, enumeration declaration, class declaration, imported values from other modules. 
 
+The primitive types are not objects and have no methods. The primitive types include number,string, boolean, undefined, null, symbol, bigint. The object types are collection of key value pairs. The object types contain object, array, function, date, regular expression. Some special types are introduced as the additional types which can be used in some specific environments. The special types have buffer, stream, promise. The buffer type is the binary data of primitive types. The stream type is used in the input and output of file operations.
+
 
