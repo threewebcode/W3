@@ -9,4 +9,8 @@ The merkle root can verify the merkle proof. The users send the transactions to 
 
 可拆分代币有元数据接口和转移所有权接口，账户和合约的数据可能在不同的分片链上，合约初始化一次，代币可以转给账户 或者合约账户，账户需要支付数据存储的成本，有铸造、销毁和发送三种常用事件，代币有授权和撤销管理功能，版税支付接 口，钱包管理密钥对，签名待发送的交易。
 
+## TypeScript Tool
+
+Types in the typescript language can be defined using type alias, interface, class, enumeration and imported types from other modules. Values are created through variable declaration, module declaration, enumeration declaration, class declaration, imported values from other modules. 
+
 
