@@ -15,4 +15,8 @@ Types in the typescript language can be defined using type alias, interface, cla
 
 The primitive types are not objects and have no methods. The primitive types include number,string, boolean, undefined, null, symbol, bigint. The object types are collection of key value pairs. The object types contain object, array, function, date, regular expression. Some special types are introduced as the additional types which can be used in some specific environments. The special types have buffer, stream, promise. The buffer type is the binary data of primitive types. The stream type is used in the input and output of file operations.
 
+Typed array are array-like objects that provide a mechanism for reading and writing the raw binary data in the memory buffer. The typed array specifies the element type in the array. The byte type of array elements can be 8-bits integer, unsigned 8-bits integer, and 32 bits float number. The set and map are collections that allow for storing the unique item or key-value pairs. The weak map and set are similar to the map and set, but allow for garbage collection of keys or values that are no longer referenced.
+
+The promise represents a future value in the asynchronous operations. A proxy object enables defining custom behaviors for fundamental operations. The reflect object provides methods for interceptable javascript operations.It can be used for metaprogramming. The function type can be categorized as common function, arrow function, anonymous function, higher-order function and closure function. The double question mark operator can tell us whether the value is undefined/null or not. The question mark plus the dot character can handle the target object's emptiness when accessing its property. 
+
 
