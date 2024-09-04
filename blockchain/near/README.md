@@ -29,4 +29,6 @@ A lexicon is a dictionary or vocabulary of a language. It refers to the complete
 
 An abstract syntax tree is a tree-like data structure that represents the syntactic structure of a programming language. It is an abstract representation of the code, capturing the essential elements and their relationship, while omitting unnecessary details. The sequence of tokens is parsed into a tree-like structure, where each node represents a syntactic construct in the programming language. The abstract syntax tree is a tree-like data structure, where each node represents a construct in the programming language, such as a variable declaration, a function call, or an arithmetic expression. The relationship between these constructs are represented by the tree data structure, with parent-child relationship indicating the hierarchical nature of the code.
 
+Each node in the abstract syntax tree represents a specific construct in the programming language. The specific structure of abstract syntax tree may vary, depending on the programming language. The node types in the abstract syntax tree are literal node, variable node, operator node, function node, control flow node, assignment node, class node, method node, import node, include node and comment node. 
+
 
