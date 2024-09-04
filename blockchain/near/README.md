@@ -23,4 +23,6 @@ The optional chaining operator can ensure that expressions are chained and conti
 
 A compiler is a computer program that translates code written in a high-level programming language into a low-level language. The main purpose of a compiler is to automate the translation process, ensure the correctness of the output, and report any errors in the source code.
 
+A typical compiler can be divided into the following main phases: lexical analysis, syntax analysis, semantic analysis, intermediate code generation, code optimization, code generation and symbol table management. Compilers can be designed using various techniques, including parsing techniques, code generation strategies, optimization techniques, memory management, error handling.
+
 
