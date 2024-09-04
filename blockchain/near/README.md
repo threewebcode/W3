@@ -25,4 +25,6 @@ A compiler is a computer program that translates code written in a high-level pr
 
 A typical compiler can be divided into the following main phases: lexical analysis, syntax analysis, semantic analysis, intermediate code generation, code optimization, code generation and symbol table management. Compilers can be designed using various techniques, including parsing techniques, code generation strategies, optimization techniques, memory management, error handling.
 
+A lexicon is a dictionary or vocabulary of a language. It refers to the complete set of words and their meanings that make up a language. It is a fundamental component of a language, distinct from its grammar and syntax. Lexicon focuses on the field of lexicography, which involves the compilation and study of dictionaries and vocabularies. The syntax are the rules that govern how words are combined to form grammatical sentences, including word order and sentence structure. Semantics is the study of the meaning and contents of words and language. 
+
 
