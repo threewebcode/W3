@@ -21,4 +21,6 @@ The promise represents a future value in the asynchronous operations. A proxy ob
 
 The optional chaining operator can ensure that expressions are chained and continuous execution. The template literal allows for multiple-lines strings and string interpolation. The generator function can be paused and resumed, returning an iterator. The error types are important for error handling. There are built-in types of error, type error, reference error and syntax error. The class type provides a way to create objects with the shared properties and methods. The class definition can include constructor and methods. The constructor method is called when an instance of the class is created. It initializes the object's properties. Classes can inherit from other classes by using the extend keyword. The access modifiers are provided to control the visibility of the class members. The static members belong to the class instead of the instance of the class. The interface can be used to define the structure of a class. 
 
+A compiler is a computer program that translates code written in a high-level programming language into a low-level language. The main purpose of a compiler is to automate the translation process, ensure the correctness of the output, and report any errors in the source code.
+
 
