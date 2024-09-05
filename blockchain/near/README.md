@@ -31,4 +31,6 @@ An abstract syntax tree is a tree-like data structure that represents the syntac
 
 Each node in the abstract syntax tree represents a specific construct in the programming language. The specific structure of abstract syntax tree may vary, depending on the programming language. The node types in the abstract syntax tree are literal node, variable node, operator node, function node, control flow node, assignment node, class node, method node, import node, include node and comment node. 
 
+A formal language is a set of strings of symbols that are governed by specific grammatical rules. These symbols include letters, numbers and other characters. Every expression has a clear and unambiguous meaning. Formal languages have defined syntax and semantics. Words and sentences in the natural language can have multiple meanings based on the context. Natural languages can express a wide range of ideas and emotions. 
+
 
