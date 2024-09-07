@@ -6,6 +6,9 @@
 
 The state could be initialized from anchor state, database, execution layer. The provider pattern is used for ethereum execution layer. The type and interface keywords are used. The value list of synchronization state is stalled, synchronizing finalization, synchronizing head, synchronized. The range of slots is indicated by start slot and end slot. 
 
+The question mark can indicate the optional property of the field. The export statement is used to export functions, objects, or primitives from a module, making them available for use in other modules. The asterisk in the export statement signifies that you are exporting all exports from a module. 
+
+
 ## Programming language
 
 Creating a programming language involves several key steps: define the grammar, build the compiler front end, build the compiler back end, implement language features, develop supporting tools. The grammar defines things like keywords, operators, variable, data types, control flow statement,  and the overall structure of valid program. Creating a domain specific language involves the following key steps: identify the domain, design the syntax, implement domain specific language. 
