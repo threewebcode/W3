@@ -6,8 +6,7 @@
 
 The state could be initialized from anchor state, database, execution layer. The provider pattern is used for ethereum execution layer. The type and interface keywords are used. The value list of synchronization state is stalled, synchronizing finalization, synchronizing head, synchronized. The range of slots is indicated by start slot and end slot. 
 
-The question mark can indicate the optional property of the field. The export statement is used to export functions, objects, or primitives from a module, making them available for use in other modules. The asterisk in the export statement signifies that you are exporting all exports from a module. 
-
+The question mark can indicate the optional property of the field. The export statement is used to export functions, objects, or primitives from a module, making them available for use in other modules. The asterisk in the export statement signifies that you are exporting all exports from a module.  The three dot operator is known as the spread operator or rest operator. It is used to expand an iterable object into its individual elements. The rest operator is used in function parameter to gather the remaining arguments into an array. There are several utility types that help manipulate and transform types. They are partial, require, readonly, record, pick, omit, exclude, extract, non nullable, return type, instance type, and this type.
 
 ## Programming language
 
