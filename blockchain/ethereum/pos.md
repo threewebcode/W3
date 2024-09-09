@@ -8,8 +8,7 @@ The state could be initialized from anchor state, database, execution layer. The
 
 The question mark can indicate the optional property of the field. The export statement is used to export functions, objects, or primitives from a module, making them available for use in other modules. The asterisk in the export statement signifies that you are exporting all exports from a module.  The three dot operator is known as the spread operator or rest operator. It is used to expand an iterable object into its individual elements. The rest operator is used in function parameter to gather the remaining arguments into an array. There are several utility types that help manipulate and transform types. They are partial, require, readonly, record, pick, omit, exclude, extract, non nullable, return type, instance type, and this type.
 
-The lodestar is a TypeScript implementation of Ethereum consensus specification. It includes command line tool, beacon node client, validator client and other utilities. 
-
+The lodestar is a TypeScript implementation of Ethereum consensus specification. It includes command line tool, beacon node client, validator client and other utilities. When the block is coming, the block will be processed by the chain and fork choice. There is block processor between the chain and fork choice.
 
 ## Programming language
 
