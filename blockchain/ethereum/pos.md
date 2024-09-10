@@ -14,3 +14,8 @@ The lodestar is a TypeScript implementation of Ethereum consensus specification.
 
 Creating a programming language involves several key steps: define the grammar, build the compiler front end, build the compiler back end, implement language features, develop supporting tools. The grammar defines things like keywords, operators, variable, data types, control flow statement,  and the overall structure of valid program. Creating a domain specific language involves the following key steps: identify the domain, design the syntax, implement domain specific language. 
 
+## Ethereum Specification
+
+分叉选择软件包提供查询区块的头信息，分叉选择存储对象的更新是事件机制触发，触发的因子有时间、区块、投票和惩罚。 The double colon need to be used to specify the type parameter when invoking generic methods. The double colon severs several important purposes, primarily related to namespace resolution and access control. The state of object is changed when its mutable methods are called with passing-in values. 
+
+
