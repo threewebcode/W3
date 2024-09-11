@@ -20,4 +20,6 @@ Creating a programming language involves several key steps: define the grammar, 
 
 Blocks are considered expression, which means they can return an value. The value of the last expression in the block is what gets returned. The return keyword is not needed, the last expression is automatically returned. Since blocks are evaluated to values, the result of block can be assigned to a variable. 
 
+The command name will match the client builder through the command line application system. The client builder will build all the necessary services and start them. The last service is the network service. During this process, the configuration is used to provide the values. The dependent object can be passed as value or atomic reference so that the state can be synchronized between the objects. 
+
 
