@@ -26,4 +26,5 @@ The network service provides the message channel between the inner processes and
 
 The block hash is the index key and the index number is the value. The node is an important data structure, while the indexes and node list are derived data structure. The block should have valid execution payload. The consensus block has the execution payload which can be validated. The execution payload has the execution status and block hash in the execution layer.
 
+It is an evolving philosophy and framework that encourage faster, better application development and faster release of new software features or products to customers. The closer relationship permeates every phase of lifecycle: initial planning, code, build, test, and release, deployment, operation, ongoing monitoring. 
 
