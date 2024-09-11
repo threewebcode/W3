@@ -24,4 +24,6 @@ The command name will match the client builder through the command line applicat
 
 The network service provides the message channel between the inner processes and external peers. The messages are requested and replied through the network routing system. The synchronization service is spawn along side with the network service. The synchronization service is registered into network router. The network router is created and invoked in the network service.
 
+The block hash is the index key and the index number is the value. The node is an important data structure, while the indexes and node list are derived data structure. The block should have valid execution payload. The consensus block has the execution payload which can be validated. The execution payload has the execution status and block hash in the execution layer.
+
 
