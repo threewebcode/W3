@@ -22,4 +22,6 @@ Blocks are considered expression, which means they can return an value. The valu
 
 The command name will match the client builder through the command line application system. The client builder will build all the necessary services and start them. The last service is the network service. During this process, the configuration is used to provide the values. The dependent object can be passed as value or atomic reference so that the state can be synchronized between the objects. 
 
+The network service provides the message channel between the inner processes and external peers. The messages are requested and replied through the network routing system. The synchronization service is spawn along side with the network service. The synchronization service is registered into network router. The network router is created and invoked in the network service.
+
 
