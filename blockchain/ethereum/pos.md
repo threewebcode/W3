@@ -18,4 +18,6 @@ Creating a programming language involves several key steps: define the grammar, 
 
 分叉选择软件包提供查询区块的头信息，分叉选择存储对象的更新是事件机制触发，触发的因子有时间、区块、投票和惩罚。 The double colon need to be used to specify the type parameter when invoking generic methods. The double colon severs several important purposes, primarily related to namespace resolution and access control. The state of object is changed when its mutable methods are called with passing-in values. 
 
+Blocks are considered expression, which means they can return an value. The value of the last expression in the block is what gets returned. The return keyword is not needed, the last expression is automatically returned. Since blocks are evaluated to values, the result of block can be assigned to a variable. 
+
 
