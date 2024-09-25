@@ -249,4 +249,8 @@ In the Rust programming language, the `mpsc` (Multiple Producer, Single Consumer
 
 The main difference between the bounded and unbounded channels in the `mpsc` package is the handling of backpressure. The bounded channel will block the sender when the channel's capacity is reached, while the unbounded channel will not block the sender, potentially leading to increased memory usage.
 
+## Execution Layer
+
+The execution layer adopts RLP encoding. The new block root hash can be calculated by parent root hash and execution payload. During the procedures of calculation, the block header is constructed with each field value. The contract execution log can be retrieved from the execution side via API. The consensus side is only interested in the deposit logs. The execution payload has the main data fields from the execution layer. It is consumed by the consensus layer.
+
 
