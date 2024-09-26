@@ -259,4 +259,6 @@ The genesis time, block hash and execution payload header from execution layer t
 
 There are mature http client libraries which can be used to construct specific http client and send http requests to target server. The block root hash can be regarded as id of block. The block can be found by block root hash. The block contains state root hash so that beacon state can be found by state root hash. The expected data can be computed from block and state objects. In light of known blocks, block reward can be calculated for each validator by checking whether it did attestation work successfully.
 
+The consensus version is determined by fork name. Small pieces of process units are combined to construct a bigger process unit. The duty of proposers are computed at the side of beacon node. The validator client can know this result by sending request to beacon node. The block root hash is the truth. The proposer is the actor who tells the truth. The slot is the time of when the proposer tells the truth.
+
 
