@@ -257,4 +257,6 @@ The deposit object is created from deposit data. The deposit object has two fiel
 
 The genesis time, block hash and execution payload header from execution layer take part in the genesis state in the consensus layer. The metrics is an independent http namespace which is hosted by http framework. The registered http handlers are used to process the incoming metrics http requests. The issue about the attestation should be specified. From the issue and perspective of design, try to understand the data type and structure. Moreover, processing algorithm can be clarified to explain data organization operation.
 
+There are mature http client libraries which can be used to construct specific http client and send http requests to target server. The block root hash can be regarded as id of block. The block can be found by block root hash. The block contains state root hash so that beacon state can be found by state root hash. The expected data can be computed from block and state objects. In light of known blocks, block reward can be calculated for each validator by checking whether it did attestation work successfully.
+
 
