@@ -255,4 +255,6 @@ The execution layer adopts RLP encoding. The new block root hash can be calculat
 
 The deposit object is created from deposit data. The deposit object has two fields: data and proof. The proof is merkel tree proof. The deposit data, blocks and transactions from execution layer are the main data sources which are useful for consensus side. The genesis state of consensus side can be computed with the help of deposit data and genesis block from execution layer. The execution service can fetch the blocks from the execution layer. 
 
+The genesis time, block hash and execution payload header from execution layer take part in the genesis state in the consensus layer. The metrics is an independent http namespace which is hosted by http framework. The registered http handlers are used to process the incoming metrics http requests. The issue about the attestation should be specified. From the issue and perspective of design, try to understand the data type and structure. Moreover, processing algorithm can be clarified to explain data organization operation.
+
 
