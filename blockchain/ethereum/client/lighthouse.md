@@ -253,4 +253,6 @@ The main difference between the bounded and unbounded channels in the `mpsc` pac
 
 The execution layer adopts RLP encoding. The new block root hash can be calculated by parent root hash and execution payload. During the procedures of calculation, the block header is constructed with each field value. The contract execution log can be retrieved from the execution side via API. The consensus side is only interested in the deposit logs. The execution payload has the main data fields from the execution layer. It is consumed by the consensus layer.
 
-The deposit object is created from deposit data. The deposit object has two fields: data and proof. The proof is merkel tree proof. The deposit data, blocks and transactions from execution layer are the main data sources which are useful for consensus side.
+The deposit object is created from deposit data. The deposit object has two fields: data and proof. The proof is merkel tree proof. The deposit data, blocks and transactions from execution layer are the main data sources which are useful for consensus side. The genesis state of consensus side can be computed with the help of deposit data and genesis block from execution layer. The execution service can fetch the blocks from the execution layer. 
+
+
