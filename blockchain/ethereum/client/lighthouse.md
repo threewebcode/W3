@@ -261,4 +261,6 @@ There are mature http client libraries which can be used to construct specific h
 
 The consensus version is determined by fork name. Small pieces of process units are combined to construct a bigger process unit. The duty of proposers are computed at the side of beacon node. The validator client can know this result by sending request to beacon node. The block root hash is the truth. The proposer is the actor who tells the truth. The slot is the time of when the proposer tells the truth.
 
+The proposer index is included in the block. It is referenced when computing block reward. The total reward is the sum of block proposal reward plus attestation reward plus synchronization reward minus slashing punishment for proposing and attesting. Each fork name has its own execution payload data structure. The block is loaded from the database. If it is full block, it is just the target block. If it is blinded block, the execution payload is loaded from execution layer. 
+
 
