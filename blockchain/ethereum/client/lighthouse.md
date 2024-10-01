@@ -264,3 +264,5 @@ The consensus version is determined by fork name. Small pieces of process units 
 The proposer index is included in the block. It is referenced when computing block reward. The total reward is the sum of block proposal reward plus attestation reward plus synchronization reward minus slashing punishment for proposing and attesting. Each fork name has its own execution payload data structure. The block is loaded from the database. If it is full block, it is just the target block. If it is blinded block, the execution payload is loaded from execution layer. 
 
 The beacon node is a big data object which stores block, attestation and process them at the same time. The state, reward as well as slashing are processed on the basis of block and state. There are gas price for transactions and blob price in the same block. 
+
+Preconfirmation is a proposed mechanism of enabling faster transaction confirmation. 
