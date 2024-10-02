@@ -267,4 +267,6 @@ The beacon node is a big data object which stores block, attestation and process
 
 Preconfirmation is a proposed mechanism of enabling faster transaction confirmation. The PBS is the separation of proposer and builder. The proposer has the right of proposing block. The work of block construction can be outsourced or delegated to other actors like builder. The block builder focuses on the job of transaction selection and inclusion.
 
+The record is keyword in the java and typescript language. The mapping between address and storage key list are access entry list. It is used to place restrictions on the address. The account has balance and storage root. The storage root represents storage trie tree. The state associated with account can be stored at the node of state trie tree. 
+
 
