@@ -269,4 +269,6 @@ Preconfirmation is a proposed mechanism of enabling faster transaction confirmat
 
 The record is keyword in the java and typescript language. The mapping between address and storage key list are access entry list. It is used to place restrictions on the address. The account has balance and storage root. The storage root represents storage trie tree. The state associated with account can be stored at the node of state trie tree. 
 
+The attributes and actions are used to define and describe a thing. The same thing can be represented by different data types. The data type can be transformed. The most important data types are transaction, hash, consensus and signature. The json and yaml file are used as the configuration file. 
+
 
