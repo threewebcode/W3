@@ -271,4 +271,6 @@ The record is keyword in the java and typescript language. The mapping between a
 
 The attributes and actions are used to define and describe a thing. The same thing can be represented by different data types. The data type can be transformed. The most important data types are transaction, hash, consensus and signature. The json and yaml file are used as the configuration file. 
 
+Different keystore strategies can be applied to store the keys. The SDK can be implemented by any programming language. The language orders the grammar items differently. Contract fields are regarded as contract state. The word is is the keyword in the contract language. The contract address can stand for contract instance. It can be registered into proxy contract and act as delegated contract.
+
 
