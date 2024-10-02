@@ -265,4 +265,6 @@ The proposer index is included in the block. It is referenced when computing blo
 
 The beacon node is a big data object which stores block, attestation and process them at the same time. The state, reward as well as slashing are processed on the basis of block and state. There are gas price for transactions and blob price in the same block. 
 
-Preconfirmation is a proposed mechanism of enabling faster transaction confirmation. The PBS is the separation of proposer and builder.
+Preconfirmation is a proposed mechanism of enabling faster transaction confirmation. The PBS is the separation of proposer and builder. The proposer has the right of proposing block. The work of block construction can be outsourced or delegated to other actors like builder. The block builder focuses on the job of transaction selection and inclusion.
+
+
