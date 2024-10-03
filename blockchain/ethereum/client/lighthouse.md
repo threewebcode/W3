@@ -275,4 +275,6 @@ Different keystore strategies can be applied to store the keys. The SDK can be i
 
 There are storage, encoding, rpc plugins and fundamental services. The block has proposer, creator, scheduler, miner, executor. Transaction engine is offered by API declarations. The proper programming language is adopted to implement technical specification. 
 
+The basic data structures are used to create trie data structure. The undo operation can be performed on the list and map data type and achieve state rollback. The data section can be described as offset point and data length. The operation codes have registry table which holds all of operation codes. The specific version must be provided when instantiating virtual machine object.
+
 
