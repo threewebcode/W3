@@ -281,4 +281,6 @@ Push, duplicate and swap are three basic operations on the stack. A new data str
 
 It is a rule that contract code has maximum size. Ethereum virtual machine is dependent variable for contract executor. Each fork version has the tiny differences so that each of them has its own executor. The account has direct attributes like address and balance. It also has map data container for state storage. The block has gas limit for whole block. 
 
+The memory storage is supported by byte array. There are two message types: contract creation message and contract call message. One is to create contract and the other is to invoke function from contract. The operation system, architecture can be detected by invoking low level interfaces.
+
 
