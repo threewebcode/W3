@@ -279,4 +279,6 @@ The basic data structures are used to create trie data structure. The undo opera
 
 Push, duplicate and swap are three basic operations on the stack. A new data structure is composed of data state and state mutation function. There is also pure function which just does computation work. There are rules which are used to check the validity of contracts. The contract code is byte code. If the code is layouted in the format of ethereum object format, there are clear rules which are specified in the ethereum improvement protocol and can be used to validator smart contract codes.
 
+It is a rule that contract code has maximum size. Ethereum virtual machine is dependent variable for contract executor. Each fork version has the tiny differences so that each of them has its own executor. The account has direct attributes like address and balance. It also has map data container for state storage. The block has gas limit for whole block. 
+
 
