@@ -277,4 +277,6 @@ There are storage, encoding, rpc plugins and fundamental services. The block has
 
 The basic data structures are used to create trie data structure. The undo operation can be performed on the list and map data type and achieve state rollback. The data section can be described as offset point and data length. The operation codes have registry table which holds all of operation codes. The specific version must be provided when instantiating virtual machine object.
 
+Push, duplicate and swap are three basic operations on the stack. A new data structure is composed of data state and state mutation function. There is also pure function which just does computation work. There are rules which are used to check the validity of contracts. The contract code is byte code. If the code is layouted in the format of ethereum object format, there are clear rules which are specified in the ethereum improvement protocol and can be used to validator smart contract codes.
+
 
