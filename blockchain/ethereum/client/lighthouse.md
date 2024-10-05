@@ -283,4 +283,4 @@ It is a rule that contract code has maximum size. Ethereum virtual machine is de
 
 The memory storage is supported by byte array. There are two message types: contract creation message and contract call message. One is to create contract and the other is to invoke function from contract. The operation system, architecture can be detected by invoking low level interfaces.
 
-
+A new engine API is added for blob stuff. 
