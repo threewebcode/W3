@@ -285,4 +285,6 @@ The memory storage is supported by byte array. There are two message types: cont
 
 A new engine API is added for blob stuff. The storage service is created and register key value storage factory. The storage factory can produce key value storage instance on demand. The input from pipe is processed and put into out pipe. The command line is entry point that bootstraps all services from separate packages.
 
+Bench test is one kind of performance test. It can find the bottlenecks in the software program. Byte type is basic unit type. The RLP is divided into input and output. The input has various data types. RLP encoding scheme provides the encoding rules of transferring data object into bytes type. The original value and type can be decoded from bytes according to encoding rules. 
+
 
