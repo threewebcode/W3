@@ -287,4 +287,6 @@ A new engine API is added for blob stuff. The storage service is created and reg
 
 Bench test is one kind of performance test. It can find the bottlenecks in the software program. Byte type is basic unit type. The RLP is divided into input and output. The input has various data types. RLP encoding scheme provides the encoding rules of transferring data object into bytes type. The original value and type can be decoded from bytes according to encoding rules. 
 
+The node visitor provides the node process opportunity. The node is either leaf node or branch node. The tree has nodes and node has location path. The node has factory, loader, visitor and children. The point is composed of three elements. 
+
 
