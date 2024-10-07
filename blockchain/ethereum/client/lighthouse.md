@@ -289,4 +289,6 @@ Bench test is one kind of performance test. It can find the bottlenecks in the s
 
 The node visitor provides the node process opportunity. The node is either leaf node or branch node. The tree has nodes and node has location path. The node has factory, loader, visitor and children. The point is composed of three elements. 
 
+The block contains transactions. The transaction mutates world state. The transaction outputs are transaction receipts. When block hash and transaction index are known, the transaction can be located from blockchain ledger. There are some known nodes in the network. Connection timeout is most popular network configuration item as well as network address and port. There are sub or child protocols which are supervised by protocol manager.
+
 
