@@ -291,4 +291,6 @@ The node visitor provides the node process opportunity. The node is either leaf 
 
 The block contains transactions. The transaction mutates world state. The transaction outputs are transaction receipts. When block hash and transaction index are known, the transaction can be located from blockchain ledger. There are some known nodes in the network. Connection timeout is most popular network configuration item as well as network address and port. There are sub or child protocols which are supervised by protocol manager.
 
+The peer or node object has fork id property which is aimed to join right network. The endpoint object can be extracted from enode string format value. The peer discovery message is sent and received via UDP transport protocol. The network space divides network into sub-protocols. The values of sync mode are full, fast, snapshot and checkpoint. 
+
 
