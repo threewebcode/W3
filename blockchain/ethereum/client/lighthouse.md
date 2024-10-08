@@ -295,4 +295,6 @@ The peer or node object has fork id property which is aimed to join right networ
 
 The block creation is the aspect of how to create block. The abstract class is utilized to create block with the help of associated class members. The transactions are picked by transaction selector. The block header and body are preparation work before creating block. The block root hash and state root hash are primary keys for fetching block and state data. 
 
+The block is scheduled by time clock. The process should wait before next time slot is valid for block creation. The executable task is executed by execution service offered by thread executor. The job of miner is to mine and create the block. The miner accepts work definition and submit solution for assigned work. The authentication methods should be provided for API access and control. 
+
 
