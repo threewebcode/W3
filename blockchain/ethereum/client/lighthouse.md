@@ -293,4 +293,6 @@ The block contains transactions. The transaction mutates world state. The transa
 
 The peer or node object has fork id property which is aimed to join right network. The endpoint object can be extracted from enode string format value. The peer discovery message is sent and received via UDP transport protocol. The network space divides network into sub-protocols. The values of sync mode are full, fast, snapshot and checkpoint. 
 
+The block creation is the aspect of how to create block. The abstract class is utilized to create block with the help of associated class members. The transactions are picked by transaction selector. The block header and body are preparation work before creating block. The block root hash and state root hash are primary keys for fetching block and state data. 
+
 
