@@ -297,4 +297,6 @@ The block creation is the aspect of how to create block. The abstract class is u
 
 The block is scheduled by time clock. The process should wait before next time slot is valid for block creation. The executable task is executed by execution service offered by thread executor. The job of miner is to mine and create the block. The miner accepts work definition and submit solution for assigned work. The authentication methods should be provided for API access and control. 
 
+Liveness and readiness are two facets of health service. The world state is updated and transaction receipts are manufactured after blocks are processed. The boolean flag and exception can indicate the result of block validation. The blockchain has data viewer and updater. The reorganization happens when new block's parent hash is not equal to block hash of current block. 
+
 
