@@ -299,4 +299,5 @@ The block is scheduled by time clock. The process should wait before next time s
 
 Liveness and readiness are two facets of health service. The world state is updated and transaction receipts are manufactured after blocks are processed. The boolean flag and exception can indicate the result of block validation. The blockchain has data viewer and updater. The reorganization happens when new block's parent hash is not equal to block hash of current block. 
 
+The data should be well organized. The blob location has the same design as transaction location in the block. The function type is return type of main function. 
 
