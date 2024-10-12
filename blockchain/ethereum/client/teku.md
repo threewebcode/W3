@@ -16,4 +16,6 @@ The best headers from layer one network can be subscribed for event processing. 
 
 The calldata can be extracted from transaction. Transaction logs are captured by contract events. The type is used to distinguish similar things. Different aspects of data are sourced and derived. The steps of derivation are pipelined. The contract address must be known before it is invoked. The data frame has clear and fixed data format. 
 
+The genesis payload and state is checked at the first step. The block number, block hash, parent hash, sequence number, layer one origin and timestamps are the ingredients of layer two block. The parameters are always constant variables. The configuration is always dynamic variables. The state of layer one is traced to trigger layer two block derivation. 
+
 
