@@ -6,4 +6,6 @@ The single channel or bidirectional channel could be created for files on the op
 
 How to create variables and use them is the key question in the programming. Build and deploy projects are two ordered processes. One target in make file is equal to one function in the bash script. The command line application is written to do something. The latest unsafe block is located in the execution engine side. 
 
+The files and directories are ignored if git ignore file is specified. The same chain names have different networks. The configuration are different between different networks. The chain name is same as fork name. The chain is identified by chain id. The transaction metadata can be fetched from execution layer, however, the blob data must be retrieved from beacon client.
+
 
