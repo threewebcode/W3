@@ -14,4 +14,6 @@ The peer id is derived from private key. The bytes are converted to hex string v
 
 The best headers from layer one network can be subscribed for event processing. Safe head informations are persisted into database storage. The P2P network protocol is implemented by P2PNode object and bound with primary node object. The peer is scored for performance and choice. 
 
-The calldata can be extracted from transaction. 
+The calldata can be extracted from transaction. Transaction logs are captured by contract events. The type is used to distinguish similar things. Different aspects of data are sourced and derived. The steps of derivation are pipelined. The contract address must be known before it is invoked. The data frame has clear and fixed data format. 
+
+
