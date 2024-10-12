@@ -10,4 +10,8 @@ The files and directories are ignored if git ignore file is specified. The same 
 
 When you learn new programming language, you must know how to create command line application by this new language. The transaction is made of transaction frames. The golang bindings are generated from Solidity language codes. The code bindings are used to make call with smart contracts deployed on the layer one network. The data view should be provided by command line tools. 
 
+The peer id is derived from private key. The bytes are converted to hex string value. When layer one block hash is known, the layer two block output can be queried again output oracle contract on the layer one network. Safe head and block hash are from layer one network. 
+
+The best headers from layer one network can be subscribed for event processing. Safe head informations are persisted into database storage. The P2P network protocol is implemented by P2PNode object and bound with primary node object. The peer is scored for performance and choice. 
+
 
