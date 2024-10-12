@@ -8,4 +8,6 @@ How to create variables and use them is the key question in the programming. Bui
 
 The files and directories are ignored if git ignore file is specified. The same chain names have different networks. The configuration are different between different networks. The chain name is same as fork name. The chain is identified by chain id. The transaction metadata can be fetched from execution layer, however, the blob data must be retrieved from beacon client.
 
+When you learn new programming language, you must know how to create command line application by this new language. The transaction is made of transaction frames. The golang bindings are generated from Solidity language codes. The code bindings are used to make call with smart contracts deployed on the layer one network. The data view should be provided by command line tools. 
+
 
