@@ -18,4 +18,6 @@ The calldata can be extracted from transaction. Transaction logs are captured by
 
 The genesis payload and state is checked at the first step. The block number, block hash, parent hash, sequence number, layer one origin and timestamps are the ingredients of layer two block. The parameters are always constant variables. The configuration is always dynamic variables. The state of layer one is traced to trigger layer two block derivation. 
 
+The execution engine is managed by the controller. Three kinds of engine clients are supported. The math problem is how to find layer one's origin block when layer two's head is known. The solution is to check current layer one's origin block and find next one by adding block number if the current origin lags behind. This aspect is implemented by origin selector and its algorithm.
+
 
