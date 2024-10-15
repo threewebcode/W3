@@ -12,5 +12,5 @@ Batch Queue:
     * batch list
 
 a:
-  * b
-  * c
+  *b
+  *c
