@@ -11,3 +11,6 @@ Batch Queue:
     * block list
     * batch list
 
+The batch queue can accept new batch and pop batch from the queue.  The batch queue is a queue for batch. The block list is used for mapping and validation.
+
+
