@@ -35,4 +35,11 @@ Data Type of Sequencer Structure:
 
 The sequencer instance listens on the event and trigger specific event handling. The payload attributes are prepared before building new block. The payload attribute is emitted by build start event.  The most important method of sequencer instance is event listener method. It will process all kinds of events which it is able to process.
 
+The attributes in OP:
+  - payload attributes
+  - Eth block reference
+  - OP block reference
+
+The payload attributes are prepared with additional transactions which are not normal OP user transactions. The attribute queue has the property of batch queue. The attributes can merge the transactions from the batch.
+
 
