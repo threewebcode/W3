@@ -19,4 +19,6 @@ Batch Interface:
   - as single batch
   - as span batch
 
+The batch has type and timestamp. It can be either single batch or span batch. The batch contains batch data which is encoded and decoded by RLP algorithm.
+
 
