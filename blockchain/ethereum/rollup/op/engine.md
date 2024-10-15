@@ -6,4 +6,9 @@ Batch Queue:
   * structure type
   * member list:
     * rollup configuration
+    * next batch provider
+    * original block
+    * block list
+    * batch list
+
 
