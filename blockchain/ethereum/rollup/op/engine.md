@@ -21,4 +21,18 @@ Batch Interface:
 
 The batch has type and timestamp. It can be either single batch or span batch. The batch contains batch data which is encoded and decoded by RLP algorithm.
 
+Data Type of Sequencer Structure:
+  - context
+  - rollup configuration
+  - chain specification
+  - state listener
+  - conductor
+  - asynchronous gossip
+  - event emitter
+  - attribute builder
+  - origin selector
+  - building state
+
+The sequencer instance listens on the event and trigger specific event handling. The payload attributes are prepared before building new block. The payload attribute is emitted by build start event.  The most important method of sequencer instance is event listener method. It will process all kinds of events which it is able to process.
+
 
