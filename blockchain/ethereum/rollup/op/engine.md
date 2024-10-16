@@ -42,4 +42,8 @@ The attributes in OP:
 
 The payload attributes are prepared with additional transactions which are not normal OP user transactions. The attribute queue has the property of batch queue. The attributes can merge the transactions from the batch.
 
+The finalizer is the actor who performs some actions in the final step. These actions include updating corresponding data and making the pointers to point to new value.
+
+There are emitter and executor for event. The block is polled and send to babylon network with signature. The client is the tool which is used to interact with chain network.
+
 
