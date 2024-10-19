@@ -6,4 +6,6 @@ The beacon block has slot, proposer index, parent hash, state hash and block bod
 
 The class is provided to get data object from ssz bytes form. Justified and finalized are two types of checkpoints. The beacon node needs to know how many deposits are submitted in the execution layer as well as timestamp and hash proof. 
 
+A function is callable and a thread is runnable. They can be executed in the asynchronous mode. The future is delayed waiting result. The task queue can be throttled. The task can be scheduled by timer. The BLS crypto algorithm is implemented by java language. The key store for BLS cryptography is specified. Limited collections are constructed in java language. 
+
 
