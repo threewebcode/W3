@@ -10,4 +10,6 @@ A function is callable and a thread is runnable. They can be executed in the asy
 
 The event mechanism is written by java language. There are event channel, event deliver and event consumer concepts and code items. HTTP is network protocol for networking functionalities. IO is data storage protocol for file reading and writing in the local file system. The infrastructure folder contains common libraries for upper application codes.
 
+The KZG cryptography is implemented by c language. Its interfaces are called via JNI method. The trust setup is loaded at first step. It is able to do the verification work when blob data, commitment and proof are known. The commitment is computed on the basis of blob data. The proof is calculated based on the blob and commitment data. KZG is powerful when it is used in batch mode. The commitment and proof have several different data formats which are transformable. 
+
 
