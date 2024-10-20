@@ -12,4 +12,6 @@ The event mechanism is written by java language. There are event channel, event 
 
 The KZG cryptography is implemented by c language. Its interfaces are called via JNI method. The trust setup is loaded at first step. It is able to do the verification work when blob data, commitment and proof are known. The commitment is computed on the basis of blob data. The proof is calculated based on the blob and commitment data. KZG is powerful when it is used in batch mode. The commitment and proof have several different data formats which are transformable. 
 
+The networking directory offers the network capabilities which includes P2P protocol, gossip protocol, subnet protocol, discovery protocol and peer manager. It routes the messages between different peers. The peer can publish and receive messages from each other.
+
 
