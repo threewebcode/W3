@@ -14,4 +14,6 @@ The KZG cryptography is implemented by c language. Its interfaces are called via
 
 The networking directory offers the network capabilities which includes P2P protocol, gossip protocol, subnet protocol, discovery protocol and peer manager. It routes the messages between different peers. The peer can publish and receive messages from each other.
 
+The storage folder provides data storage layer which contains data channel API, store, data schema and low-level storage databases as well as some storage features like hot data, cold data, archival data and data prune. The database or file storage are basic storage medium. The schema tells how to store the data. The API provides data storage features like access, write, query, delete and cache.
+
 
