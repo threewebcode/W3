@@ -16,4 +16,6 @@ The networking directory offers the network capabilities which includes P2P prot
 
 The storage folder provides data storage layer which contains data channel API, store, data schema and low-level storage databases as well as some storage features like hot data, cold data, archival data and data prune. The database or file storage are basic storage medium. The schema tells how to store the data. The API provides data storage features like access, write, query, delete and cache.
 
+The interface, abstract class and concrete class are coding pattern in object programming paradigm. The software program is a system which should be organized and managed well. The codes from parent class is executed before the codes in the concrete class. The design pattern leads to the ordering of execution. The node types are classified as beacon node and validator node.
+
 
