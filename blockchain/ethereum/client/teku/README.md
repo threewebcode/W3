@@ -18,4 +18,6 @@ The storage folder provides data storage layer which contains data channel API, 
 
 The interface, abstract class and concrete class are coding pattern in object programming paradigm. The software program is a system which should be organized and managed well. The codes from parent class is executed before the codes in the concrete class. The design pattern leads to the ordering of execution. The node types are classified as beacon node and validator node.
 
+The command line has options and arguments. The converters are needed for options' values. The concatenation of configuration, optional values and arguments will choose node type and node service controller from node facade class. It is one command for two node types.
+
 
