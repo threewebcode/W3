@@ -20,4 +20,6 @@ The interface, abstract class and concrete class are coding pattern in object pr
 
 The command line has options and arguments. The converters are needed for options' values. The concatenation of configuration, optional values and arguments will choose node type and node service controller from node facade class. It is one command for two node types.
 
+The specification object has fork information. The network specification is composed of forks, fork schedule and state transitions. Every fork has its specific configuration and capabilities. The block and state provider can offer the block and state data object for further processing. The block tree is constituted by block hash node. 
+
 
