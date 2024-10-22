@@ -22,4 +22,6 @@ The command line has options and arguments. The converters are needed for option
 
 The specification object has fork information. The network specification is composed of forks, fork schedule and state transitions. Every fork has its specific configuration and capabilities. The block and state provider can offer the block and state data object for further processing. The block tree is constituted by block hash node. 
 
+The new state is generated when new block is processed with previous state. The tasks are queued in the memory cache and statistics are counted. The state can be rebased and archored. The ancestor block and state should be founded and consensused for new era. Known states can be cached for performance. The base state is selectable by options and algorithms.
+
 
