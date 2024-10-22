@@ -24,4 +24,6 @@ The specification object has fork information. The network specification is comp
 
 The new state is generated when new block is processed with previous state. The tasks are queued in the memory cache and statistics are counted. The state can be rebased and archored. The ancestor block and state should be founded and consensused for new era. Known states can be cached for performance. The base state is selectable by options and algorithms.
 
+The PoW chain provides JSON-RPC and Execution Engine API. The client can fetch data from these APIs for block and execution payload. The state can be from genesis, initial, custom and checkpoint. There is a period of weak subjectivity from epoch start to epoch end. The period of weak subjectivity can be calculated. The time span is the period of weak subjectivity from start epoch to its sum with calculated period.
+
 
