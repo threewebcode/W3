@@ -26,4 +26,6 @@ The new state is generated when new block is processed with previous state. The 
 
 The PoW chain provides JSON-RPC and Execution Engine API. The client can fetch data from these APIs for block and execution payload. The state can be from genesis, initial, custom and checkpoint. There is a period of weak subjectivity from epoch start to epoch end. The period of weak subjectivity can be calculated. The time span is the period of weak subjectivity from start epoch to its sum with calculated period.
 
+The block is validated, imported and broadcasted to the network. The task can be specified by its member fields and it is finished by task runner. The forward synchronization has the capabilities of knowing sync status, active flag, update subscription. The service has the characteristics of start and stop behaviors. The blocks are wrapped in a batch which is imported into local ledger. 
+
 
