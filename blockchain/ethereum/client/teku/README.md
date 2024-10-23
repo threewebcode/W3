@@ -28,4 +28,6 @@ The PoW chain provides JSON-RPC and Execution Engine API. The client can fetch d
 
 The block is validated, imported and broadcasted to the network. The task can be specified by its member fields and it is finished by task runner. The forward synchronization has the capabilities of knowing sync status, active flag, update subscription. The service has the characteristics of start and stop behaviors. The blocks are wrapped in a batch which is imported into local ledger. 
 
+The common ancestor is found from different sources and peers. Virtual machine can be abstracted as register for storage and instruction for computation. Polynomial language is a language to describe constrains on vector of field elements. The group theory is related to high degree equation. 
+
 
