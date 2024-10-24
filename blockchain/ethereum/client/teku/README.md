@@ -32,4 +32,6 @@ The common ancestor is found from different sources and peers. Virtual machine c
 
 The execution payload is gossiped out through peep to peer network. The current execution payload is written into payload channel for query. The fork name is aliased as string type. The type of fork name has the concrete value for each fork. The specification object includes fork name and version information. 
 
+The chain specification is made of chain configuration and chain fork name. The safe head is listened by various parties who are interested in this event data. The output is consisted by state root hash, block hash and message passer storage hash. This output can retrieved from smart contract for history data. The new data is calculated from the new block and served by RPC API. 
+
 
