@@ -34,4 +34,6 @@ The execution payload is gossiped out through peep to peer network. The current 
 
 The chain specification is made of chain configuration and chain fork name. The safe head is listened by various parties who are interested in this event data. The output is consisted by state root hash, block hash and message passer storage hash. This output can retrieved from smart contract for history data. The new data is calculated from the new block and served by RPC API. 
 
+The fork name should be detected as well as engine api version. The derivation is progressed with events and event listeners are the event processors who handle the event and emit new events. Both event and event handler are defined in the same source code file. 
+
 
