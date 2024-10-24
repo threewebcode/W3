@@ -36,4 +36,6 @@ The chain specification is made of chain configuration and chain fork name. The 
 
 The fork name should be detected as well as engine api version. The derivation is progressed with events and event listeners are the event processors who handle the event and emit new events. Both event and event handler are defined in the same source code file. 
 
+The request can be reset when unsafe block hash, safe block hash and finalized block hash are found from the synchronization layer. There is one algorithm which is capable of finding current header information.
+
 
