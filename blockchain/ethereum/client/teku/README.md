@@ -30,4 +30,6 @@ The block is validated, imported and broadcasted to the network. The task can be
 
 The common ancestor is found from different sources and peers. Virtual machine can be abstracted as register for storage and instruction for computation. Polynomial language is a language to describe constrains on vector of field elements. The group theory is related to high degree equation. 
 
+The execution payload is gossiped out through peep to peer network. The current execution payload is written into payload channel for query. The fork name is aliased as string type. The type of fork name has the concrete value for each fork. The specification object includes fork name and version information. 
+
 
