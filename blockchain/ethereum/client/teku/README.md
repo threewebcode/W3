@@ -38,4 +38,12 @@ The fork name should be detected as well as engine api version. The derivation i
 
 The request can be reset when unsafe block hash, safe block hash and finalized block hash are found from the synchronization layer. There is one algorithm which is capable of finding current header information.
 
+The computation steps of how to get current header:
+  - find finalized block
+  - use genesis block is it is not found
+  - find safe block by block query
+  - find unsafe block by sending block request
+
+The critical blocks are stored so that they can be fetched by special tags. All of finalized, safe and unsafe are particular tags for milestone blocks.
+
 
