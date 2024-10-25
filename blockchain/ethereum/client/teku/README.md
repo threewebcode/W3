@@ -46,4 +46,6 @@ The computation steps of how to get current header:
 
 The critical blocks are stored so that they can be fetched by special tags. All of finalized, safe and unsafe are particular tags for milestone blocks.
 
+The block is in the ring buffer. The ring buffer is in the block buffer. The block buffer is in the block tracker. Rate limiter is an independent component and function as standalone feature. The emitter can have rate limit if it embeds rate limiter into its structure. 
+
 
