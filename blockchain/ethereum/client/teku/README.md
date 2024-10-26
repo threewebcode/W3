@@ -48,4 +48,6 @@ The critical blocks are stored so that they can be fetched by special tags. All 
 
 The block is in the ring buffer. The ring buffer is in the block buffer. The block buffer is in the block tracker. Rate limiter is an independent component and function as standalone feature. The emitter can have rate limit if it embeds rate limiter into its structure. 
 
+The inter-operation has its own deriver. The event handler is cased when the event arrives. It is a great ides that the committee synchronization is removed. It is replaced by SNARK. The stateless state tree is also a good idea. The encoding and transaction type is also changed.
+
 
