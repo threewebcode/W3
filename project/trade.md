@@ -8,4 +8,6 @@
 - $UFD, $AVA, and $GIGA
 - ZAILGO, LLM, and SNAI
 - KAS, APT, ARB, TIA, HBAR, MNT, SEI, S, STRK, TON, TRX
-- 
+- $SOLA, $WULFY, $SOAI, $TRUST, $BRAIN, and $MLT 
+- $KWAII, $Listen, $CPU, $MASCO, $Shigga, and $HAL
+ 
