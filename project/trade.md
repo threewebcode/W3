@@ -11,3 +11,12 @@
 - $SOLA, $WULFY, $SOAI, $TRUST, $BRAIN, and $MLT 
 - $KWAII, $Listen, $CPU, $MASCO, $Shigga, and $HAL
  
+## 2025-01-16
+
+- $ARC, $AIXBT, $VIRTUAL, $AI16Z, $GRIFFAIN, $TRISIG, $NEUR, $SNAI, $VADER, $GOAT, $REKT, $FCP, $AVA, $GRIFT, $TANK, $GRPH, $ALPHA, $PIPPIN, $SendAI, $EternalAI, $Shuttle, $Abstract
+- $TANK, $ARC, $ALCH, and $HAT
+- $MAX, $PIPPIN
+- $TOSHI, $VIRTUAL, $REI, $AIXBT, and $AIPUMP
+- $COOK, $TIME, and $MNT
+- $PRIME and $PROMPT
+
