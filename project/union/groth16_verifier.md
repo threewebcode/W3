@@ -1,0 +1,1 @@
+The proof is transformed into field element in the ring. The proof is composed of three elements in the base group and group one. The commitment of proof is the hash of the proof. The knowledge is also an element in the elliphtic curve. It is in the another group. These three items in the protocol have the mathematical relationship and match an equation.
