@@ -18,7 +18,7 @@ The apis are constructed around the account object and able to do query and post
 
 ```
 applyMixin(Aptos, Account, "account");
-applyMixin(Aptos, ANS, "ans");
+applyMixin(Aptos, AND, "and");
 applyMixin(Aptos, Coin, "coin");
 applyMixin(Aptos, DigitalAsset, "digitalAsset");
 applyMixin(Aptos, Event, "event");

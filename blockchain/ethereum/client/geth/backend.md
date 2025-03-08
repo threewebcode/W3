@@ -7,8 +7,8 @@
         - transaction pool
         - blockchain
         - handler
-        - ethereum dial condidates
-        - ethereum snap condidates
+        - ethereum dial candidates
+        - ethereum snap candidates
         - chain database
         - consensus engine
         - account manager

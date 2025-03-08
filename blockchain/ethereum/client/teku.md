@@ -12,7 +12,7 @@ When you learn new programming language, you must know how to create command lin
 
 The peer id is derived from private key. The bytes are converted to hex string value. When layer one block hash is known, the layer two block output can be queried again output oracle contract on the layer one network. Safe head and block hash are from layer one network. 
 
-The best headers from layer one network can be subscribed for event processing. Safe head informations are persisted into database storage. The P2P network protocol is implemented by P2PNode object and bound with primary node object. The peer is scored for performance and choice. 
+The best headers from layer one network can be subscribed for event processing. Safe head information are persisted into database storage. The P2P network protocol is implemented by P2PNode object and bound with primary node object. The peer is scored for performance and choice. 
 
 The calldata can be extracted from transaction. Transaction logs are captured by contract events. The type is used to distinguish similar things. Different aspects of data are sourced and derived. The steps of derivation are pipelined. The contract address must be known before it is invoked. The data frame has clear and fixed data format. 
 

@@ -42,7 +42,7 @@ The vim run command file can contain the vim scripts. The scripts and codes in t
 
 The key can be mapped with the existing command. When the new key is pressed, the correlated action is executed on the text object. The mode name is prefixed when you want to remap the new key. The abbreviation is same like mapping, but it has its own special scenarios. 
 
-The motion has direction and scope. The direction are up, down, left, right. The scope is character, word, block, paragraph. The window can be splitted, switched and closed. 
+The motion has direction and scope. The direction are up, down, left, right. The scope is character, word, block, paragraph. The window can be split, switched and closed. 
 
 The command list has call, cd, chdir, command, compiler, delete, edit, echo, eval, execute, exit, file, function, grep, insert, list, last, move, make, mark, normal, open, perl, python, pwd, read, right, ruby, shell, silent, visual, write and others. All of these commands can be executed in the command mode. 
 

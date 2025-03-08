@@ -2,7 +2,7 @@
 
 ## Endpoints
 
-There is a file named `endpoints.go` under the folder `beacon-chain/rpc`. All endpoints in the beacon node are defined in this file. There are beacon, node, validator, reward, blob, builder, config, debug, event and other endponts. Each endpoint may has GET or POST methods for data operations. 
+There is a file named `endpoints.go` under the folder `beacon-chain/rpc`. All endpoints in the beacon node are defined in this file. There are beacon, node, validator, reward, blob, builder, config, debug, event and other endpoints. Each endpoint may has GET or POST methods for data operations. 
 
 ## Beacon Block API
 

@@ -2,7 +2,7 @@
 
 ## Architecture
 
-When a client is initialized out of box, it starts a varity of services that run in parallel to handle everything required for the life cycle of the beacon chain. 
+When a client is initialized out of box, it starts a variety of services that run in parallel to handle everything required for the life cycle of the beacon chain. 
 
 - A beacon node which powers the beacon chain of Ethereum consensus.
 - A validator client connects to the beacon node and manages staking keypairs.

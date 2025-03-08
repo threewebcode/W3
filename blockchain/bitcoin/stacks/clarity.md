@@ -6,5 +6,5 @@ The function items can be associated with the enumeration type. The asset is ass
 
 The modules are nested and have the relative position and reference relationship. There are user function, native function and special function for the callable type in the clarity contract. The virtual machine finds the process function for the callable data. The clarity codes are parsed, analyzed and interpreted by the virtual machine. 
 
-The environment and database are the context and dependent objects for the clarity virtual machine. The claritysmart contract are analyzed and stored into the database. The enironment is composed of global context, contract context, call stack, sender, caller and sponsor. When the transaction is executed, the result is returned with the inclusion of result, events and costs. 
+The environment and database are the context and dependent objects for the clarity virtual machine. The claritysmart contract are analyzed and stored into the database. The environment is composed of global context, contract context, call stack, sender, caller and sponsor. When the transaction is executed, the result is returned with the inclusion of result, events and costs. 
 

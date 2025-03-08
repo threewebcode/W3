@@ -8,7 +8,7 @@
     - block by hash
     - block by number
     - header by hash
-    - heder by number
+    - header by number
     - transaction count
     - transaction in block
     - subscribe new head

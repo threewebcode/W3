@@ -24,7 +24,7 @@ ZeroDev uses a unique "meta infrastructure" -- we work with various bundler/paym
 
 ### Code Implementation
 
-**Kernal**
+**Kernel**
 
 It is a wallet kernel for extensible wallet functionality. The contract includes functions for executing external contract calls, validating user operations, and checking the validity of signatures. It also includes various import statements for external libraries and contracts.
 

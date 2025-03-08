@@ -9,7 +9,7 @@
         - define light client configuration struct type
         - structure composition: chain configuration and checkpoint hash
         - manufacture different client variables for different networks
-        - provide funtion of creating client configuration instance from the command line context
+        - provide function of creating client configuration instance from the command line context
 3. light client
     - file location: `client.go`
     - file content

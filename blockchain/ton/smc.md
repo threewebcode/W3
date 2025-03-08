@@ -47,7 +47,7 @@ The elements of input parameter list are the code, stack, current state, virtual
 1. create application
 
 ```bash
-npm create ton@lastest
+npm create ton@last
 npx blueprint help
 export WALLET_VERSION="v4"
 address: EQA71ufil0Hn_QHUpjVqLOr0yEIpKFbCMkPeC706dns2wIhR

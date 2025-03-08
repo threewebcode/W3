@@ -11,4 +11,4 @@ This function can be used to introduce a delay in your code execution. By awaiti
 
 ### Viem
 
-The wagmi Viem can provide the client, wrapp the contract and execute the contract's functions with the configured network.
+The wagmi Viem can provide the client, wrap the contract and execute the contract's functions with the configured network.
