@@ -17,4 +17,6 @@ The result computed by the function is return to finish function invocation or a
 
 The error only has error keyword and constructor signature without function body. The storage location can be specified and decorate the variable. There are three locations: calldata, memory and storage. The storage is the persist store. The mathematical calculation must be correct and safe. The role is managed in the authorizer contract implementation. There are factory, proxy and delegate design pattern in the solidity contract. The decentralized finance application is a bit complicated database application on the blockchain network.
 
+Every field or variable should has its meaningful explanation and clear purpose. The relationship between onchain entities are constructed and updated through external interactions. The conditional order should be submited, verified and matched. The permission of send, transfer, deposit, withdraw and swap are authorized or permitted by the permission state updates. The swap path is used to finish swap from source token to target token through middle tokens. More than one hop happened. The liquidity pool is added, removed, swapped and queried.
+
 
