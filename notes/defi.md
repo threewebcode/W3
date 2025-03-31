@@ -15,4 +15,6 @@ The import action can be performed in full elements or partial elements ways. Th
 
 The result computed by the function is return to finish function invocation or assigned to field variable. The mint function is purposed to increase account balance and total supply. The burn function does the opposite work. The modifier function is either preprocess handler or post handler. The function invocation can be nested. One function's output is the input of another function. The modifier function is used to add additional process for current function. Usually, the modifier function adds more conditional constraints. The main category of contract actions are state query and update.
 
+The error only has error keyword and constructor signature without function body. The storage location can be specified and decorate the variable. There are three locations: calldata, memory and storage. The storage is the persist store. The mathematical calculation must be correct and safe. The role is managed in the authorizer contract implementation. There are factory, proxy and delegate design pattern in the solidity contract. The decentralized finance application is a bit complicated database application on the blockchain network.
+
 
