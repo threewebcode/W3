@@ -19,4 +19,4 @@ The error only has error keyword and constructor signature without function body
 
 Every field or variable should has its meaningful explanation and clear purpose. The relationship between onchain entities are constructed and updated through external interactions. The conditional order should be submited, verified and matched. The permission of send, transfer, deposit, withdraw and swap are authorized or permitted by the permission state updates. The swap path is used to finish swap from source token to target token through middle tokens. More than one hop happened. The liquidity pool is added, removed, swapped and queried.
 
-
+The interfaces are composited to produce a powerful contract which meets the high end demands and features from users. The administration functionalities are placed in a separate contract. The common and user-facing features are implemented in an independent contract. 
