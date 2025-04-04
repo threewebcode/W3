@@ -3,14 +3,6 @@
 ## Projects
 
 - [candle](https://github.com/huggingface/candle)
-
-## Candle Framework
-
-
-# Awesome AI 
-
-## Code Repositories
-
 - [Virtual Protocol](https://github.com/orgs/Virtual-Protocol)
 - [ai16z](https://github.com/elizaOS)
 
