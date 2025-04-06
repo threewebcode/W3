@@ -7,6 +7,7 @@
 - [Scaling Video Model](https://arxiv.org/pdf/2504.02438)
 - [Cogntive Architecture of Memory](https://arxiv.org/pdf/2504.02441)
 - [Tree based Model](https://arxiv.org/pdf/2504.02285)
+- [From Text to Graph](https://arxiv.org/pdf/2504.02064)
 
 ## Video Tools
 
@@ -15,6 +16,10 @@
 - [scenedetect](https://github.com/Breakthrough/PySceneDetect)
 - [vidgear](https://github.com/abhiTronix/vidgear)
 - [video-retalk](https://github.com/OpenTalker/video-retalking)
+
+## Graph Model
+
+Transformer architecture makes use of attention mechanism applied to natural language processing. Transformer model vectorises the input text through a tokenizer. The relationship and advancement are exlored between language model, neural network, graph and the automatic conversion of text to structured data. 
 
 ## Diffusion Models
 
