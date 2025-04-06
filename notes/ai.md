@@ -6,6 +6,7 @@
 - [Affordable AI](https://arxiv.org/pdf/2504.02670)
 - [Scaling Video Model](https://arxiv.org/pdf/2504.02438)
 - [Cogntive Architecture of Memory](https://arxiv.org/pdf/2504.02441)
+- [Tree based Model](https://arxiv.org/pdf/2504.02285)
 
 ## Video Tools
 
@@ -17,7 +18,7 @@
 
 ## Diffusion Models
 
-Diffusion models are widely used for image edit task. The image is decomposed into text embedding or diffusion scrore. The image editing tasks include replace, add and remove operations. Reinforcement learning can directly enhance the reasoning capabilities of large language models without extensive reliances on supervised fine tuning. Memory is a crucial element in the workflow of an intelligent agent. 
+Diffusion models are widely used for image edit task. The image is decomposed into text embedding or diffusion scrore. The image editing tasks include replace, add and remove operations. Reinforcement learning can directly enhance the reasoning capabilities of large language models without extensive reliances on supervised fine tuning. Memory is a crucial element in the workflow of an intelligent agent. The memory is categorized into sensory memory, short-term memory and long-term memory. The sensor memory corresponds to request inputs or prompts. 
 
 ## Model Reasoning
 
