@@ -5,6 +5,7 @@
 - [A Survey of Scaling in Large Language Model Reasoning](https://arxiv.org/pdf/2504.02181)
 - [Affordable AI](https://arxiv.org/pdf/2504.02670)
 - [Scaling Video Model](https://arxiv.org/pdf/2504.02438)
+- [Cogntive Architecture of Memory](https://arxiv.org/pdf/2504.02441)
 
 ## Video Tools
 
