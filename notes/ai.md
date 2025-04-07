@@ -11,6 +11,7 @@
 - [Cryptographic Verification of AI Pipeline](https://arxiv.org/pdf/2503.22573)
 - [Framework of Large Action Model](https://arxiv.org/pdf/2503.22673)
 - [Multi-Turn Conversation between Agents](https://arxiv.org/pdf/2503.22458)
+- [Align to Structure](https://arxiv.org/pdf/2504.03622)
 
 ## Video Tools
 
