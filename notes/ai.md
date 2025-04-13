@@ -17,6 +17,7 @@
 - [Responsee Consistancy Index](https://arxiv.org/pdf/2504.07303)
 - [Writing Quality from LLM](https://arxiv.org/pdf/2504.07532)
 - [DM for Tabular Data](https://arxiv.org/pdf/2504.07566)
+- [Speculative Reasoning](https://arxiv.org/pdf/2504.07891)
 
 ## Video Tools
 
