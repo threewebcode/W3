@@ -19,6 +19,7 @@
 - [DM for Tabular Data](https://arxiv.org/pdf/2504.07566)
 - [Speculative Reasoning](https://arxiv.org/pdf/2504.07891)
 - [AI Index Report 2025](https://arxiv.org/pdf/2504.07139)
+- [Dual Engine of Thought](https://arxiv.org/pdf/2504.07872)
 
 ## Video Tools
 
