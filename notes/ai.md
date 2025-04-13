@@ -15,6 +15,7 @@
 - [Redefining small and efficient multimodal model](https://arxiv.org/pdf/2504.05299)
 - [Mathematical Foundation of Positional encoding](https://arxiv.org/pdf/2504.06308)
 - [Responsee Consistancy Index](https://arxiv.org/pdf/2504.07303)
+- [Writing Quality from LLM](https://arxiv.org/pdf/2504.07532)
 
 ## Video Tools
 
