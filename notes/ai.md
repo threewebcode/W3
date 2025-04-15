@@ -22,7 +22,7 @@
 - [Dual Engine of Thought](https://arxiv.org/pdf/2504.07872)
 - [A Blueprint Architecture of Compound AI](https://arxiv.org/pdf/2504.08148)
 - [Steering CLIP’s vision transformer with sparse autoencoders](https://arxiv.org/pdf/2504.08729)
-- 
+- [Code Documentation Agents](https://arxiv.org/pdf/2504.08725)
 
 ## Video Tools
 
