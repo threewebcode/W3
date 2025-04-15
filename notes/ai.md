@@ -24,6 +24,7 @@
 - [Steering CLIP’s vision transformer with sparse autoencoders](https://arxiv.org/pdf/2504.08729)
 - [Code Documentation Agents](https://arxiv.org/pdf/2504.08725)
 - [Data Foundation for Large Language Model](https://arxiv.org/pdf/2504.10326)
+- [Reason Model Principle](https://arxiv.org/pdf/2504.09762)
 
 ## Video Tools
 
