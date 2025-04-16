@@ -1,0 +1,1 @@
+dedicate machines to each types of request. large language serving system collects real-time requests. bidirectional kv cache management. slow thinking process. small reasoning model, 

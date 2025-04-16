@@ -25,6 +25,7 @@
 - [Code Documentation Agents](https://arxiv.org/pdf/2504.08725)
 - [Data Foundation for Large Language Model](https://arxiv.org/pdf/2504.10326)
 - [Reason Model Principle](https://arxiv.org/pdf/2504.09762)
+- [A Survey on Large Reasoning Model](https://arxiv.org/pdf/2504.09100)
 
 ## Video Tools
 
