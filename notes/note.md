@@ -1,1 +1,1 @@
-dedicate machines to each types of request. large language serving system collects real-time requests. bidirectional kv cache management. slow thinking process. small reasoning model, 
+不同的输入模式，离散激活函数，不同知识与技能专家，知识的参数内存，历史知识和外部知识，决策智能体系统，规划多步骤的解决方案，调用外部工具，智能体检索，逻辑推理与动作行为结合，链式思考动态提取证据和事实，增加输出的正确性。问题分解和知识提取，提示模型提出后续问题，每步推理过程进行知识检索，混合专家模型动态提取知识切片。路由网络分析检索查询，计算出检索路径，参数知识和检索化知识，在组件之间编排决策，多层的序列到序列的语言模型，
