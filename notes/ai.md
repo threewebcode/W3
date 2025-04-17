@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Multi-Modal Long Video Modeling](https://arxiv.org/pdf/2504.10443)
 - [MCP Bridge](https://arxiv.org/pdf/2504.08999)
 - [An LLM for Cryptography](https://arxiv.org/pdf/2504.08871)
 - [Expert DAG](https://arxiv.org/pdf/2504.08744)
