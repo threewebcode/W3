@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [MCP Bridge](https://arxiv.org/pdf/2504.08999)
 - [An LLM for Cryptography](https://arxiv.org/pdf/2504.08871)
 - [Expert DAG](https://arxiv.org/pdf/2504.08744)
 - [A Survey of Scaling in Large Language Model Reasoning](https://arxiv.org/pdf/2504.02181)
