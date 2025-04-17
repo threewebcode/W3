@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Deep Math Model](https://arxiv.org/pdf/2504.11456)
 - [Super Agent System](https://arxiv.org/pdf/2504.10519)
 - [A Survey of Frontiers in LLM Reasoning](https://arxiv.org/pdf/2504.09037)
 - [Multi-Modal Long Video Modeling](https://arxiv.org/pdf/2504.10443)
