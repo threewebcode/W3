@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Measure of Variability for Policy Gradient](https://arxiv.org/pdf/2504.11412)
 - [Deep Math Model](https://arxiv.org/pdf/2504.11456)
 - [Super Agent System](https://arxiv.org/pdf/2504.10519)
 - [A Survey of Frontiers in LLM Reasoning](https://arxiv.org/pdf/2504.09037)
