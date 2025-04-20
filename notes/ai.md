@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Virtual Machine for Low Precision in LLM](https://arxiv.org/pdf/2504.12984)
 - [Measure of Variability for Policy Gradient](https://arxiv.org/pdf/2504.11412)
 - [Deep Math Model](https://arxiv.org/pdf/2504.11456)
 - [Super Agent System](https://arxiv.org/pdf/2504.10519)
