@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Code Visionary](https://arxiv.org/pdf/2504.13472)
 - [A Comprehensive Survey of Reward Model](https://arxiv.org/pdf/2504.12328)
 - [Virtual Machine for Low Precision in LLM](https://arxiv.org/pdf/2504.12984)
 - [Measure of Variability for Policy Gradient](https://arxiv.org/pdf/2504.11412)
