@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Parameter Efficient Continual Fine Tuning: A Survey](https://arxiv.org/pdf/2504.13822)
 - [Financial Deep Learning Model](https://arxiv.org/pdf/2504.13521)
 - [Code Visionary](https://arxiv.org/pdf/2504.13472)
 - [A Comprehensive Survey of Reward Model](https://arxiv.org/pdf/2504.12328)
