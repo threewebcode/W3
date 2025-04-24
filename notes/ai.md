@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [A Comprehensive Survey on LLM Safety](https://arxiv.org/pdf/2504.15585)
 - [Deep Learning Code Generation](https://arxiv.org/pdf/2504.15080)
 - [A Survey on LLM Based GUI Agent](https://arxiv.org/pdf/2504.13865)
 - [Parameter Efficient Continual Fine Tuning: A Survey](https://arxiv.org/pdf/2504.13822)
