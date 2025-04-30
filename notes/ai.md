@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [ResearchCodeAgent](https://arxiv.org/pdf/2504.20117)
 - [AutoP2C](https://arxiv.org/pdf/2504.20115)
 - [A Comprehensive Survey on LLM Safety](https://arxiv.org/pdf/2504.15585)
 - [Deep Learning Code Generation](https://arxiv.org/pdf/2504.15080)
