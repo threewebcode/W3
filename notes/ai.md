@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [CodeBC](https://arxiv.org/pdf/2504.21043)
 - [Security Architecture for Agentic System](https://arxiv.org/pdf/2504.21034)
 - [Model Context Protocol](https://arxiv.org/pdf/2504.21030)
 - [ResearchCodeAgent](https://arxiv.org/pdf/2504.20117)
