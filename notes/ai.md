@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Model Context Protocol](https://arxiv.org/pdf/2504.21030)
 - [ResearchCodeAgent](https://arxiv.org/pdf/2504.20117)
 - [AutoP2C](https://arxiv.org/pdf/2504.20115)
 - [A Comprehensive Survey on LLM Safety](https://arxiv.org/pdf/2504.15585)
