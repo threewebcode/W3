@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Beyond the Models](https://arxiv.org/pdf/2505.02489)
 - [CodeBC](https://arxiv.org/pdf/2504.21043)
 - [Security Architecture for Agentic System](https://arxiv.org/pdf/2504.21034)
 - [Model Context Protocol](https://arxiv.org/pdf/2504.21030)
