@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [A Survey of Agent Interoperability Protocol](https://arxiv.org/pdf/2505.02279)
 - [Beyond the Models](https://arxiv.org/pdf/2505.02489)
 - [CodeBC](https://arxiv.org/pdf/2504.21043)
 - [Security Architecture for Agentic System](https://arxiv.org/pdf/2504.21034)
