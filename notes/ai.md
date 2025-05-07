@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [CodeShield](https://arxiv.org/pdf/2505.03574)
 - [A Unified Memory of LLM-based Agents](https://arxiv.org/pdf/2505.02099)
 - [A Survey of Agent Interoperability Protocol](https://arxiv.org/pdf/2505.02279)
 - [Beyond the Models](https://arxiv.org/pdf/2505.02489)
