@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [Internet of Agent](https://arxiv.org/pdf/2505.07176)
 - [A2A and MCP Glue](https://arxiv.org/pdf/2505.03864)
 - [CodeShield](https://arxiv.org/pdf/2505.03574)
 - [A Unified Memory of LLM-based Agents](https://arxiv.org/pdf/2505.02099)
