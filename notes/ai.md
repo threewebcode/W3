@@ -2,6 +2,7 @@
 
 ## Academic Papers
 
+- [A Comprehensive Review of AI Infrastructure](https://arxiv.org/pdf/2505.16771)
 - [AI Agent VS Agentic AI](https://arxiv.org/pdf/2505.10468)
 - [Internet of Agent](https://arxiv.org/pdf/2505.07176)
 - [A2A and MCP Glue](https://arxiv.org/pdf/2505.03864)
