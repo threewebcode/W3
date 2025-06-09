@@ -1,5 +1,6 @@
 # Finance
 
+- [Injective Helix](https://github.com/InjectiveLabs/injective-helix-demo)
 - [DeFi Derivatives](https://github.com/0xperp/defi-derivatives)
 - [Uniswap Hook](https://arxiv.org/pdf/2410.10162)
 - [SoK:DEX](https://arxiv.org/pdf/2103.12732)
