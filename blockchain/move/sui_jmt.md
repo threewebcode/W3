@@ -1,6 +1,6 @@
 ---
 
-## 1️⃣ First Principles: What JMT Is *For* in Sui
+## First Principles: What JMT Is *For* in Sui
 
 JMT should **not** be treated as:
 
@@ -15,7 +15,7 @@ This is similar to how Aptos uses JMT, but adapted to Sui’s object model.
 
 ---
 
-## 2️⃣ What Exactly Goes Into the JMT?
+## What Exactly Goes Into the JMT?
 
 ### Key Design Choice
 
@@ -43,7 +43,7 @@ This preserves:
 
 ---
 
-## 3️⃣ When Is the JMT Updated?
+## When Is the JMT Updated?
 
 ### ❌ Not during execution
 
@@ -62,7 +62,7 @@ This keeps execution fast and parallel.
 
 ---
 
-## 4️⃣ Validator Responsibilities
+## Validator Responsibilities
 
 Each validator maintains:
 
@@ -81,7 +81,7 @@ Because JMT is **sparse and versioned**, updates are efficient.
 
 ---
 
-## 5️⃣ What Guarantees Does JMT Provide?
+## What Guarantees Does JMT Provide?
 
 Once embedded, JMT enables:
 
@@ -103,7 +103,7 @@ Once embedded, JMT enables:
 
 ---
 
-## 6️⃣ How ZKVM Uses JMT (Important)
+## How ZKVM Uses JMT (Important)
 
 The ZKVM **does NOT execute over JMT**.
 
@@ -135,7 +135,7 @@ Prove:
 
 ---
 
-## 7️⃣ Why JMT (Specifically) Works Well for Sui
+## Why JMT (Specifically) Works Well for Sui
 
 JMT advantages that match Sui:
 
@@ -149,7 +149,7 @@ JMT advantages that match Sui:
 
 ---
 
-## 8️⃣ Network-Level Integration Plan (Step-by-Step)
+## Network-Level Integration Plan (Step-by-Step)
 
 ### Phase 1: Passive Commitment
 
@@ -174,7 +174,7 @@ JMT advantages that match Sui:
 
 ---
 
-## 9️⃣ What This Does *NOT* Change
+## What This Does *NOT* Change
 
 ❌ Transaction execution model
 ❌ Object ownership rules
@@ -185,7 +185,7 @@ JMT is **purely a cryptographic commitment layer**.
 
 ---
 
-## 10️⃣ Mental Model (Very Important)
+## Mental Model (Very Important)
 
 Think of Sui as:
 
