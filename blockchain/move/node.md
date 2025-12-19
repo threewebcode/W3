@@ -184,6 +184,3 @@ graph TD
 <cite repo="MystenLabs/sui" path="crates/sui-core/src/checkpoints/checkpoint_executor/mod.rs" start="665-705"/>
 <cite repo="MystenLabs/sui" path="crates/sui-node/src/lib.rs" start="1852-1875"/>
 <cite repo="MystenLabs/sui" path="crates/sui-core/src/authority.rs" start="3482-3504"/>
-
-Wiki pages you might want to explore:
-- [Overview (MystenLabs/sui)](/wiki/MystenLabs/sui#1)
