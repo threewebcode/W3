@@ -78,3 +78,48 @@ graph TD
     class A_Core,A_Pub,A_ZK,B_Client,B_Exec primary;
     class Relayer secondary;
 ```
+
+## 容器图 (Sui 节点 JMT 核心集成)
+
+```mermaid
+
+graph TD
+    %% 样式定义
+    classDef container fill:#f0f7ff,stroke:#0052cc,stroke-width:2px,color:#000;
+    classDef storage fill:#ffffff,stroke:#333,stroke-dasharray: 5 5,color:#333;
+    classDef highlight fill:#e1f5fe,stroke:#01579b,stroke-width:3px;
+
+    subgraph Sui_Node [Sui 验证节点 / 全节点]
+        
+        %% 核心逻辑容器
+        Exec["<b>执行引擎 (Execution Engine)</b><br/>(Sui VM)<br/>处理事务并生成<br/>Object 变更集 (Writesets)"]:::container
+        
+        JMT_Mod["<b>JMT 模块 (JMT Module)</b><br/>(Jellyfish Merkle Tree)<br/>根据对象变更计算<br/>版本化的状态根"]:::highlight
+
+        Consensus["<b>共识容器 (Consensus)</b><br/>(共识引擎)<br/>将状态根打包至<br/>最终确定的 Checkpoint"]:::container
+
+        RPC["<b>RPC 证明服务 (RPC Service)</b><br/>(JSON-RPC)<br/>向外部客户端提供<br/>JMT 包含证明 (Inclusion Proof)"]:::container
+
+        %% 存储层
+        subgraph Data_Layer [持久化存储层]
+            Obj_DB[("Object 存储<br/>(RocksDB)")]:::storage
+            JMT_DB[("JMT 节点存储<br/>(LSM-Tree)")]:::storage
+        end
+    end
+
+    %% 内部数据流转
+    Exec -->|1. Object 变更集| JMT_Mod
+    Exec -->|2. 原始对象数据| Obj_DB
+    
+    JMT_Mod -->|3. 节点持久化| JMT_DB
+    JMT_Mod -->|4. 待确定的状态根| Consensus
+    
+    Consensus -->|5. 固化 Checkpoint + 状态根| RPC
+    JMT_DB -.->|6. 获取路径数据| RPC
+
+    %% 外部交互
+    Client((轻客户端)) --- RPC
+
+    %% 备注
+    note["JMT 模块弥合了基于对象的执行<br/>与基于 Merkle 的全局状态之间的鸿沟"]
+```
