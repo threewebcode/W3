@@ -160,3 +160,52 @@ graph TB
     RPC_Service((RPC 服务)) -->|请求证明| Proof_Builder
     Cache_Layer <-->|持久化读写| JMT_DB[(JMT 存储)]
 ```
+
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction BT
+    
+    %% Type Definitions
+    class Version {
+        <<typedef>>
+        u64
+    }
+
+    class NibblePath {
+        +Vec~u8~ 0
+    }
+
+    %% Node Enumeration and Variants
+    class Node {
+        <<enumeration>>
+        Internal(InternalNode)
+        Leaf(LeafNode)
+        Null
+    }
+
+    class LeafNode {
+        +u8[32] object_id
+        +u8[32] object_digest
+    }
+
+    class InternalNode {
+        +HashMap~u8, ChildReference~ children
+    }
+
+    %% Core Interface (Trait)
+    class JellyfishMerkleTree {
+        <<interface>>
+        +put_value_set(version, value_set) Result~RootHash~
+        +get_with_proof(object_id, version) Result~Proof~
+        +prune_old_versions(min_version) Result~()~
+    }
+
+    %% Relationships
+    Node *-- InternalNode : variant
+    Node *-- LeafNode : variant
+    InternalNode ..> NibblePath : uses for routing
+    JellyfishMerkleTree ..> Node : operates on
+    JellyfishMerkleTree ..> Version : tracks state by
+```
