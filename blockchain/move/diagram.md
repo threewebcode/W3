@@ -79,7 +79,7 @@ graph TD
     class Relayer secondary;
 ```
 
-## 容器图 (Sui 节点 JMT 核心集成)
+## JMT 集成系统视图
 
 ```mermaid
 
@@ -122,4 +122,41 @@ graph TD
 
     %% 备注
     note["JMT 模块弥合了基于对象的执行<br/>与基于 Merkle 的全局状态之间的鸿沟"]
+```
+
+## JMT 组件 
+
+```mermaid
+graph TB
+    %% Style Definitions
+    classDef component fill:#ffffff,stroke:#0052cc,stroke-width:2px;
+    classDef logic fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+
+    subgraph JMT_Module [JMT Module 内部组件]
+        direction TB
+
+        Batcher["<b>批量处理器 (Batch Inserter)</b><br/>将多个交易的 Writesets<br/>合并为单次树更新"]:::logic
+        
+        Node_Manager["<b>节点管理器 (Node Manager)</b><br/>处理 Nibble 路径计算、<br/>节点分裂与哈希重计"]:::component
+
+        Version_Manager["<b>版本管理器 (Version Manager)</b><br/>管理 Checkpoint ID 与<br/>JMT Root 版本的映射"]:::component
+
+        Proof_Builder["<b>证明构建器 (Proof Builder)</b><br/>执行树遍历以提取<br/>特定的 Merkle 证明路径"]:::component
+
+        Cache_Layer["<b>结构缓存 (Structure Cache)</b><br/>在内存中缓存热点内部节点<br/>以加速查询和更新"]:::component
+    end
+
+    %% Internal Connections
+    Batcher --> Node_Manager
+    Node_Manager --> Cache_Layer
+    Node_Manager --> Version_Manager
+    
+    Proof_Builder --> Cache_Layer
+    Proof_Builder --> Version_Manager
+
+    %% External Connections (from Level 2)
+    Exec_Engine((执行引擎)) -->|Writesets| Batcher
+    Consensus((共识层)) -->|Finalize Checkpoint| Version_Manager
+    RPC_Service((RPC 服务)) -->|请求证明| Proof_Builder
+    Cache_Layer <-->|持久化读写| JMT_DB[(JMT 存储)]
 ```
