@@ -6,4 +6,4 @@ Its architecture balances several competing requirements. The prime field provid
 
 The system uses the term and constraint types to represent algebraic constraints, with automatic normalization enforcing the degree-2 limit before constraints are accepted by the circuit. The most distinctive design pattern in airbender is the orthogonal selection optimization. The circuit prepares candidate computations for many instruction handlers, but enforces only the active one via mutually exclusive boolean flags. The lookup-centric design extends to delegation circuits, which use dedicated lookup tables for delegation operations.
 
-
+Specialized delegation circuits execute outside the main risc-v semantics, but inside the same proving system. 
