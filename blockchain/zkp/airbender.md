@@ -18,4 +18,6 @@ Delegation is a core mechanism for handling complex or expensive operations effi
 
 Delegation type is csr id that identifies the specific circuit. Trace length is the length of the circuit's trace. Number requests per circuit is how many requests one circuit instance can batch-process. Table driver is lookup tables used by the circuit. Compiled circuit artifact is compiled circuit data for the prover. 
 
+zkVM systems use different names and invocation methods for the same core idea: offloading complex or costly operations to optimized, native circuit gadgets. Precompiles are not just fast host functions; they are proven via dedicated sub-circuits or gadgets. The guest program triggers a system call, and the prover handles with a specialized constraint system. The low-level hostcalls are exposed to any RISC-V guest program. There are storage and state management, contract lifecycle and calls, balance and value transfer, cryptography that is delegated to runtime primitives, event and logging, runtime queries. Precompiles bypass the VM and call native runtime functions directly.
+
 
