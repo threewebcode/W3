@@ -4,4 +4,4 @@ In Rust, polymorphics generics often called parametric polymorphism allow you to
 
 For smart pointers like Arc, moving often happens by mistake when the user actually intended to share ownership. This hint atrribute allows the compiler to explicitely suggest using `.clone()` instead of moving. UART is the short name of universal asynchronous receiver and transmitter for different devices. 
 
-
+Schema drift is a common issue while working on distribution systems. Portable code never imports a concrete adapter. 
