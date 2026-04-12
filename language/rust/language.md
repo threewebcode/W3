@@ -8,4 +8,8 @@ Schema drift is a common issue while working on distribution systems. Portable c
 
 Token stream is a sequence of tokens. Token slice is a borrowed slice of tokens. A span gives information about where in the source code a token is defined. It also gives information about the token came from. Rust treats errors as return values. Traits allow these values to be handled abstractly and converted automatically. The most exception-like behavior in Rust comes from the question mark operator. When question mark is used on a result type, Rust automatically calls `From::from` to convert the error into the return type of the current function. When a function might return several unrelated error types, you can return a trait object. This is a form of dynamic dispatch that lets you return any type as long as it implements the Error trait, similar to catching a base exception class in other language.
 
+The rayon crate uses an internal thread pool to easily paralelize data-parallel operations. Diesel is a rustic typesafe extensible object relational mapper and query builder. Rust's borrow checker is a wonderful thing that forcs you into designing code to be more robust. 
 
+In computer science, deterministi finite automata and nondeterministic finite automata are abstract mathematical models-knowns as finite state machines - used to recognize patterns in strings and define regular languages. Nondeterministic means that a state can have zero, one, multiple transitions for the same input symbol. 
+
+Rotor is a mio-based asynchronic IO library providing an event loop, state machine combinators and futures. Rust is not what makes these projects awesome. These projects are what make Rust awesome. Synchronization primitives are provided by parking lot crate. 
