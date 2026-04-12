@@ -12,4 +12,4 @@ The rayon crate uses an internal thread pool to easily paralelize data-parallel 
 
 In computer science, deterministi finite automata and nondeterministic finite automata are abstract mathematical models-knowns as finite state machines - used to recognize patterns in strings and define regular languages. Nondeterministic means that a state can have zero, one, multiple transitions for the same input symbol. 
 
-Rotor is a mio-based asynchronic IO library providing an event loop, state machine combinators and futures. Rust is not what makes these projects awesome. These projects are what make Rust awesome. Synchronization primitives are provided by parking lot crate. 
+Rotor is a mio-based asynchronic IO library providing an event loop, state machine combinators and futures. Rust is not what makes these projects awesome. These projects are what make Rust awesome. Synchronization primitives are provided by parking lot crate. Crate petgraph provides graph structures and algorithms. 
