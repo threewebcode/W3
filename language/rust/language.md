@@ -15,3 +15,5 @@ In computer science, deterministi finite automata and nondeterministic finite au
 Rotor is a mio-based asynchronic IO library providing an event loop, state machine combinators and futures. Rust is not what makes these projects awesome. These projects are what make Rust awesome. Synchronization primitives are provided by parking lot crate. Crate petgraph provides graph structures and algorithms. 
 
 It is like learning to dance when your partner borrow checker already knows all the steps. Clippy is for everyone. Lazy initialization is designed for wgen you want to do some work lazily, the prouct of this work is immutable once it is created, and you want to share this data across threads. Optimization is the process of changing your code to run faster by doing less work or getting more work done over a period of time. 
+
+Range and where clauses are expression statement. There are product, sum and pi types in Rust. Rust's type system is turing-complete. In Rust, None is always an Option. 
